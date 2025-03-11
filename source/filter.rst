@@ -169,14 +169,14 @@ ID ресурса, как и ID пользователя, содержатся �
 Чтобы узнать ID пользователя, в Веб ГИС в `Панели управления <https://docs.nextgis.ru/docs_ngweb/source/admin_interface.html#ngw-control-panel>`_ зайдите в раздел `Пользователи <https://docs.nextgis.ru/docs_ngweb/source/users.html>`_, найдите нужного пользователя в списке и отройте режим редактирования (или наведите курсор на значок редактирования, чтобы увидеть ссылку, не котрывая окно, если это позволяет ваш браузер).
 
 .. figure:: _static/ngw_user_id_ru.png
-   :name: ngw_user_id_pic
+   :name: ngc_user_id_pic
    :align: center
    :width: 20cm
 
    Идентификационный номер пользователя "Другой пользователь": 10
 
 .. figure:: _static/ngw_user_id_list_ru.png
-   :name: ngw_user_id_list_pic
+   :name: ngc_user_id_list_pic
    :align: center
    :width: 20cm
 
