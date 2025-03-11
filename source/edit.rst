@@ -76,7 +76,7 @@
 
 Если нужно одновременное редактирование данных с разных устройств/платформ, то доступны следующие варианты:
 
-1. Использовать сервисы OGC API — Features или `WFS <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#connect-data-edit-wfs>`_. Их можно создать в Веб ГИС (`WFS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#c-wfs>`_, `OGC API — Features <https://docs.nextgis.ru/docs_ngweb/source/layers.html#c-ogc-api-features>`_) или прямо `через коннект <https://docs.nextgis.ru/docs_ngcom/source/ngqgis_connect.html#wfs-wms-ogc-api-features>`_, и редактировать данные через них.
+1. Использовать сервисы OGC API — Features или `WFS <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#connect-data-edit-wfs>`_. Их можно создать в Веб ГИС (`WFS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#c-wfs>`__, `OGC API — Features <https://docs.nextgis.ru/docs_ngweb/source/layers.html#c-ogc-api-features>`_) или прямо `через коннект <https://docs.nextgis.ru/docs_ngcom/source/ngqgis_connect.html#wfs-wms-ogc-api-features>`_, и редактировать данные через них.
 
 2. Напрямую в QGIS с включенной функцией `версионирования <https://docs.nextgis.ru/docs_ngweb/source/layers.html#create-vector-layer-vers-pic>`_ векторных слоёв. Включается в Веб ГИС в настройках каждого векторного слоя. При включенном версионировании вся история изменений слоя будет накапливаться в системе. Это позволит Connect увидеть изменения, сделанные на других устройствах, и обработать их без сброса слоя.
 
@@ -131,7 +131,7 @@
 С помощью NextGIS Connect можно обновить целиком содержимое уже существующего векторного слоя Веб ГИС, заменив входящие в него объекты, но сохранив его стили, псевдонимы атрибутов и другие настройки.
 
 .. warning:: 
-   При обновлении **слоя** все данные целевого слоя, включая вложения (фото, документы), будут очищены. Если вам нужно их сохранить - используйте `WFS <https://docs.nextgis.ru/docs_ngconnect/source/resources.html#wfs>`_. Если обновляется `стиль <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#connect-style-overwrite>`_, то вложения затронуты не будут.
+   При обновлении **слоя** все данные целевого слоя, включая вложения (фото, документы), будут очищены. Если вам нужно их сохранить - используйте `WFS <https://docs.nextgis.ru/docs_ngconnect/source/resources.html#wfs>`__. Если обновляется `стиль <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#connect-style-overwrite>`_, то вложения затронуты не будут.
 
 
 Для обновления (замены) данных слоя:
