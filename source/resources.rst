@@ -84,6 +84,7 @@
    Указание имени импортируемого проекта
 
 * Если проект загрузился успешно, то в соответствующей Группе ресурсов появится новая Группа ресурсов с заданным названием, внутри которой будут находиться: 
+
 1) все Растровые и Векторные слои, для которых доступна операция *Добавить в Веб ГИС*, а также их Стили;
 2) автоматически созданная `Веб-карта <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client>`_ с заданным охватом, на которую будут добавлены все импортированные слои с учетом их группировки, иерархии и видимости в панели слоёв QGIS.
 
@@ -103,7 +104,7 @@
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/f374bd300335a78dddd017a0c0934eec/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Смотреть на `youtube <https://youtu.be/qIByQEqZ4oQ>`_, `rutube <https://rutube.ru/video/f374bd300335a78dddd017a0c0934eec/>`_.
+Смотреть на `youtube <https://youtu.be/qIByQEqZ4oQ>`__, `rutube <https://rutube.ru/video/f374bd300335a78dddd017a0c0934eec/>`__.
 
 .. _ng_connect_lookup:
 
@@ -186,7 +187,7 @@
 * В настольном приложении (QGIS) в дереве ресурсов Веб ГИС модуля NextGIS Connect выберите **Векторный слой**, который вы хотите опубликовать по протоколу OGC API - Features;
 
 .. figure:: _static/NGConnect_ogc_select_ru.png
-   :name: NGConnect_wfs_select_pic
+   :name: NGConnect_ogc_select_pic
    :align: center
    :width: 20cm
    
@@ -195,7 +196,7 @@
 * Выберите пункт **Создать сервис OGC API - Features** в контекстном меню слоя;
 
 .. figure:: _static/NGConnect_ogc_context_ru.png
-   :name: NGConnect_wfs_context_pic
+   :name: NGConnect_ogc_context_pic
    :align: center
    :width: 20cm
    
@@ -204,7 +205,7 @@
 * В открывшемся диалоговом окне укажите число объектов слоя, которое должен публиковать Сервис OGC API - Features;
 
 .. figure:: _static/NGConnect_ogc_number_ru.png
-   :name: NGConnect_wfs_number_pic
+   :name: NGConnect_ogc_number_pic
    :align: center
    :width: 20cm
    
@@ -214,7 +215,7 @@
 
 
 .. figure:: _static/NGConnect_ogc_result_ru.png
-   :name: NGConnect_wfs_result_pic
+   :name: NGConnect_ogc_result_pic
    :align: center
    :width: 20cm
    
@@ -232,7 +233,7 @@
 
 
 .. figure:: _static/NGConnect_wfs_select_ru.png
-   :name: NGConnect_wfs_select_pic
+   :name: NGConnect_wms_select_pic
    :align: center
    :width: 20cm
    
@@ -303,7 +304,7 @@
 1. При выборе в дереве Connect **слоя с несколькими стилями**, они подгрузятся все, но будет предложено выбрать текущий. Это единственный вариант, при котором появляется диалоговое окно. Кликните дважды на нужном стиле, чтобы выбрать его.
 
 .. figure:: _static/NGConnect_export_select_style_ru.png
-   :name: NGConnect_export_select_pic
+   :name: NGConnect_export_select_style_pic
    :align: center
    :width: 20cm
    
