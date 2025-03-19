@@ -3,7 +3,7 @@
 Поиск и фильтрация
 ======================
 
-Модуль NextGIS Connect позволяет `искать ресурсы по названию <https://docs.nextgis.ru/docs_ngconnect/source/filter.html#ngc-search-name>`_ и `URL <https://docs.nextgis.ru/docs_ngconnect/source/filter.html#ngc-search-url>`_ или `фильтровать <https://docs.nextgis.ru/docs_ngconnect/source/filter.html#ngc-filter-expression>`_ дерево ресурсов по выражению.
+Модуль NextGIS Connect позволяет `искать ресурсы по названию <https://docs.nextgis.ru/docs_ngconnect/source/filter.html#ngc-search-name>`_ и `URL <https://docs.nextgis.ru/docs_ngconnect/source/filter.html#ngc-search-url>`_ и `метаданным <https://docs.nextgis.ru/docs_ngconnect/source/filter.html#ngc-filter-metadata>`_ или `фильтровать <https://docs.nextgis.ru/docs_ngconnect/source/filter.html#ngc-filter-expression>`_ дерево ресурсов по выражению.
 
 Чтобы активировать поиск, нажмите кнопку |button_filter| в панели инструментов модуля.
 
@@ -52,7 +52,7 @@
 ``@type ILIKE "wfs%" OR @name ILIKE "%wfs%"``. В панели Коннекта будут показаны все соединения, слои и сервисы WFS, а также ресурсы, которые содержат буквы "wfs" в названии (например, веб-карта "Демонстрация возможностей WFS").
 
 .. figure:: _static/ngc_filter_example_wfs_ru.png
-   :name: 
+   :name: ngc_filter_example_wfs_pic
    :align: center
    :width: 10cm
 
@@ -62,7 +62,7 @@
 ``@owner = 4 AND @type = "raster_layer"``. В панели Коннекта будут показаны все растровые слои, владельцем которых является пользователь с ID 4.
 
 .. figure:: _static/ngc_filter_example_user_raster_ru.png
-   :name: 
+   :name: ngc_filter_example_user_raster_pic
    :align: center
    :width: 10cm
 
@@ -93,25 +93,40 @@
 *  ``"_в%"`` - вторая буква в строке - В, например "А\ **в**\ тодороги"
 
 .. figure:: _static/ngc_filter_endletter_ru.png
-   :name: 
+   :name: ngc_filter_endletter_pic
    :align: center
    :width: 10cm
 
 .. figure:: _static/ngc_filter_startletter_ru.png
-   :name: 
+   :name: ngc_filter_startletter_pic
    :align: center
    :width: 10cm
 
 .. figure:: _static/ngc_filter_start_end_ru.png
-   :name: 
+   :name: ngc_filter_start_end_pic
    :align: center
    :width: 10cm
 
 .. figure:: _static/ngc_filter_2ndletter_ru.png
-   :name: 
+   :name: ngc_filter_2ndletter_pic
    :align: center
    :width: 10cm
 
+.. __ngc_filter_metadata:
+
+Поиск по метаданным
+---------------------
+
+Также доступен поиск по метаданным. Чтобы перейти к нему, нажмите на стрелочку вниз рядом с кнопкой поиска |button_filter| и выберите "По метаданным".
+
+Метаданные вводятся в два отдельных поля, в одно - ключ, во второе - значение.
+
+.. figure:: _static/ngc_filter_metadata_ru.png
+   :name: ngc_filter_metadata_pic
+   :align: center
+   :width: 10cm
+
+   Пример поиска по метаданным, в которых записан номер региона
 
 .. _resource_types:
 
@@ -126,6 +141,7 @@
 * Группа трекеров - trackers_group
 * Демо-проект - demo_project
 * Набор тайлов – tileset
+* Набор файлов - file_bucket
 * Подложка - baselayers
 * Проект Collector - collector_project
 * Растровый слой - raster_layer
@@ -146,7 +162,6 @@
 * Стиль MapServer - mapserver_style
 * Трекер - tracker
 * Форма - formbuilder_form
-* Хранилище файлов - file_bucket
 * Библиотека маркеров SVG – svg_marker_library
 
 
@@ -160,7 +175,7 @@ ID ресурса, как и ID пользователя, содержатся �
 Чтобы узнать ID ресурса, откройте его страницу (это можно сделать из контекстного меню из панели Connect или из панели слоёв, если ресурс добавлен в QGIS). Число в конце адресной строки - идентификатор ресурса.
 
 .. figure:: _static/ngw_resource_id_ru.png
-   :name: 
+   :name: ngc_resource_id_pic
    :align: center
    :width: 20cm
 
