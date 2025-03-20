@@ -13,7 +13,7 @@
 
    Вызов диалога настроек
 
-.. figure:: _static/nextgis_connect/ngc_settings_ru_2.png
+.. figure:: _static/ngc_settings_ru_2.png
    :align: center
    :alt: Основные настройки
    :width: 20cm
