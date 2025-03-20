@@ -113,7 +113,7 @@
    :align: center
    :width: 10cm
 
-.. __ngc_filter_metadata:
+.. _ngc_filter_metadata:
 
 Поиск по метаданным
 ---------------------
