@@ -3,7 +3,7 @@
 Search and filter
 ======================
 
-In NextGIS Connect you can `search resources by name <https://docs.nextgis.com/docs_ngconnect/source/filter.html#ngc-search-name>`_ and `url <https://docs.nextgis.com/docs_ngconnect/source/filter.html#ngc-search-url>`_ or `filter <https://docs.nextgis.com/docs_ngconnect/source/filter.html#ngc-filter-expression>`_ the resource tree using expressions.
+In NextGIS Connect you can `search resources by name <https://docs.nextgis.com/docs_ngconnect/source/filter.html#ngc-search-name>`_, `url <https://docs.nextgis.com/docs_ngconnect/source/filter.html#ngc-search-url>`_ or `metadata <https://docs.nextgis.com/docs_ngconnect/source/filter.html#ngc-filter-metadata>`_ or `filter <https://docs.nextgis.com/docs_ngconnect/source/filter.html#ngc-filter-expression>`_ the resource tree using expressions.
 
 To open the search/filter bar, press |button_filter| button in the plugin toolbar.
 
@@ -52,7 +52,7 @@ Examples of expressions:
 ``@type ILIKE "wfs%" OR @name ILIKE "%wfs%"``. The Connect panel will show all the WFS connections, layers and services as well as resource that have "wfs" in their name (e.g. a Web Map called "WFS demo").
 
 .. figure:: _static/ngc_filter_example_wfs_en.png
-   :name: 
+   :name: ngc_filter_example_wfs_pic
    :align: center
    :width: 10cm
 
@@ -62,7 +62,7 @@ Examples of expressions:
 ``@owner = 4 AND @type = "raster_layer"``. The Connect panel will show all raster layers owned by the user with ID=4.
 
 .. figure:: _static/ngc_filter_example_user_raster_en.png
-   :name: 
+   :name: ngc_filter_example_user_raster_pic
    :align: center
    :width: 10cm
 
@@ -81,7 +81,8 @@ Administrators also can enter usernames for search by owner.
 * ``@type`` – resource type (resource group, vector layer, lookup table etc), see the full list of possible values below
 * ``@name`` – resource name, similar to `search by name <https://docs.nextgis.com/docs_ngconnect/source/filter.html#ngc-search-name>`_, but can be combined with other parameters. ``@name = "text"`` searches for exact matches, while the simple name search uses the expression ``@name ILIKE "%text%"``
 * ``@keyname`` – resource key
-* ``@description`` – resource description
+
+.. todo:: ``@description`` – resource description
 
 Values of these parameters are strings, they should be enclosed in quotation marks or apostrophes. Also you can add one of the wildcards: ``_`` – any symbol or ``%`` – any number of any symbols. 
 
@@ -93,25 +94,43 @@ As an example, see how it works for the expression @name ILIKE …
 * ``'_s%'`` – any string that has the letter S in the second position, for example "O\ **s**\ lo"
 
 .. figure:: _static/ngc_filter_endletter_en.png
-   :name: 
+   :name: ngc_filter_endletter_pic
    :align: center
    :width: 10cm
 
 .. figure:: _static/ngc_filter_startletter_en.png
-   :name: 
+   :name: ngc_filter_startletter_pic
    :align: center
    :width: 10cm
 
 .. figure:: _static/ngc_filter_start_end_en.png
-   :name: 
+   :name: ngc_filter_start_end_pic
    :align: center
    :width: 10cm
 
 .. figure:: _static/ngc_filter_2ndletter_en.png
-   :name: 
+   :name: ngc_filter_2ndletter_pic
    :align: center
    :width: 10cm
 
+
+.. _ngc_filter_metadata:
+
+Metadata search
+---------------------
+
+NextGIS Connect also allows search by metadata. To activate it, press the downward arrow next to the filter icon |button_filter| and select "By metadata".
+
+Metadata is entered as a key-value pair, in two separate fields.
+
+.. figure:: _static/ngc_filter_metadata_en.png
+   :name: ngc_filter_metadata_pic
+   :align: center
+   :width: 10cm
+
+   Example of searching by state code stored in metadata
+
+You can pre-enter a list of metadata keys to choose from in the `Settings <https://docs.nextgis.com/docs_ngconnect/source/ngc_settings.html#ngc-set-search>`_.
 
 .. _resource_types:
 
@@ -160,7 +179,7 @@ ID of a resource, as well as user ID, can be found in the URL while viewing a We
 To find out the ID of resource, open its page (you can do it from the Connect panel context menu or from the Layers panel if the resource is added to QGIS). The number at the end of the URL is the resource ID.
 
 .. figure:: _static/ngw_resource_id_en.png
-   :name: 
+   :name: ngc_resource_id_pic
    :align: center
    :width: 20cm
 
@@ -169,14 +188,14 @@ To find out the ID of resource, open its page (you can do it from the Connect pa
 To learn user ID, in the Web GIS go to the `Control panel <https://docs.nextgis.com/docs_ngweb/source/admin_interface.html#ngw-control-panel>`_, open `Users <https://docs.nextgis.com/docs_ngweb/source/users.html>`_ section, find the user you need and enter the Edit mode (or just hover the cursor over the pencil icon to see the link without opening the page, if your browser allows it).
 
 .. figure:: _static/ngw_user_id_en.png
-   :name: 
+   :name: ngc_user_id_pic
    :align: center
    :width: 20cm
 
    User ID for "Someone Else" is 8
 
 .. figure:: _static/ngw_user_id_list_en.png
-   :name: 
+   :name: ngc_user_id_list_pic
    :align: center
    :width: 20cm
 
