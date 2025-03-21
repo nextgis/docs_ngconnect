@@ -30,7 +30,10 @@ If a layer has **multiple styles**, they will all be uploaded. Their names will 
 Upload raster data
 ----------------------------
 
-* Add raster layers to QGIS from :term:`GeoTIFF` files;
+* Add raster layers to QGIS from :term:`GeoTIFF` file;
+
+.. note:: A raster layer in a different format, e.g. PostGIS, can also be uploaded to Web GIS via Connect. It will be transformed to EPSG:3857 GeoTIFF during uploading.
+
 * In NextGIS Connect panel select Resource group to which you want to upload your data;
 * In QGIS Layers panel select a raster layer which you want to upload to Web GIS;
 * Press **Add to Web GIS** button on NextGIS Connect control panel and click **Upload selected** or choose **NextGIS Connect --> Upload selected** in layer context menu;
@@ -128,7 +131,7 @@ In QGIS you can use Value relation widget to add another vector layer as a looku
 Create WFS, WMS, OGC API - Features services
 -------------------------------------------------
 
-NextGIS Connect plugin allows to quickly publish vector data using standard protocols :term:`WFS`, :term:`WMS` and OGC. 
+NextGIS Connect plugin allows to quickly publish vector data using standard protocols :term:`WFS`, :term:`WMS` and OGC. Raster data can also be published using :term:`WMS`.
 
 .. _create_wfs_service:
 
@@ -229,7 +232,7 @@ Create WMS service
 
 The process is similar to creation of WFS service (see above):
 
-* In the desktop application (QGIS) in the resource Web GIS tree of module NextGIS Connect select **Vector layer** that you want to publish via the WMS protocol; 
+* In the desktop application (QGIS) in the resource Web GIS tree of module NextGIS Connect select **Vector layer**, **Raster layer** or **QGIS style** that you want to publish via the WMS protocol; 
 
 
 .. figure:: _static/NGConnect_wfs_select_en.png
@@ -278,6 +281,56 @@ Creating Web Map from a layer
 
 A Web Map with the name "layer_name-map" will be created in the same resource group. A QGIS style will be created for the layer and added to Web Map. The map's initial extent is set by the layer.
 
+.. _new_vector_layer:
+
+Create empty vector layer
+-----------------------------------
+
+With NextGIS Connect plugin you can create a new vector layer in your Web GIS without uploading data.
+
+In the Connect panel select the resource group inside which you want to create a new layer. In the menu bar select :menuselection:`Layer ‣ Create layer ‣ New NextGIS Web vector layer`.
+
+.. figure:: _static/ngc_create_ngw_layer_en.png
+   :name: ngc_create_ngw_layer_pic
+   :align: center
+   :width: 20cm
+
+   Creating new vector layer in Web GIS
+
+In the opened dialog enter the parameters of the new layer:
+
+.. figure:: _static/ngc_create_ngw_layer_set_en.png
+   :name: ngc_create_ngw_layer_set_pic
+   :align: center
+   :width: 20cm
+
+   Parameters of the new layer
+
+* Layer name
+* Geometry type
+* Option to include Z dimension
+* Layer fields: enter the display name and keyname, select field type, then press **Add to Field List**. Available field parameters: 
+
+   * Feature table - the contents of the field will be displayed in the identification panel;
+   * Text search - enable/disable text search in the values of the attribute;
+   * Label attribute - values from this field will be used as feature labels on the map.
+
+* You can also choose to add the layer to the project or just create in in the Web GIS.
+
+Also while creating a layer you can turn on `versioning <https://docs.nextgis.com/docs_ngweb/source/version.html#vers-qgis>`_ for it. Go to the second tab, "Settings".
+
+.. figure:: _static/ngc_create_ngw_layer_set_version_en.png
+   :name: ngc_create_ngw_layer_set_version_pic
+   :align: center
+   :width: 14cm
+
+   Enable versioning
+
+To complete the process, pess **Create**.
+
+The new layer will appear in the resource tree of the Connect panel as well as the QGIS Layers panel if the "Add layer to project" option was ticked.
+
+
 
 .. _connect_data_export:
 
@@ -321,3 +374,25 @@ You can change current style in the layer properties.
 
 
 If the layer is exported successfully you'll see in QGIS Layers panel a new GeoJSON vector layer which you can use in your projects or save to your device in a required format. 
+
+
+.. _connect_data_sync:
+
+Synchronization with Web GIS
+------------------------
+
+Layer added to QGIS continues to be synced with the Web GIS server. It means that all the changes made via Web interface will be displayed in the desktop app and the edits made in QGIS `change the layer in the Web GIS <https://docs.nextgis.com/docs_ngconnect/source/edit.html>`_.
+
+Synchronization is automatic. Set how often Connect checks for layer updates in `QGIS Options <https://docs.nextgis.com/docs_ngconnect/source/ngc_settings.html#ngc-set-sync>`_.
+
+You can disable auto sync for a layer and synchronize it manually when needed. Go to layer properties and untick "Automatic synchronization".
+
+.. figure:: _static/ngc_layer_autosync_set_en.png
+   :name: ngc_layer_autosync_set_pic
+   :align: center
+   :width: 20cm
+
+   Automatic synchronization is enabled
+
+To start the synchronization manually, open the `layer status window <https://docs.nextgis.ru/docs_ngconnect/source/edit.html>`_ and press **Synchronization**.
+
