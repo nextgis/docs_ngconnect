@@ -12,7 +12,7 @@ You can access this dialog via top menu *Settings > Options > NextGIS Connect*, 
 
    Opening Settings menu
 
-.. figure:: _static/ngc_settings_en.png
+.. figure:: _static/ngc_settings_en_2.png
    :align: center
    :alt: Main settings
    :width: 20cm
@@ -29,9 +29,9 @@ Also, in this section you can create, edit or delete connections.
 Uploading
 -----------
 
-**Rename forbidden fields** - if selected, the plugin renames fields forbidden for Web GIS during the export of a layer separately or within a project.
-
 **Upload rasters as Cloud Optimized GeoTIFF (COG)** - if this option is selected, pyramids will be used for loading rasters depending on zoom level, so there's no need to wait for the entire raster to finish loading.
+
+**Enable feature versioning for vector layers when uploading** - versioning allows `co-editing from multiple devices <https://docs.nextgis.com/docs_ngweb/source/version.html#vers-qgis>`_.
 
 Resources
 --------------
@@ -40,12 +40,21 @@ Resources
 
 **Open Web Map automatically on creation** – after completing any operation that includes creation of a Web Map it will be automatically opened in browser. 
 
+.. _ngc_set_search:
+
+Searching
+----------
+
+Enter a list of metadata keys to select from the dropdown menu in the `search bar <https://docs.nextgis.com/docs_ngconnect/source/filter.html#ngc-filter-metadata>`_ instead of typing them every time.
+
 Synchronization
 ----------------
 
 You can select how often the plugin checks for edits. The interval is set in minutes or hours, between 1 and 59.
 
 A bigger interval can be helpful if there are many layers to prevent a constant state of synchronization.
+
+You can disable automatic synchronization for a layer in the `layer properties <https://docs.nextgis.com/docs_ngconnect/source/resources.html#connect-data-sync>`_.
 
 Cache settings
 -----------------
