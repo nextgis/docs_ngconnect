@@ -26,6 +26,7 @@ This functionality is only available for vector data formats used in QGIS.
 To check when the layer was last synchronized, hover over the sync symbol.
 
 .. figure:: _static/ngc_check_sync_en.png
+   :name: ngc_check_sync_pic
    :align: center
    :alt: Sync information
    :width: 16cm
@@ -35,6 +36,7 @@ To check when the layer was last synchronized, hover over the sync symbol.
 Press the symbol to open the layer status window.
 
 .. figure:: _static/ngc_layer_status_en.png
+   :name: ngc_layer_status_pic
    :align: center
    :width: 10cm
 
@@ -47,20 +49,7 @@ You can start the process manually by pressing the **Synchronization** button.
 .. important::
     While the layer is in edit mode, synchronization is not available.
 
-If changes have been made to the layer in Web GIS since the last synchronization, further synchronization will not be possible. Press the sync symbol by the layer, "Layer status" window will open. In the dropdown menu select **Reset layer**. Keep in mind that if you reset the layer, all local changes that had not been synchronized will be lost. 
-
-.. figure:: _static/ngc_check_sync_en.png
-   :align: center
-   :alt: Sync information
-   :width: 16cm
-
-   Layer synchronization symbol
-
-.. figure:: _static/ngc_layer_status_en.png
-   :align: center
-   :width: 10cm
-
-   Layer status dialog. To reset the layer, press the downward arrow by the "Synchronization" button and select "Reset layer"
+If changes have been made to the layer in Web GIS since the last synchronization, further synchronization will not be possible. Press the sync symbol by the layer, "Layer status" window will open. Press the downward arrow by the "Synchronization" button and in the dropdown menu select **Reset layer**. Keep in mind that if you reset the layer, all local changes that had not been synchronized will be lost. 
 
 If the edits made in the cloud were incorrect and you need to replace them with local ones, you can use the `Data overwrite <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-data-overwrite>`_ function.
 
