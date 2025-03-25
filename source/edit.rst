@@ -62,9 +62,39 @@ Multi user editing
 
 Layers can be edited by several people at once or from several different devices/platforms. The options for collaborative editing are:
 
-1. Use OGC API — Features or `WFS <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-data-edit-wfs>`_ services. You can create them in Web GIS (`WFS <https://docs.nextgis.com/docs_ngweb/source/layers.html#c-wfs>`_, `OGC API — Features <https://docs.nextgis.com/docs_ngweb/source/layers.html#c-ogc-api-features>`_) or directly in the `Connect plugin <https://docs.nextgis.ru/docs_ngcom/source/ngqgis_connect.html#wfs-wms-ogc-api-features>`_ and then use them to edit data.
+1. Edit directly in QGIS with enabled `versioning <https://docs.nextgis.com/docs_ngweb/source/layers.html#create-vector-layer-vers-pic>`_ of vector layers.  Turn on versioning in the layer's settings in Web GIS. When versioning is on, all changes made to the layer are logged in the system. That allows Connect to access edits made on other devices and process them without resetting the layer.
 
-2. Edit directly in QGIS with enabled `versioning <https://docs.nextgis.com/docs_ngweb/source/layers.html#create-vector-layer-vers-pic>`_ of vector layers.  Turn on versioning in the layer's settings in Web GIS. When versioning is on, all changes made to the layer are logged in the system. That allows Connect to access edits made on other devices and process them without resetting the layer.
+2. Use OGC API — Features or `WFS <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-data-edit-wfs>`_ services. You can create them in Web GIS (`WFS <https://docs.nextgis.com/docs_ngweb/source/layers.html#c-wfs>`_, `OGC API — Features <https://docs.nextgis.com/docs_ngweb/source/layers.html#c-ogc-api-features>`_) or directly in the `Connect plugin <https://docs.nextgis.com/docs_ngcom/source/ngqgis_connect.html#wfs-wms-ogc-api-features>`_ and then use them to edit data.
+
+
+.. _connect_conflict:
+
+Resolve edit confilcts
+-----------------------------
+
+`Versioning <https://docs.nextgis.com/docs_ngweb/source/layers.html#create-vector-layer-vers-pic>`_ allows multiple users to edit a layer from different devices at the same time, via QGIS or Web interface. If two users try to make different changes to the same feature, then before saving the changes NextGIS Connect plugin detects an edit conflict and shows a dialog to resolve it. 
+
+.. figure:: _static/conflict_detected_en.png
+   :name: conflict_detected_pic
+   :align: center
+   :width: 20cm
+
+   Edit conflict detected in one feature. Yellow dots mark conflicting changes: in geometry and in one of the attributes
+
+All the features that have conflicting edits are listed on the left. 
+
+For each of the features you can view the attribute values and geometry preview. Conflicting changes are marked by yellow dots. The local changes are shown on the left and the changes saved on the server after you entered the editing mode are shown on the right.
+
+Select the correct option for each conflict individually or apply all the local or server changes at once using buttons in the bottom left corner. 
+
+The final version is displayed in the middle, in the Result column. Resolved conflicts are marked by green dots. When all the edit conflicts of a feature are resolved, the question mark next to it changes to a green tick.
+
+.. figure:: _static/conflict_resolved_en.png
+   :name: conflict_resolved_pic
+   :align: center
+   :width: 20cm
+
+   Edit conflict resolved. As a result, the attribute value is from the local version and the geometry is from the server version
 
 
 
@@ -117,7 +147,7 @@ Update data
 NextGIS Connect allows you to update the content of an existing Web GIS vector layer keeping its styles, attribute aliases and other settings.
 
 .. warning:: 
-   When a **layer** is updated, all data of the target layer including attachments (photos, documents) is cleared. If you need to keep the attachments intact, use `WFS <https://docs.nextgis.ru/docs_ngconnect/source/resources.html#wfs>`_. When you update a `style <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-style-overwrite>`_, it does not affect attachments.
+   When a **layer** is updated, all data of the target layer including attachments (photos, documents) is cleared. If you need to keep the attachments intact, use `WFS <https://docs.nextgis.com/docs_ngconnect/source/resources.html#wfs>`_. When you update a `style <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-style-overwrite>`_, it does not affect attachments.
 
 
 To update (overwrite) layer's data:
