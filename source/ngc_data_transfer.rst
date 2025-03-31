@@ -181,9 +181,9 @@ See how to work with multi-style layers in our video:
 
    <iframe width="560" height="315" src="https://www.youtube.com/embed/7vwt1k6Cv3k?si=5FIwWTQU4UeCNMw3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Watch on `youtube <https://youtu.be/7vwt1k6Cv3k?si=db1YkX-aS7f3_sd7>`_.
+Watch on `youtube <https://youtu.be/7vwt1k6Cv3k?si=db1YkX-aS7f3_sd7>`__.
 
-Detailed instructions for adding various data types to QGIS `here <https://docs.nextgis.com/docs_ngconnect/source/resources.html#ngcom-ngqgis-connect-data-export>`_.
+Detailed instructions for adding `various data types to QGIS <https://docs.nextgis.com/docs_ngconnect/source/resources.html#ngcom-ngqgis-connect-data-export>`_.
 
 Vector layers added from Web GIS can be `edited in QGIS <https://docs.nextgis.com/docs_ngconnect/source/edit.html#>`_ right away.
 
