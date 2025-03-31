@@ -88,6 +88,7 @@ Upload entire QGIS project
    Entering the name for the project
 
 * If the project is uploaded successfully you'll see in a selected Resource group a newly created group with: 
+
 1) all Raster and Vector layers to which **Add to Web GIS** operation is applicable, and their Styles;
 2) automatically created `Web map <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client>`_ with a set extent, to which all the imported layers are added with groups, hierarchy and visibility settings similar to QGIS. 
 
@@ -107,7 +108,7 @@ If you select a resource group containing layers with multiple styles, all the s
 
    <iframe width="560" height="315" src="https://www.youtube.com/embed/Wwx1mowUAL4?si=pSrv-l2C2Nvqd9eH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Watch on `youtube <https://youtu.be/Wwx1mowUAL4?si=g1ErxArjC4GewSsh>`_.
+Watch on `youtube <https://youtu.be/Wwx1mowUAL4?si=g1ErxArjC4GewSsh>`__.
 
 .. _ng_connect_lookup:
 
@@ -190,7 +191,7 @@ NextGIS Connect plugin enables a fast publication of Vector layers from your Web
 * Select in NextGIS Connect Resources panel a **Vector layer** from your Web GIS resource tree which you want to publish using OGCF protocol;
 
 .. figure:: _static/NGConnect_ogc_select_en.png
-   :name: NGConnect_wfs_select_pic
+   :name: NGConnect_ogc_select_pic
    :align: center
    :width: 20cm
    
@@ -208,7 +209,7 @@ NextGIS Connect plugin enables a fast publication of Vector layers from your Web
 * In the opened dialog window set the number of layer's features to be published via OGCF service by changing the value of the field **The number of objects returned by default**;
 
 .. figure:: _static/NGConnect_ogc_number_en.png
-   :name: NGConnect_wfs_number_pic
+   :name: NGConnect_ogc_number_pic
    :align: center
    :width: 20cm
    
@@ -218,7 +219,7 @@ NextGIS Connect plugin enables a fast publication of Vector layers from your Web
 
 
 .. figure:: _static/NGConnect_ogc_result_en.png
-   :name: NGConnect_wfs_result_pic
+   :name: NGConnect_ogc_result_pic
    :align: center
    :width: 20cm
    
@@ -236,7 +237,7 @@ The process is similar to creation of WFS service (see above):
 
 
 .. figure:: _static/NGConnect_wfs_select_en.png
-   :name: NGConnect_wfs_select_pic
+   :name: NGConnect_wms_select_pic
    :align: center
    :width: 20cm
    
@@ -357,7 +358,7 @@ Press **Add to QGIS** button on NextGIS Connect control panel or select **Add to
 1. If you select a layer with **multiple styles** in the Connect window, all the styles will be added, but you need to chose current style in a dialog window. Double-click the style to select it. This is the only case in which a dialog pops up.
 
 .. figure:: _static/NGConnect_export_select_style_en.png
-   :name: NGConnect_export_select_pic
+   :name: NGConnect_export_select_style_pic
    :align: center
    :width: 20cm
    
@@ -379,7 +380,7 @@ If the layer is exported successfully you'll see in QGIS Layers panel a new GeoJ
 .. _connect_data_sync:
 
 Synchronization with Web GIS
-------------------------
+-----------------------------
 
 Layer added to QGIS continues to be synced with the Web GIS server. It means that all the changes made via Web interface will be displayed in the desktop app and the edits made in QGIS `change the layer in the Web GIS <https://docs.nextgis.com/docs_ngconnect/source/edit.html>`_.
 
