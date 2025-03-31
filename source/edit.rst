@@ -64,7 +64,7 @@ Layers can be edited by several people at once or from several different devices
 
 1. Edit directly in QGIS with enabled `versioning <https://docs.nextgis.com/docs_ngweb/source/layers.html#create-vector-layer-vers-pic>`_ of vector layers.  Turn on versioning in the layer's settings in Web GIS. When versioning is on, all changes made to the layer are logged in the system. That allows Connect to access edits made on other devices and process them without resetting the layer.
 
-2. Use OGC API — Features or `WFS <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-data-edit-wfs>`_ services. You can create them in Web GIS (`WFS <https://docs.nextgis.com/docs_ngweb/source/layers.html#c-wfs>`_, `OGC API — Features <https://docs.nextgis.com/docs_ngweb/source/layers.html#c-ogc-api-features>`_) or directly in the `Connect plugin <https://docs.nextgis.com/docs_ngcom/source/ngqgis_connect.html#wfs-wms-ogc-api-features>`_ and then use them to edit data.
+2. Use :term:`OGC API — Features` or :term:`WFS` services. You can create them in Web GIS (`WFS <https://docs.nextgis.com/docs_ngweb/source/layers.html#c-wfs>`_, `OGC API — Features <https://docs.nextgis.com/docs_ngweb/source/layers.html#c-ogc-api-features>`_) or directly in the `Connect plugin <https://docs.nextgis.com/docs_ngcom/source/ngqgis_connect.html#wfs-wms-ogc-api-features>`_ and then use them to edit data.
 
 
 .. _connect_conflict:
@@ -110,7 +110,7 @@ You can also edit a vector layer using the standard :term:`WFS` protocol (with f
 * Press |button_to_qgis| Add to QGIS button on NextGIS Connect control panel or select **Add to QGIS** in the service context menu;
 
 .. figure:: _static/NGConnect_edit_add_en.png
-   :name: NGConnect_edit_add_pic
+   :name: ngcn_edit_add_pic
    :align: center
    :width: 20cm
    
@@ -120,7 +120,7 @@ You can also edit a vector layer using the standard :term:`WFS` protocol (with f
 * Enter Edit mode and modify geometries and attributes in the added WFS layer using standard QGIS tools;
 
 .. figure:: _static/NGConnect_edit_process_en.png
-   :name: NGConnect_edit_process_pic
+   :name: ngcn_edit_process_pic
    :align: center
    :width: 20cm
    
@@ -129,7 +129,7 @@ You can also edit a vector layer using the standard :term:`WFS` protocol (with f
 * Press the "Edit" button to finish editing and press "Save" in the opened window.
 
 .. figure:: _static/NGConnect_edit_save_en.png
-   :name: NGConnect_edit_save_pic
+   :name: ngcn_edit_save_pic
    :align: center
    :width: 20cm
    
@@ -160,7 +160,7 @@ Layer resource ID stays the same. The attribute structure of the source and targ
 
    
 .. figure:: _static/NGconnect_vector_overwrite_en_2.png
-   :name: connect_vector_overwrite
+   :name: ngcn_vector_overwrite
    :align: center
    :width: 20cm
    
@@ -183,7 +183,7 @@ You can add another style to a layer or replace its existing style with a new on
 * In Connect toolbar press |button_to_wg| Add to Web GIS and in the dropdown menu select "Add new style to layer" or "Update style".
 
 .. figure:: _static/connect_add_style_en_2.png
-   :name: connect_add_style_pic
+   :name: ngcn_add_style_pic
    :align: center
    :width: 20cm
 
@@ -196,7 +196,7 @@ To update layer's style you don't need to select a specific one.
 3. If the layer has no style, the style is added to it.
 
 .. figure:: _static/connect_replace_select_style_en.png
-   :name: connect_replace_style_pic
+   :name: ngcn_replace_style_pic
    :align: center
    :width: 20cm
 
@@ -205,7 +205,7 @@ To update layer's style you don't need to select a specific one.
 This operation is also available in the layer's context menu in QGIS Layers panel: :menuselection:`NextGIS Connect --> Add new style to layer / Update layer style`.
 
 .. figure:: _static/connect_replace_add_style_context_en.png
-   :name: connect_replace_style_context_pic
+   :name: ngcn_replace_style_context_pic
    :align: center
    :width: 20cm
 
@@ -228,21 +228,21 @@ Watch on `youtube <https://youtu.be/bmba3qqgTmM?si=dZMBmZyPSXojFgiY>`_.
 Click on the layer in the Connect panel to view the styles and right-click on the QML-style. Select "Copy style" in the context menu. Then in the QGIS Layers panel paste style via context menu as usual.
 
 .. figure:: _static/connect_copy_style_en.png
-   :name: connect_copy_style_pic
+   :name: ngcn_copy_style_pic
    :align: center
    :width: 7cm
 
    Copying a style
 
 .. figure:: _static/connect_paste_style_en.png
-   :name: connect_paste_style_pic
+   :name: ngcn_paste_style_pic
    :align: center
    :width: 22cm
 
    Pasting a style
 
 .. figure:: _static/connect_result_style_en.png
-   :name: connect_result_style_pic
+   :name: ngcn_result_style_pic
    :align: center
    :width: 22cm
 
