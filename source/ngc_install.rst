@@ -76,7 +76,7 @@
 
 * |button_refresh| `Обновить дерево ресурсов <https://docs.nextgis.ru/docs_ngconnect/source/ngc_data_transfer.html#connect-refresh>`_
 
-* |button_openmap| `Открыть веб-карту в браузере <https://docs.nextgis.ru/docs_ngconnect/source/ngc_data_transfer.html#connect-open-webmap>`_
+* |button_openmap| `Просмотр в браузере <https://docs.nextgis.ru/docs_ngconnect/source/ngc_data_transfer.html#connect-open-webmap>`_
 
 * |button_settings| `Настройки модуля <https://docs.nextgis.ru/docs_ngconnect/source/ngc_settings.html>`_
 
