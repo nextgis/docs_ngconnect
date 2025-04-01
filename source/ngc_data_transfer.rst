@@ -228,6 +228,31 @@ Detailed instructions for adding `various data types to QGIS <https://docs.nextg
 
 Vector layers added from Web GIS can be `edited in QGIS <https://docs.nextgis.com/docs_ngconnect/source/edit.html#>`_ right away.
 
+
+.. _ng_connect_share_project:
+
+Open a project created on another device
+-------------------------------------------------
+
+With NextGIS Connect v. 3.2.0 and up a project file that uses detached layers can be opened on another computer if they both have a connection to the same Web GIS. When the project is opened, the layers are loaded automatically.
+
+#. In NextGIS Connect check the connection to the Web GIS or create it, if necessary. 
+#. Add the layers from Web GIS to QGIS project.
+#. Save the project.
+#. Copy the project file and transfer it to the other computer.
+#. On the other computer in NextGIS Connect check the connection to the same Web GIS or create it if necessary.
+#. Open the project.
+
+The data will be loaded from the Web GIS. To check if the synchronization was successful, click on the layer status icon next to its name.
+
+.. note:: Open the project **after** the connection is set up. If you get "Handle Unavailable Layers" window, close the project, check the connection to Web GIS, then re-open the project.
+
+
+
+
+
+
+
 .. _ng_connect_cont_menu:
 
 Context Menu
