@@ -14,26 +14,67 @@ Resource types
 The following types of resources are available for data exchange and operation:
 
 .. |resource_vector_point| image:: _static/nextgis_connect/vector_layer_point.png
+   :width: 6mm
+
 .. |resource_vector_mpoint| image:: _static/nextgis_connect/vector_layer_mpoint.png
+   :width: 6mm
+
 .. |resource_vector_line| image:: _static/nextgis_connect/vector_layer_line.png
+   :width: 6mm
+
 .. |resource_vector_mline| image:: _static/nextgis_connect/vector_layer_mline.png
+   :width: 6mm
+
 .. |resource_vector_polygon| image:: _static/nextgis_connect/vector_layer_polygon.png
+   :width: 6mm
+
 .. |resource_vector_mpolygon| image:: _static/nextgis_connect/vector_layer_mpolygon.png
+   :width: 6mm
+
 .. |resource_wfs| image:: _static/resource_wfs_symbol.png
+   :width: 6mm
+
 .. |resource_wms| image:: _static/resource_wms_symbol.png
+   :width: 6mm
+
 .. |resource_style| image:: _static/resource_style_symbol.png
+   :width: 6mm
+
 .. |resource_webmap| image:: _static/resource_webmap_symbol.png
+   :width: 6mm
+
 .. |resource_group| image:: _static/nextgis_connect/resource_group.png
+   :width: 6mm
+
 .. |raster_layer| image:: _static/raster_layer.png
+   :width: 5mm
+
 .. |vector_layer| image:: _static/vector_layer_symbol.png
+   :width: 6mm
+
 .. |basemap_symbol| image:: _static/basemap_symbol.png
+   :width: 6mm
+
 .. |tms_connection_symbol| image:: _static/tms_connection_symbol.png
+   :width: 6mm
+
 .. |tms_service_symbol| image:: _static/tms_service_symbol.png
+   :width: 6mm
+
 .. |postgis_layer_symbol| image:: _static/postgis_layer_symbol.png
+   :width: 6mm
+
 .. |demo_project_symbol| image:: _static/demo_project_symbol.png
+   :width: 6mm
+
 .. |wms_layer_symbol| image:: _static/wms_layer_symbol.png
+   :width: 6mm
+
 .. |wms_connection_symbol| image:: _static/wms_connection_symbol.png
+   :width: 6mm
+
 .. |wfs_layer_symbol| image:: _static/wfs_layer_symbol.png
+   :width: 6mm
 
 - |vector_layer| - Vector layer (NGW Vector Layer), which can be:  
   |resource_vector_point| - Point vector layer (NGW Vector Layer); 
@@ -84,7 +125,7 @@ Alternatively you can upload data to Web GIS from the Layers panel. In the conte
 
 .. figure:: _static/context_export_to_ngw_en.png
    :align: center
-   :width: 20cm
+   :width: 22cm
 
    Uploading data to Web GIS via layer context menu
 
@@ -131,7 +172,7 @@ To **keep the photos** intact while modifying the style, perform the following s
 
 .. figure:: _static/ngconnect_modify_keep_photo_en.png
    :align: center
-   :width: 20cm   
+   :width: 22cm   
    
    Updating a style
 
@@ -143,7 +184,7 @@ From Web GIS to QGIS
 .. figure:: _static/add_to_qgis_en.png
    :align: center
    :alt: Add to QGIS
-   :width: 10cm
+   :width: 8cm
    
    Button for data transfer to QGIS
 
@@ -196,7 +237,7 @@ Context menu may differ depending on resource type.
 .. figure:: _static/context_menu_en.png
    :align: center
    :alt: Context menu for a qgis vector style
-   :width: 10cm
+   :width: 8cm
    
    Context menu example
 
@@ -229,7 +270,9 @@ Variable options – depend on resource type:
 
 - `Duplicate resource <https://docs.nextgis.com/docs_ngcom/source/ngqgis_connect.html#ngcom-connect-resource-double>`_ - available only for Vector layer and Raster layer;
 
-- `Overwrite selected layer <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-data-overwrite>`_ - only available for Vector layer.
+- `Overwrite selected layer <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-data-overwrite>`_ - only available for Vector layer;
+
+- Display in browser - available for Web Map, all types of layers and styles.
 
 
 The plugin also allows you to navigate to the Web GIS data directly from the the Layers panel in QGIS. In the layer's context menu find "NextGIS Connect" and press "Open in Web GIS".
@@ -317,13 +360,18 @@ The "refresh" operation will update the entire Web GIS resource tree to the curr
 
 .. _connect_open_webmap:
 
-Open Web Map in browser
+Display in browser
 -----------------------------
 
-In the top menu of the NextGIS Connect plugin you'll find a "Create group" button.
+In the top menu of the NextGIS Connect plugin you'll find |button_openmap| "Display in browser" button.
 
-Option is available if a Web Map (|resource_webmap| NGW Web Map) is selected in NextGIS Connect resource tree. 
-The Web Map will be opened in a new tab of default browser.
+.. |button_openmap| image:: _static/button_openmap.png
+   :width: 6mm
+   :alt: magnifying glass
+
+
+Option is available if a Web Map (|resource_webmap| NGW Web Map), a layer or a style is selected in NextGIS Connect resource tree. 
+The preview will be opened in a new tab of default browser.
 
 .. figure:: _static/open_webmap_en.png
    :align: center
@@ -332,4 +380,4 @@ The Web Map will be opened in a new tab of default browser.
 
    Opening a Web Map
 
-Context menu also allows to `open the Web GIS page of any resource <https://docs.nextgis.com/docs_ngconnect/source/ngc_data_transfer.html#ng-connect-cont-menu>`_ in browser.
+Context menu also allows to display a Web Map, layer or style in browser or to `open the Web GIS page of any resource <https://docs.nextgis.com/docs_ngconnect/source/ngc_data_transfer.html#ng-connect-cont-menu>`_.
