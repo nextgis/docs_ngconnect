@@ -70,9 +70,17 @@ Examples of expressions:
 
 You can filter resources by:
 
-* ``@id`` – identification number of the resource. You can also use it to `search by URL <https://docs.nextgis.com/docs_ngconnect/source/filter.html#ngc-search-url>`_.
-* ``@parent`` – identification number of the parent resource, all its subresources will be displayed (e.g. all resources in a group or all styles and forms of a layer)
-* ``@owner`` – all resources owned by the user with the entered ID
+* ``@id`` – identification number of the resource. You can also use it to `search by URL <https://docs.nextgis.com/docs_ngconnect/source/filter.html#ngc-search-url>`_;
+* ``@owner`` – all resources owned by the user with the entered ID;
+* ``@parent`` – identification number of the parent resource, all its direct subresources will be displayed (e.g. all resources in a group or all styles and forms of a layer), to filter the other levels of subresources too use @root;
+* ``@root`` - identification number of the resource, all its subresources, their subresource and so on, will be displayed.
+
+.. figure:: _static/ngc_filter_parent_root_en.png
+   :name: ngc_filter_parent_root_pic
+   :align: center
+   :width: 20cm
+
+   Web Maps found in a resource group with ID=376 using @parent and @root
 
 Values for the above expressions are entered as numbers, no quotation marks. `Where to find these numbers. <https://docs.nextgis.com/docs_ngconnect/source/filter.html#ngc-find-id>`_
 
