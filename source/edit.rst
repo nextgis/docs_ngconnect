@@ -147,7 +147,7 @@ Update data
 NextGIS Connect allows you to update the content of an existing Web GIS vector layer keeping its styles, attribute aliases and other settings.
 
 .. warning:: 
-   When a **layer** is updated, all data of the target layer including attachments (photos, documents) is cleared. If you need to keep the attachments intact, use `WFS <https://docs.nextgis.com/docs_ngconnect/source/resources.html#wfs>`_. When you update a `style <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-style-overwrite>`_, it does not affect attachments.
+   When a **layer** is updated, all data of the target layer including attachments (photos, documents) is cleared. If you need to keep the attachments intact, use `WFS <https://docs.nextgis.com/docs_ngconnect/source/resources.html#wfs>`__. When you update a `style <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-style-overwrite>`_, it does not affect attachments.
 
 
 To update (overwrite) layer's data:
@@ -166,7 +166,7 @@ Layer resource ID stays the same. The attribute structure of the source and targ
    
    Overwriting layer with the new version via context menu 
 
-You can also edit features `directly <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-data-edit>`_ or via `WFS <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-data-edit-wfs>`_.
+You can also edit features `directly <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-data-edit>`_ or via `WFS <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-data-edit-wfs>`__.
 
 
 
