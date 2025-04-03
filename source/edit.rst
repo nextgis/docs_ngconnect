@@ -156,7 +156,7 @@ To update (overwrite) layer's data:
 * In the NextGIS Connect panel select the vector layer , select the vector layer the contents of which you need to replace;
 * Right click on the target layer and choose **Overwrite selected layer**.
 
-Layer resource ID stays the same. The attribute structure of the source and target layers must be the same, otherwise you cannot overwrite data.
+Layer resource ID stays the same.
 
    
 .. figure:: _static/NGconnect_vector_overwrite_en_2.png
