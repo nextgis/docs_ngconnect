@@ -64,7 +64,7 @@ Layers can be edited by several people at once or from several different devices
 
 1. Edit directly in QGIS with enabled `versioning <https://docs.nextgis.com/docs_ngweb/source/layers.html#create-vector-layer-vers-pic>`_ of vector layers.  Turn on versioning in the layer's settings in Web GIS. When versioning is on, all changes made to the layer are logged in the system. That allows Connect to access edits made on other devices and process them without resetting the layer.
 
-2. Use :term:`OGC API — Features` or :term:`WFS` services. You can create them in Web GIS (`WFS <https://docs.nextgis.com/docs_ngweb/source/layers.html#c-wfs>`_, `OGC API — Features <https://docs.nextgis.com/docs_ngweb/source/layers.html#c-ogc-api-features>`_) or directly in the `Connect plugin <https://docs.nextgis.com/docs_ngcom/source/ngqgis_connect.html#wfs-wms-ogc-api-features>`_ and then use them to edit data.
+2. Use :term:`OGC API — Features` or :term:`WFS` services. You can create them in Web GIS (`WFS <https://docs.nextgis.com/docs_ngweb/source/layers.html#services.html#ngw-create-service-wfs>`_, `OGC API — Features <https://docs.nextgis.com/docs_ngweb/source/services.html#ngw-ogc-api-features>`_) or directly in the `Connect plugin <https://docs.nextgis.com/docs_ngcom/source/ngqgis_connect.html#wfs-wms-ogc-api-features>`_ and then use them to edit data.
 
 
 .. _connect_conflict:
