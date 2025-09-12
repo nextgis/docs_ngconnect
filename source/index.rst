@@ -14,10 +14,10 @@ NextGIS Connect для QGIS
 
 **Загрузка данных в хранилище**
 
-* `Проект целиком <https://docs.nextgis.ru/docs_ngconnect/source/resources.html#qgis-project>`_
-* `Векторный слой <https://docs.nextgis.ru/docs_ngconnect/source/resources.html#vector-data>`_
-* `Растровый слой <https://docs.nextgis.ru/docs_ngconnect/source/resources.html#raster-data>`_
-* `Подложка <https://docs.nextgis.ru/docs_ngconnect/source/resources.html#basemaps>`_
+* `Проект целиком <https://docs.nextgis.ru/docs_ngconnect/source/ngc_data_transfer.html#qgis-project>`_
+* `Векторный слой <https://docs.nextgis.ru/docs_ngconnect/source/ngc_data_transfer.html#vector-data>`_
+* `Растровый слой <https://docs.nextgis.ru/docs_ngconnect/source/ngc_data_transfer.html#raster-data>`_
+* `Подложка <https://docs.nextgis.ru/docs_ngconnect/source/ngc_data_transfer.html#basemaps>`_
 * `Заменить данные <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#connect-data-overwrite>`_
 * `Обновить стиль <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#connect-style-overwrite>`_
 
@@ -31,9 +31,9 @@ NextGIS Connect для QGIS
 **Управление ресурсами**
 
 * `Поиск и фильтрация <https://docs.nextgis.ru/docs_ngconnect/source/filter.html>`_
-* `Создание: папки, веб-карты, слои, сервисы <https://docs.nextgis.ru/docs_ngconnect/source/resources.html#wfs-wms-ogc-api-features>`_
-* `Удаление <https://docs.nextgis.ru/docs_ngconnect/source/ngc_data_transfer.html#connect-resource-delete>`_
-* `Дублирование <https://docs.nextgis.ru/docs_ngconnect/source/ngc_data_transfer.html#connect-resource-double>`_
+* `Создание: папки, веб-карты, слои, сервисы <https://docs.nextgis.ru/docs_ngconnect/source/manage.html#wfs-wms-ogc-api-features>`_
+* `Удаление <https://docs.nextgis.ru/docs_ngconnect/source/manage.html#connect-resource-delete>`_
+* `Дублирование <https://docs.nextgis.ru/docs_ngconnect/source/manage.html#connect-resource-double>`_
 
 **Полезная информация**
 
