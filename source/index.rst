@@ -9,6 +9,7 @@ NextGIS Connect для QGIS
 
 * `Обзор <https://docs.nextgis.ru/docs_ngconnect/source/ngconnect.html>`_
 * `Установка и обновление <https://docs.nextgis.ru/docs_ngconnect/source/ngc_install.html>`_
+* `Панель модуля <https://docs.nextgis.ru/docs_ngconnect/source/panel.html>`_
 * `Создание подключения <https://docs.nextgis.ru/docs_ngconnect/source/ngc_install.html#ng-connect-new-connection>`_
 * `Настройки <https://docs.nextgis.ru/docs_ngconnect/source/ngc_settings.html>`_
 
@@ -53,10 +54,12 @@ NextGIS Connect для QGIS
 
    ngconnect
    ngc_install
+   panel
    ngc_settings
    filter
    ngc_data_transfer
    resources
    edit
    export
+   manage
    troubleshooting
