@@ -81,6 +81,151 @@
 
 Новый слой появится в дереве ресурсов в панели Connect и в панели слоёв QGIS, если была отмечена опция "Добавить в проект".
 
+.. _connect_services:
+
+Создание Сервисов: WFS, WMS, OGC API - Features
+-------------------------------------------------
+
+Модуль NextGIS Connect позволяет быстро публиковать Векторные слои в Веб ГИС по стандартным протоколам :term:`WFS`, :term:`WMS` и OGC API - Features. Растровые слои так же можно публиковать по протоколу :term:`WMS`.
+
+.. _create_wfs_service:
+
+Создание сервиса WFS
+~~~~~~~~~~~~~~~~~~~~~
+
+Для этого в модуле доступна операция быстрого создания Сервиса WFS:
+
+* В настольном приложении (QGIS) в дереве ресурсов Веб ГИС модуля NextGIS Connect выберите **Векторный слой**, который вы хотите опубликовать по протоколу WFS;
+
+.. figure:: _static/NGConnect_wfs_select_ru.png
+   :name: NGConnect_wfs_select_pic
+   :align: center
+   :width: 20cm
+   
+   Выбор слоя
+
+* Выберите пункт **Создать сервис WFS** в контекстном меню слоя;
+
+.. figure:: _static/NGConnect_wfs_context_ru.png
+   :name: NGConnect_wfs_context_pic
+   :align: center
+   :width: 20cm
+   
+   Контекстное меню слоя
+   
+* В открывшемся диалоговом окне укажите число объектов слоя, которое должен публиковать Сервис WFS;
+
+.. figure:: _static/NGConnect_wfs_number_ru.png
+   :name: NGConnect_wfs_number_pic
+   :align: center
+   :width: 20cm
+   
+   Число публикуемых объектов слоя
+
+* Если Сервис WFS создался успешно, то в соответствующей Группе ресурсов появится новый Сервис WFS, в который уже подключен ваш Векторный слой.
+
+
+.. figure:: _static/NGConnect_wfs_result_ru.png
+   :name: NGConnect_wfs_result_pic
+   :align: center
+   :width: 20cm
+   
+   Созданный сервис WFS в дереве ресурсов
+   
+.. note:: 
+	Отредактировать настройки созданного таким образом Сервиса WFS (включая его название, публикуемые слои и их настройки) можно через веб-интерфейс Веб ГИС.
+
+.. _create_ogc_api_feat_service:
+
+Создание сервиса OGC API - Features
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Для этого в модуле доступна операция быстрого создания Сервиса OGC API - Features:
+
+* В настольном приложении (QGIS) в дереве ресурсов Веб ГИС модуля NextGIS Connect выберите **Векторный слой**, который вы хотите опубликовать по протоколу OGC API - Features;
+
+.. figure:: _static/NGConnect_ogc_select_ru.png
+   :name: NGConnect_ogc_select_pic
+   :align: center
+   :width: 20cm
+   
+   Выбор слоя
+
+* Выберите пункт **Создать сервис OGC API - Features** в контекстном меню слоя;
+
+.. figure:: _static/NGConnect_ogc_context_ru.png
+   :name: NGConnect_ogc_context_pic
+   :align: center
+   :width: 20cm
+   
+   Контекстное меню слоя
+   
+* В открывшемся диалоговом окне укажите число объектов слоя, которое должен публиковать Сервис OGC API - Features;
+
+.. figure:: _static/NGConnect_ogc_number_ru.png
+   :name: NGConnect_ogc_number_pic
+   :align: center
+   :width: 20cm
+   
+   Число публикуемых объектов слоя
+
+* Если Сервис OGC API - Features создался успешно, то в соответствующей Группе ресурсов появится новый Сервис OGC API - Features, в который уже подключен ваш Векторный слой.
+
+
+.. figure:: _static/NGConnect_ogc_result_ru.png
+   :name: NGConnect_ogc_result_pic
+   :align: center
+   :width: 20cm
+   
+   Созданный сервис OGC API - Features в дереве ресурсов
+
+
+.. _create_wms_service:
+
+Создание сервиса WMS
+~~~~~~~~~~~~~~~~~~~~~
+
+Для этого в модуле доступна операция быстрого создания Сервиса WMS:
+
+* В настольном приложении (QGIS) в дереве ресурсов Веб ГИС модуля NextGIS Connect выберите **Векторный слой**, **Растровый слой** или **Стиль QGIS** слоя, который вы хотите опубликовать по протоколу WMS;
+
+
+.. figure:: _static/NGConnect_wfs_select_ru.png
+   :name: NGConnect_wms_select_pic
+   :align: center
+   :width: 20cm
+   
+   Выбор слоя
+   
+* Выберите пункт **Создать WMS сервис** в контекстном меню слоя;
+
+.. figure:: _static/NGConnect_wms_context_ru.png
+   :name: NGConnect_wms_context_pic
+   :align: center
+   :width: 20cm
+   
+   Контекстное меню слоя
+   
+* В открывшемся диалоговом выберите стиль слоя для публикация Сервиса WMS;
+
+
+.. figure:: _static/NGConnect_wms_style_ru.png
+   :name: NGConnect_wms_style_pic
+   :align: center
+   :width: 20cm
+   
+   Выбор стиля для публикации Сервиса WMS
+   
+* Если Сервис WMS создался успешно, то в соответствующей Группе ресурсов появится новый Сервис WMS, в который уже подключен ваш Векторный слой.
+
+.. figure:: _static/NGConnect_wms_result_ru.png
+   :name: NGConnect_wms_result_pic
+   :align: center
+   :width: 20cm
+   
+   Созданный Сервис WMS в дереве ресурсов
+
+
 .. _connect_resource_double:
 
 Дублирование ресурсов
