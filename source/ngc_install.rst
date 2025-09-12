@@ -16,11 +16,6 @@
 
 Посмотреть видео на `youtube <https://youtu.be/6UX0_Bn2L-A>`_, `rutube <https://rutube.ru/video/5f96ea9ca914a0a06cf365e6330c16b2/>`_.
 
-.. _ng_connect_connection:
-
-Панель модуля
-----------------
-
 После установки модуля на панели инструментов появится иконка: 
 
 .. figure:: _static/logo_connect.png
@@ -36,87 +31,12 @@
    
    Панель модуля расширения NextGIS Connect
 
-.. |button_to_qgis| image:: _static/button_to_qgis.png
-   :width: 6mm
-
-.. |button_to_wg| image:: _static/button_to_wg.png
-   :width: 6mm
-
-.. |button_newfolder| image:: _static/button_newfolder.png
-   :width: 6mm
-
-.. |button_filter| image:: _static/button_filter.png
-   :width: 6mm
-   :alt: воронка
-
-.. |button_refresh| image:: _static/button_refresh.png
-   :width: 6mm
-
-.. |button_openmap| image:: _static/button_openmap.png
-   :width: 6mm
-   :alt: карта с лупой
-
-.. |button_settings| image:: _static/button_settings.png
-   :width: 6mm
-   :alt: синяя шестерёнка
-
-.. |button_help| image:: _static/button_help.png
-   :width: 6mm
-   :alt: знак вопроса
-
-На панели расположены следующие кнопки:
-
-* |button_to_qgis| `Загрузить в QGIS <https://docs.nextgis.ru/docs_ngconnect/source/ngc_data_transfer.html#qgis>`_
-
-* |button_to_wg| `Добавить в Веб ГИС <https://docs.nextgis.ru/docs_ngconnect/source/ngc_data_transfer.html#ng-connect-export>`_
-
-* |button_newfolder| `Создать группу ресурсов <https://docs.nextgis.ru/docs_ngconnect/source/ngc_data_transfer.html#ng-connect-res-group>`_
-
-* |button_filter| `Поиск и фильтрация ресурсов <https://docs.nextgis.ru/docs_ngconnect/source/filter.html>`_
-
-* |button_refresh| `Обновить дерево ресурсов <https://docs.nextgis.ru/docs_ngconnect/source/ngc_data_transfer.html#connect-refresh>`_
-
-* |button_openmap| `Просмотр в браузере <https://docs.nextgis.ru/docs_ngconnect/source/ngc_data_transfer.html#connect-open-webmap>`_
-
-* |button_settings| `Настройки модуля <https://docs.nextgis.ru/docs_ngconnect/source/ngc_settings.html>`_
-
-* |button_help| Справка - вы окажетесь здесь
-
-Если на данный момент не настроено ни одно `подключение <https://docs.nextgis.ru/docs_ngconnect/source/ngc_install.html#ng-connect-new-connection>`_, вы увидите сообщение с предложением 
-создать свою Веб ГИС.
-
-.. figure:: _static/nextgis_connect/panel-no-connections_ru.png
-   :align: center
-   :alt: Панель модуля расширения NextGIS Connect при отсутствии подключения
-   :width: 10cm
-   
-   Панель модуля расширения NextGIS Connect при отсутствии подключения
-
-Если ранее на устройстве использовалась версия NextGIS Connect, не поддерживавшая аутентификацию QGIS, то при включении обновленной версии будет предложено конвертировать существующие соединения и данные аутентификации. Это можно сделать через окно NextGIS Connect, а также в настройках модуля.
-
-.. figure:: _static/nextgis_connect/connect_update_convert_ru.png
-   :align: center
-   :name: connect_update_convert_pic
-   :alt: Панель модуля расширения NextGIS Connect после обновления
-   :width: 8cm
-
-   Предупреждение о необходимости конвертации соединений
-
-.. figure:: _static/nextgis_connect/ngc_upd_convert_menu_ru.png
-   :align: center
-   :name: ngc_upd_convert_menu_pic
-   :alt: Настройки модуля расширения NextGIS Connect после обновления
-   :width: 22cm
-
-   Настройки модуля расширения NextGIS Connect после обновления с сообщением о конвертации
-
+Для начала работы создайте подключение к Веб ГИС. 
 
 .. _ng_connect_new_connection:
 
 Создание подключения
 --------------------
-
-Для начала работы создайте подключение к Веб ГИС. 
 
 1. Нажмите кнопку |button_settings| Настройки на панели модуля расширения NextGIS Connect.
 
