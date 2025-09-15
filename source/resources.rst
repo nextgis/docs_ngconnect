@@ -1,342 +1,94 @@
 .. _connect_data_upload:
 
-Create resources and transfer data
+Working with cloud data
 ====================================
 
-NextGIS Connect plugin enables a fast upload of raster and vector data and `entire QGIS projects <https://docs.nextgis.com/docs_ngconnect/source/resources.html#upload-entire-qgis-project>`_ to Web GIS. You’ll be able to publish your maps and geodata online very quick and easy.
+With this plugin you can download data from Web GIS to QGIS to edit it.
 
-With this plugin you can also `download data from Web GIS <https://docs.nextgis.com/docs_ngconnect/source/resources.html#connect-data-export>`_ to QGIS to edit it.
-
-.. _vector_data:
-
-Uploading vector data
-------------------------------
-
-.. important:: 
-   You can avoid `data format limitations <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-vector-data-requirements>`_ when uploading vector data to Web GIS through NextGIS Connect by switching on options "Rename forbidden fields" and "Fix incorrect geometries" in *Settings* dialog.
-
-In QGIS create from scratch or upload from :term:`ESRI Shape`, :term:`GeoJSON` or :term:`CSV` files vector layers. Tailor their styles;
-* In NextGIS Connect panel select Resource group to which you want to upload your data (or create a new one using `Create resource group <https://docs.nextgis.com/docs_ngconnect/source/ngc_data_transfer.html#ng-connect-res-group>`_ button);
-* In QGIS Layers panel select the vector layer which you want to upload to Web GIS;
-* Press **Add to Web GIS** button on NextGIS Connect control panel and click **Upload selected** or choose **NextGIS Connect --> Upload selected** in layer context menu;
-* If data is uploaded successfully you'll see in the relevant Resource group a new Vector layer with `QGIS style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html>`_ tailored by you.
-
-If a layer has **multiple styles**, they will all be uploaded. Their names will be kept. If the style name is "default", the layer's name will be used instead. 
+.. |button_to_qgis| image:: _static/button_to_qgis.png
+   :width: 6mm
 
 
+.. _ng_connect_export:
 
-.. _raster_data:
+From Web GIS to QGIS
+------------------------------------
 
-Upload raster data
-----------------------------
-
-* Add raster layers to QGIS from :term:`GeoTIFF` file;
-
-.. note:: A raster layer in a different format, e.g. PostGIS, can also be uploaded to Web GIS via Connect. It will be transformed to EPSG:3857 GeoTIFF during uploading.
-
-* In NextGIS Connect panel select Resource group to which you want to upload your data;
-* In QGIS Layers panel select a raster layer which you want to upload to Web GIS;
-* Press **Add to Web GIS** button on NextGIS Connect control panel and click **Upload selected** or choose **NextGIS Connect --> Upload selected** in layer context menu;
-* If data is uploaded successfully you'll see in the relevant Resource group a new Raster layer  with default `Raster style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#ngw-process-create-raster-style
->`_.
-
-See how to set transparancy for a raster layer, upload it and `create a Web Map <https://docs.nextgis.com/docs_ngconnect/source/resources.html#creating-web-map-from-a-layer>`_ from the layer in our video:
-
-.. raw:: html
-
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/AA36g3CdGcU?si=YvqWTVMYnLt9-0sl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-Watch on `youtube <https://youtu.be/AA36g3CdGcU?si=d2JGjil-zMEbws4r>`_.
-
-
-.. _basemaps:
-
-Upload basemap
----------------------------------
-
-* Add basemaps to QGIS via TMS;
-* In NextGIS Connect panel select Resource group to which you want to add your basemap;
-* In QGIS Layers panel select a basemap which you want to upload to Web GIS;
-* Press **Add to Web GIS** button on NextGIS Connect control panel and click **Upload selected** or choose **NextGIS Connect --> Upload selected** in layer context menu;
-* If a basemap is uploaded successfully you'll see it the relevant Resource group.
-
-You need to be on `Mini or Premium <https://nextgis.com/pricing-base/>`_ to work with basemaps.
-
-
-.. _qgis_project:
-
-Upload entire QGIS project
--------------------------------
-
-* Create a QGIS project with raster and vector layers. Tailor their styles, group them, set their hierarchy and visibility settings. Set the map extent;
-* In NextGIS Connect panel select Resource group to which you want to upload the project;
-* Press **Add to Web GIS** button on NextGIS Connect control panel and select **Upload all**;
-
-.. figure:: _static/NGConnect_import_menu_en_2.png
-   :name: NGConnect_import_menu_pic
+.. figure:: _static/add_to_qgis_en.png
    :align: center
-   :width: 20cm
+   :alt: Add to QGIS
+   :width: 10cm
    
-   Adding project in the NextGIS Connect panel. Target resource group is highligthed in blue
-   
-* In the opened dialog window enter the name of the new Resource group to which the project will be imported;
-
-.. figure:: _static/NGConnect_import_name_en_2.png
-   :name: NGConnect_import_name_pic
-   :align: center
-   :width: 20cm
-   
-   Entering the name for the project
-
-* If the project is uploaded successfully you'll see in a selected Resource group a newly created group with: 
-
-1) all Raster and Vector layers to which **Add to Web GIS** operation is applicable, and their Styles;
-2) automatically created `Web map <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client>`_ with a set extent, to which all the imported layers are added with groups, hierarchy and visibility settings similar to QGIS. 
-
-.. tip:: 
-	To view the newly created Web map press **Open map in browser** button on NextGIS Connect control panel or select **Open map in browser** in the context menu.
-
-.. figure:: _static/NGConnect_import_view_en_2.png
-   :name: NGConnect_import_view_pic
-   :align: center
-   :width: 20cm
-   
-   Opening the newly created Web Map via context menu of the imported project
-
-If you select a resource group containing layers with multiple styles, all the styles will be added. The style used as current will be the one with the same name as the layer or the first in alphabetical order. No dialog will be displayed.
-
-.. raw:: html
-
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/Wwx1mowUAL4?si=pSrv-l2C2Nvqd9eH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-Watch on `youtube <https://youtu.be/Wwx1mowUAL4?si=g1ErxArjC4GewSsh>`__.
-
-.. _ng_connect_lookup:
-
-Lookup tables
-------------------------------------------------
-
-In Web GIS you can create `Lookup tables <https://docs.nextgis.com/docs_ngweb/source/create_other.html#ngcom-lookup-table-for-layer>`_ and link them to vector layers.
-
-When the layer is exported from Web GIS to QGIS the values of the lookup table will be added to the layer using value map widget. After that they will be available in the desktop app in the corresponding field of the table when you enter edit mode.
-
-.. figure:: _static/ngc_lookup_en.png
-   :align: center
-   :width: 20cm
-
-   Lookup table values available during editing in QGIS
-
-In QGIS you can use Value relation widget to add another vector layer as a lookup table or upload a CSV file. When the layer is transfered to Web GIS, a Lookup table resource will be created for it.
-
-.. _connect_services:
-
-Create WFS, WMS, OGC API - Features services
--------------------------------------------------
-
-NextGIS Connect plugin allows to quickly publish vector data using standard protocols :term:`WFS`, :term:`WMS` and OGC. Raster data can also be published using :term:`WMS`.
-
-.. _create_wfs_service:
-
-Create WFS service
-~~~~~~~~~~~~~~~~~~~~~
-
-It's possible due to the quick creation of :ref:`WFS service <ngcom_wfs_service>` option in NextGIS Connect: 
-
-* Select in NextGIS Connect Resources panel Vector layer which you want to publish using WFS protocol;
-
-.. figure:: _static/NGConnect_wfs_select_en.png
-   :name: NGConnect_wfs_select_pic
-   :align: center
-   :width: 20cm
-   
-   Selecting vector layer
-
-* Select **Create WFS service** in layer context menu;
-
-.. figure:: _static/NGConnect_wfs_context_en.png
-   :name: NGConnect_wfs_context_pic
-   :align: center
-   :width: 20cm
-   
-   Selecting "Create WFS service" in the Vector layer context menu
-   
-* In the opened dialog window set the number of layer's features to be published via WFS service by changing the value of the field **The number of objects returned by default**;
-
-.. figure:: _static/NGConnect_wfs_number_en.png
-   :name: NGConnect_wfs_number_pic
-   :align: center
-   :width: 20cm
-   
-   Number of features returned by default
-
-* If WFS service is created successfully you'll see it in the relevant Resource group. The Vector layer is already connected to it.
-
-
-.. figure:: _static/NGConnect_wfs_result_en.png
-   :name: NGConnect_wfs_result_pic
-   :align: center
-   :width: 20cm
-   
-   Newly created WFS service
-   
-.. note:: 
-	You can edit the settings of WFS service (including its name, published layers and their settings) in the user interface of your Web GIS.
-
-.. _create_ogc_api_feat_service:
-
-Create OGC API - Features service
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-NextGIS Connect plugin enables a fast publication of Vector layers from your Web GIS using standard OGC API - Features protocol.
-
-* Select in NextGIS Connect Resources panel a **Vector layer** from your Web GIS resource tree which you want to publish using OGCF protocol;
-
-.. figure:: _static/NGConnect_ogc_select_en.png
-   :name: NGConnect_ogc_select_pic
-   :align: center
-   :width: 20cm
-   
-   Selecting vector layer
-
-* Select **Create OGC API - Features service** in layer context menu;
-
-.. figure:: _static/NGConnect_ogc_context_en.png
-   :name: NGConnect_ogcf_context_pic
-   :align: center
-   :width: 20cm
-   
-   Selecting "Create OGC API - Features service" in the Vector layer context menu
-   
-* In the opened dialog window set the number of layer's features to be published via OGCF service by changing the value of the field **The number of objects returned by default**;
-
-.. figure:: _static/NGConnect_ogc_number_en.png
-   :name: NGConnect_ogc_number_pic
-   :align: center
-   :width: 20cm
-   
-   Number of features returned by default
-
-* If OGCF service is created successfully you'll see it in the relevant Resource group. The Vector layer is already connected to it.
-
-
-.. figure:: _static/NGConnect_ogc_result_en.png
-   :name: NGConnect_ogc_result_pic
-   :align: center
-   :width: 20cm
-   
-   Newly created OGC API - Features service
-
-
-.. _create_wms_service:
-
-Create WMS service
-~~~~~~~~~~~~~~~~~~~~~
-
-The process is similar to creation of WFS service (see above):
-
-* In the desktop application (QGIS) in the resource Web GIS tree of module NextGIS Connect select **Vector layer**, **Raster layer** or **QGIS style** that you want to publish via the WMS protocol; 
-
-
-.. figure:: _static/NGConnect_wfs_select_en.png
-   :name: NGConnect_wms_select_pic
-   :align: center
-   :width: 20cm
-   
-   Selecting vector layer
-   
-* Select **Create WMS Service** in the context menu of the layer;
-
-.. figure:: _static/NGConnect_wms_context_en.png
-   :name: NGConnect_wms_context_pic
-   :align: center
-   :width: 20cm
-   
-   Selecting "Create OGC API - Features service" in the Vector layer context menu
-   
-* In the dialog that opens select a layer style for publishing the WMS Service;
-
-
-.. figure:: _static/NGConnect_wms_style_en.png
-   :name: NGConnect_wms_style_pic
-   :align: center
-   :width: 20cm
-   
-   Selecting layer style
-   
-* If the WMS Service has been created successfully, then a new WMS Service will appear in the corresponding Resource Group, to which your Vector Layer is already connected. 
-
-.. figure:: _static/NGConnect_wms_result_en.png
-   :name: NGConnect_wms_result_pic
-   :align: center
-   :width: 20cm
-   
-   Newly created WMS service
-
-
-.. _web_map:
-
-Creating Web Map from a layer
-----------------------------------
-
-* In NextGIS Connect panel select from the resource tree the Vector layer which you want to display on a Web Map;
-* In the layer's context menu select **Create Web Map**.
-
-A Web Map with the name "layer_name-map" will be created in the same resource group. A QGIS style will be created for the layer and added to Web Map. The map's initial extent is set by the layer.
-
-.. _new_vector_layer:
-
-Create empty vector layer
------------------------------------
-
-With NextGIS Connect plugin you can create a new vector layer in your Web GIS without uploading data.
-
-In the Connect panel select the resource group inside which you want to create a new layer. In the menu bar select :menuselection:`Layer ‣ Create layer ‣ New NextGIS Web vector layer`.
-
-.. figure:: _static/ngc_create_ngw_layer_en.png
-   :name: ngc_create_ngw_layer_pic
-   :align: center
-   :width: 20cm
-
-   Creating new vector layer in Web GIS
-
-In the opened dialog enter the parameters of the new layer:
-
-.. figure:: _static/ngc_create_ngw_layer_set_en.png
-   :name: ngc_create_ngw_layer_set_pic
-   :align: center
-   :width: 20cm
-
-   Parameters of the new layer
-
-* Layer name
-* Geometry type
-* Option to include Z dimension
-* Layer fields: enter the display name and keyname, select field type, then press **Add to Field List**. Available field parameters: 
-
-   * Feature table - the contents of the field will be displayed in the identification panel;
-   * Text search - enable/disable text search in the values of the attribute;
-   * Label attribute - values from this field will be used as feature labels on the map.
-
-* You can also choose to add the layer to the project or just create in in the Web GIS.
-
-Also while creating a layer you can turn on `versioning <https://docs.nextgis.com/docs_ngweb/source/version.html#vers-qgis>`_ for it. Go to the second tab, "Settings".
-
-.. figure:: _static/ngc_create_ngw_layer_set_version_en.png
-   :name: ngc_create_ngw_layer_set_version_pic
-   :align: center
-   :width: 14cm
-
-   Enable versioning
-
-To complete the process, pess **Create**.
-
-The new layer will appear in the resource tree of the Connect panel as well as the QGIS Layers panel if the "Add layer to project" option was ticked.
+   Button for data transfer to QGIS
+
+Option is available if one of the following resources is selected in NextGIS Web resource tree:
+
+
+.. |resource_vector_point| image:: _static/nextgis_connect/vector_layer_point.png
+.. |resource_vector_mpoint| image:: _static/nextgis_connect/vector_layer_mpoint.png
+.. |resource_vector_line| image:: _static/nextgis_connect/vector_layer_line.png
+.. |resource_vector_mline| image:: _static/nextgis_connect/vector_layer_mline.png
+.. |resource_vector_polygon| image:: _static/nextgis_connect/vector_layer_polygon.png
+.. |resource_vector_mpolygon| image:: _static/nextgis_connect/vector_layer_mpolygon.png
+.. |resource_wfs| image:: _static/symbol_wfs_service.png
+   :width: 6mm
+.. |resource_wms| image:: _static/symbol_wms_service.png
+   :width: 6mm
+.. |resource_style| image:: _static/symbol_qgis_vector_style.png
+   :width: 6mm
+.. |resource_webmap| image:: _static/symbol_webmap.png
+   :width: 6mm
+.. |resource_group| image:: _static/symbol_resource_group.png
+   :width: 6mm
+.. |raster_layer| image:: _static/symbol_raster_layer.png
+   :width: 6mm
+.. |vector_layer| image:: _static/symbol_vector_layer.png
+   :width: 6mm
+.. |basemap_symbol| image:: _static/symbol_basemap.png
+   :width: 6mm
+.. |tms_layer_symbol| image:: _static/symbol_tms_layer.png
+   :width: 6mm
+.. |tms_connection_symbol| image:: _static/symbol_tms_connection.png
+   :width: 6mm
+.. |postgis_layer_symbol| image:: _static/symbol_postgis_layer.png
+   :width: 6mm
+.. |demo_project_symbol| image:: _static/symbol_demo_project.png
+   :width: 6mm
+.. |wms_layer_symbol| image:: _static/symbol_wms_layer.png
+   :width: 6mm
+.. |wms_connection_symbol| image:: _static/symbol_wms_connection.png
+   :width: 6mm
+.. |wfs_layer_symbol| image:: _static/symbol_wfs_layer.png
+   :width: 6mm
+
+- |vector_layer| Vector layer (NGW Vector Layer) - GeoJSON vector layer will be created in QGIS; 
+- |wfs_layer_symbol| WFS Layer - a WFS layer will be created in QGIS;
+-  |resource_wfs| WFS service (NGW WFS Service) - WFS layer will be created in QGIS; 
+- |wms_layer_symbol| WMS Layer - the selected WMS layer will be added to QGIS;
+- |resource_wms| WMS Service - a WMS layer will be created in QGIS, the data source for which the selected WMS Service will be;
+- |wms_connection_symbol| WMS Connection - you can select the WMS layer from the list to add to QGIS;
+- |tms_layer_symbol| TMS layer;
+- |tms_connection_symbol| TMS connection;
+- |postgis_layer_symbol| PostGIS layer;
+-  |resource_style| QGIS Vector Layer style - if it's a style of a vector layer, a GeoJSON vector layer with the identical style will be created in QGIS; if it's a style of a WFS layer, a WFS with that style will be created;
+- |raster_layer| Raster layer - a GeoTIFF raster layer will be created in QGIS;
+- |basemap_symbol| Basemap;
+- |resource_webmap| Web Map - a QGIS project will be created containing layers, styles and basemaps. A mutually exclusive group will be created for all the basemap layers.
+- |demo_project_symbol| `Demo Project <https://docs.nextgis.com/docs_ngcom/source/demoprojects.html>`_ - a QGIS project will be created, containing layers, styles and basemaps;
+- |resource_group| Resource group - the group and resources inside it will be added to the QGIS project.
+
+
+
+
+Detailed instructions for adding various data types to QGIS `here <https://docs.nextgis.com/docs_ngconnect/source/resources.html#connect-data-export>`_.
+
+Vector layers added from Web GIS can be `edited in QGIS <https://docs.nextgis.com/docs_ngconnect/source/edit.html#>`_ right away.
 
 
 
 .. _connect_data_export:
 
-From Web GIS to QGIS
+Add vector layer to QGIS
 ---------------------------------------
 
 NextGIS Connect plugin enables a fast export of vector data from Web GIS to QGIS for further processing, analysis, saving in different formats and other data operations.
@@ -378,6 +130,29 @@ You can change current style in the layer properties.
 If the layer is exported successfully you'll see in QGIS Layers panel a new GeoJSON vector layer which you can use in your projects or save to your device in a required format. 
 
 
+
+
+.. warning::
+
+    **Photos** made via NextGIS Collector/Mobile apps and uploaded to Web GIS as attachments to layers **wouldn't be available** in desktop NextGIS QGIS after downloading these layers through NextGIS Connect plugin.
+
+.. _ng_connect_lookup:
+
+Lookup tables
+------------------------------------------------
+
+In Web GIS you can create `Lookup tables <https://docs.nextgis.com/docs_ngweb/source/create_other.html#ngcom-lookup-table-for-layer>`_ and link them to vector layers.
+
+When the layer is exported from Web GIS to QGIS the values of the lookup table will be added to the layer using value map widget. After that they will be available in the desktop app in the corresponding field of the table when you enter edit mode.
+
+.. figure:: _static/ngc_lookup_en.png
+   :align: center
+   :width: 20cm
+
+   Lookup table values available during editing in QGIS
+
+In QGIS you can use Value relation widget to add another vector layer as a lookup table or upload a CSV file. When the layer is transfered to Web GIS, a Lookup table resource will be created for it.
+
 .. _connect_data_sync:
 
 Synchronization with Web GIS
@@ -398,3 +173,21 @@ You can disable auto sync for a layer and synchronize it manually when needed. G
 
 To start the synchronization manually, open the `layer status window <https://docs.nextgis.ru/docs_ngconnect/source/edit.html>`_ and press **Synchronization**.
 
+
+.. _ng_connect_share_project:
+
+Open a project created on another device
+-------------------------------------------------
+
+With NextGIS Connect v. 3.2.0 and up a project file that uses detached layers can be opened on another computer if they both have a connection to the same Web GIS. When the project is opened, the layers are loaded automatically.
+
+#. In NextGIS Connect check the connection to the Web GIS or create it, if necessary. 
+#. Add the layers from Web GIS to QGIS project.
+#. Save the project.
+#. Copy the project file and transfer it to the other computer.
+#. On the other computer in NextGIS Connect check the connection to the same Web GIS or create it if necessary.
+#. Open the project.
+
+The data will be loaded from the Web GIS. To check if the synchronization was successful, click on the layer status icon next to its name.
+
+.. note:: Open the project **after** the connection is set up. If you get "Handle Unavailable Layers" window, close the project, check the connection to Web GIS, then re-open the project.

@@ -211,6 +211,22 @@ This operation is also available in the layer's context menu in QGIS Layers pane
 
    Updating/adding a style from context menu
 
+.. ng_connect_keep_photo:
+
+How to keep attachments
+~~~~~~~~~~~~~~~~~~~~~~~
+
+To **keep the photos** intact while modifying the style, perform the following steps:
+
+1. Add the layer's style from Web GIS to QGIS using NextGIS Connect.
+2. Modify the style.
+3. Update the style using NextGIS Connect. 
+
+.. figure:: _static/ngconnect_modify_keep_photo_en.png
+   :align: center
+   :width: 22cm   
+   
+   Updating a style
 
 .. _connect_style_copy:
 
