@@ -41,17 +41,17 @@ Plugin interface
 
 Buttons on the panel:
 
-* |button_to_qgis| `Add to QGIS <https://docs.nextgis.com/docs_ngconnect/source/ngc_data_transfer.html#qgis>`_
+* |button_to_qgis| `Add to QGIS <https://docs.nextgis.com/docs_ngconnect/source/resources.html>`_
 
-* |button_to_wg| `Add to Web GIS <https://docs.nextgis.com/docs_ngconnect/source/ngc_data_transfer.html#ng-connect-export>`_
+* |button_to_wg| `Add to Web GIS <https://docs.nextgis.com/docs_ngconnect/source/resources.html#ng-connect-export>`_
 
-* |button_newfolder| `Create resource group <https://docs.nextgis.com/docs_ngconnect/source/ngc_data_transfer.html#ng-connect-res-group>`_
+* |button_newfolder| `Create resource group <https://docs.nextgis.com/docs_ngconnect/source/manage.html#ng-connect-res-group>`_
 
 * |button_filter| `Search and filter resources <https://docs.nextgis.com/docs_ngconnect/source/filter.html>`_
 
-* |button_refresh| `Refresh resource tree <https://docs.nextgis.com/docs_ngconnect/source/ngc_data_transfer.html#connect-refresh>`_
+* |button_refresh| `Refresh resource tree <https://docs.nextgis.com/docs_ngconnect/source/panel.html#connect-refresh>`_
 
-* |button_openmap| `Open Web Map in browser <https://docs.nextgis.com/docs_ngconnect/source/ngc_data_transfer.html#connect-open-webmap>`_
+* |button_openmap| `Open Web Map in browser <https://docs.nextgis.com/docs_ngconnect/source/panel.html#connect-open-webmap>`_
 
 * |button_settings| `Plugin settings <https://docs.nextgis.com/docs_ngconnect/source/ngc_settings.html>`_
 
@@ -137,16 +137,16 @@ Common options for all resource types:
 
 - Rename resource;
 
-- `Delete resource <https://docs.nextgis.com/docs_ngconnect/source/ngc_data_transfer.html#connect-resource-delete>`_;
+- `Delete resource <https://docs.nextgis.com/docs_ngconnect/source/manage.html#connect-resource-delete>`_;
 
 - Edit metadata.
 
 
 Variable options – depend on resource type:
 
-- Add to QGIS - `see above <https://docs.nextgis.com/docs_ngconnect/source/ngc_data_transfer.html#ng-connect-export>`_ for the types of resources that can be added and other details;
+- Add to QGIS - `see above <https://docs.nextgis.com/docs_ngconnect/source/resources.html#ng-connect-export>`_ for the types of resources that can be added and other details;
 
-- `Create Web Map <https://docs.nextgis.com/docs_ngconnect/source/resources.html#web-map>`_ - available for: Vector layer, Vector style, Raster layer, WMS Layer;
+- `Create Web Map <https://docs.nextgis.com/docs_ngconnect/source/manage.html#web-map>`_ - available for: Vector layer, Vector style, Raster layer, WMS Layer;
 
 - `Download as QML <https://docs.nextgis.com/docs_ngconnect/source/export.html#connect-save-style>`_ - only available for QGIS Vector style;
 

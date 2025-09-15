@@ -14,10 +14,10 @@ NextGIS Connect for QGIS
 
 **Upload data to the cloud**
 
-* `Entire project <https://docs.nextgis.com/docs_ngconnect/source/resources.html#qgis-project>`_
-* `Vector layer <https://docs.nextgis.com/docs_ngconnect/source/resources.html#vector-data>`_
+* `Entire project <https://docs.nextgis.com/docs_ngconnect/source/ngc_data_transfer.html#qgis-project>`_
+* `Vector layer <https://docs.nextgis.com/docs_ngconnect/source/ngc_data_transfer.html#vector-data>`_
 * `Raster layer <https://docs.nextgis.com/docs_ngconnect/source/resources.html#raster-data>`_
-* `Basemap <https://docs.nextgis.com/docs_ngconnect/source/resources.html#basemaps>`_
+* `Basemap <https://docs.nextgis.com/docs_ngconnect/source/ngc_data_transfer.html#basemaps>`_
 * `Replace data <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-data-overwrite>`_
 * `Update style <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-style-overwrite>`_
 
@@ -31,9 +31,9 @@ NextGIS Connect for QGIS
 **Manage resources**
 
 * `Search and filter <https://docs.nextgis.com/docs_ngconnect/source/filter.html>`_
-* `Create: folder, Web Map, layer, service <https://docs.nextgis.com/docs_ngconnect/source/resources.html#wfs-wms-ogc-api-features>`_
-* `Delete <https://docs.nextgis.com/docs_ngconnect/source/ngc_data_transfer.html#connect-resource-delete>`_
-* `Copy <https://docs.nextgis.com/docs_ngconnect/source/ngc_data_transfer.html#connect-resource-double>`_
+* `Create: folder, Web Map, layer, service <https://docs.nextgis.com/docs_ngconnect/source/manage.html#wfs-wms-ogc-api-features>`_
+* `Delete <https://docs.nextgis.com/docs_ngconnect/source/manage.html#connect-resource-delete>`_
+* `Copy <https://docs.nextgis.com/docs_ngconnect/source/manage.html#connect-resource-double>`_
 
 **Useful information**
 
