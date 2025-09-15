@@ -70,21 +70,36 @@
 .. |resource_vector_mline| image:: _static/nextgis_connect/vector_layer_mline.png
 .. |resource_vector_polygon| image:: _static/nextgis_connect/vector_layer_polygon.png
 .. |resource_vector_mpolygon| image:: _static/nextgis_connect/vector_layer_mpolygon.png
-.. |resource_wfs| image:: _static/nextgis_connect/resource_wfs_symbol.png
-.. |resource_wms| image:: _static/nextgis_connect/resource_wms_symbol.png
-.. |resource_style| image:: _static/nextgis_connect/resource_style_symbol.png
-.. |resource_webmap| image:: _static/nextgis_connect/resource_webmap_symbol.png
-.. |resource_group| image:: _static/nextgis_connect/resource_group.png
-.. |raster_layer| image:: _static/nextgis_connect/raster_layer.png
-.. |vector_layer| image:: _static/nextgis_connect/vector_layer_symbol.png
-.. |basemap_symbol| image:: _static/nextgis_connect/basemap_symbol.png
-.. |tms_service_symbol| image:: _static/nextgis_connect/tms_service_symbol.png
-.. |tms_connection_symbol| image:: _static/nextgis_connect/tms_connection_symbol.png
-.. |postgis_layer_symbol| image:: _static/nextgis_connect/postgis_layer_symbol.png
-.. |demo_project_symbol| image:: _static/nextgis_connect/demo_project_symbol.png
-.. |wms_layer_symbol| image:: _static/nextgis_connect/wms_layer_symbol.png
-.. |wms_connection_symbol| image:: _static/nextgis_connect/wms_connection_symbol.png
-.. |wfs_layer_symbol| image:: _static/nextgis_connect/wfs_layer_symbol.png
+.. |resource_wfs| image:: _static/symbol_wfs_service.png
+   :width: 6mm
+.. |resource_wms| image:: _static/symbol_wms_service.png
+   :width: 6mm
+.. |resource_style| image:: _static/symbol_qgis_vector_style.png
+   :width: 6mm
+.. |resource_webmap| image:: _static/symbol_webmap.png
+   :width: 6mm
+.. |resource_group| image:: _static/symbol_resource_group.png
+   :width: 6mm
+.. |raster_layer| image:: _static/symbol_raster_layer.png
+   :width: 5mm
+.. |vector_layer| image:: _static/symbol_vector_layer.png
+   :width: 6mm
+.. |basemap_symbol| image:: _static/symbol_basemap.png
+   :width: 5mm
+.. |tms_layer_symbol| image:: _static/symbol_tms_layer.png
+   :width: 6mm
+.. |tms_connection_symbol| image:: _static/symbol_tms_connection.png
+   :width: 6mm
+.. |postgis_layer_symbol| image:: _static/symbol_postgis_layer.png
+   :width: 6mm
+.. |demo_project_symbol| image:: _static/symbol_demo_project.png
+   :width: 6mm
+.. |wms_layer_symbol| image:: _static/symbol_wms_layer.png
+   :width: 6mm
+.. |wms_connection_symbol| image:: _static/symbol_wms_connection.png
+   :width: 6mm
+.. |wfs_layer_symbol| image:: _static/symbol_wfs_layer.png
+   :width: 6mm
 
 - |vector_layer| - Векторный слой (NGW Vector Layer), он может быть: 
   |resource_vector_point| Точечный; 
