@@ -22,7 +22,7 @@
    :align: center
    :alt: Иконка модуля расширения NextGIS Connect.
 
-При нажатии на иконку откроется панель управления ресурсами Веб ГИС.
+При нажатии на иконку откроется панель управления ресурсами Веб ГИС. `Подробнее о панели NextGIS Connect <https://docs.nextgis.ru/docs_ngconnect/source/panel.html>`_.
 
 .. figure:: _static/connect_panel_ru_2.png
    :align: center
@@ -31,7 +31,7 @@
    
    Панель модуля расширения NextGIS Connect
 
-Для начала работы создайте подключение к Веб ГИС. 
+Для начала работы `создайте подключение к Веб ГИС <https://docs.nextgis.ru/docs_ngconnect/source/ngc_install.html#ng-connect-new-connection>`_. 
 
 .. _ng_connect_new_connection:
 
@@ -39,6 +39,10 @@
 --------------------
 
 1. Нажмите кнопку |button_settings| Настройки на панели модуля расширения NextGIS Connect.
+
+.. |button_settings| image:: _static/button_settings.png
+   :width: 6mm
+   :alt: синяя шестерёнка
 
 .. figure:: _static/nextgis_connect/call_settings_ru.png
    :align: center

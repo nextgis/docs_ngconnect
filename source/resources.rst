@@ -5,11 +5,14 @@
 
 При помощи модуля вы можете добавлять ресурсы из Веб ГИС в QGIS, чтобы редактировать их в настольном приложении.
 
+.. |button_to_qgis| image:: _static/button_to_qgis.png
+   :width: 6mm
+
 
 .. _ng_connect_export:
 
-Загрузка данных из Веб ГИС в QGIS
----------------------------------
+Добавление данных из Веб ГИС в QGIS
+------------------------------------
 
 .. figure:: _static/nextgis_connect/add_to_qgis_ru.png
    :align: center
@@ -20,23 +23,44 @@
 
 Операция доступна, если в дереве ресурсов NextGIS выбран один из следующих видов ресурсов:
 
-- Векторный слой (NGW Vector Layer) |vector_layer| - в QGIS будет создан векторный 
-  слой GeoJSON;
-- WFS Слой |wfs_layer_symbol| - в QGIS будет создан WFS слой;
-- WFS Сервис (NGW WFS Service) |resource_wfs| - в QGIS будет создан WFS слой, источником 
-  данных для которого будет выбранный WFS Сервис;
-- WMS Слой |wms_layer_symbol| - в QGIS будет добавлен выбранный WMS слой;
-- WMS Сервис |resource_wms| - в QGIS будет создан WMS слой, источником данных для которого будет выбранный WMS Сервис;
-- WMS Соединение |wms_connection_symbol| - из списка можно будет выбрать WMS слой, который необходимо добавить в QGIS
-- TMS Слой |tms_service_symbol|;
-- TMS Соединение |tms_connection_symbol|;
-- PostGIS Слой |postgis_layer_symbol|;
-- QGIS Стиль Векторного слоя |resource_style| - если стиль относится к векторному слою, в QGIS будет создан векторный слой GeoJSON, со стилем идентичным выбранному стилю; если стиль относится к слою WFS, будет создан слой WFS с таким стилем;
-- Растровый слой |raster_layer| - в QGIS будет создан растровый слой GeoTIFF;
-- Подложка |basemap_symbol|;
-- Веб-карта |resource_webmap| - при добавлении в QGIS она будет представлена в виде проекта со слоями, стилями и подложками. Подложки карты будут объединены во взаимоисключающую группу;
-- `Демо-проект <https://docs.nextgis.ru/docs_ngcom/source/demoprojects.html>`_ |demo_project_symbol| - в QGIS будет создан проект, содержащий слои, стили и подложки;
-- Группа ресурсов |resource_group| - в текущий проект QGIS будет добавлена новая группа и входящие в неё ресурсы.
+
+.. |resource_vector_point| image:: _static/nextgis_connect/vector_layer_point.png
+.. |resource_vector_mpoint| image:: _static/nextgis_connect/vector_layer_mpoint.png
+.. |resource_vector_line| image:: _static/nextgis_connect/vector_layer_line.png
+.. |resource_vector_mline| image:: _static/nextgis_connect/vector_layer_mline.png
+.. |resource_vector_polygon| image:: _static/nextgis_connect/vector_layer_polygon.png
+.. |resource_vector_mpolygon| image:: _static/nextgis_connect/vector_layer_mpolygon.png
+.. |resource_wfs| image:: _static/nextgis_connect/resource_wfs_symbol.png
+.. |resource_wms| image:: _static/nextgis_connect/resource_wms_symbol.png
+.. |resource_style| image:: _static/nextgis_connect/resource_style_symbol.png
+.. |resource_webmap| image:: _static/nextgis_connect/resource_webmap_symbol.png
+.. |resource_group| image:: _static/nextgis_connect/resource_group.png
+.. |raster_layer| image:: _static/nextgis_connect/raster_layer.png
+.. |vector_layer| image:: _static/nextgis_connect/vector_layer_symbol.png
+.. |basemap_symbol| image:: _static/nextgis_connect/basemap_symbol.png
+.. |tms_service_symbol| image:: _static/nextgis_connect/tms_service_symbol.png
+.. |tms_connection_symbol| image:: _static/nextgis_connect/tms_connection_symbol.png
+.. |postgis_layer_symbol| image:: _static/nextgis_connect/postgis_layer_symbol.png
+.. |demo_project_symbol| image:: _static/nextgis_connect/demo_project_symbol.png
+.. |wms_layer_symbol| image:: _static/nextgis_connect/wms_layer_symbol.png
+.. |wms_connection_symbol| image:: _static/nextgis_connect/wms_connection_symbol.png
+.. |wfs_layer_symbol| image:: _static/nextgis_connect/wfs_layer_symbol.png
+
+- |vector_layer| Векторный слой (NGW Vector Layer)  - в QGIS будет создан векторный слой GeoJSON;
+- |wfs_layer_symbol| WFS Слой - в QGIS будет создан WFS слой;
+- |resource_wfs| WFS Сервис (NGW WFS Service) - в QGIS будет создан WFS слой, источником данных для которого будет выбранный WFS Сервис;
+- |wms_layer_symbol| WMS Слой - в QGIS будет добавлен выбранный WMS слой;
+- |resource_wms| WMS Сервис - в QGIS будет создан WMS слой, источником данных для которого будет выбранный WMS Сервис;
+- |wms_connection_symbol| WMS Соединение - из списка можно будет выбрать WMS слой, который необходимо добавить в QGIS
+- |tms_service_symbol| TMS Слой;
+- |tms_connection_symbol| TMS Соединение;
+- |postgis_layer_symbol| PostGIS Слой;
+- |resource_style| QGIS Стиль Векторного слоя - если стиль относится к векторному слою, в QGIS будет создан векторный слой GeoJSON, со стилем идентичным выбранному стилю; если стиль относится к слою WFS, будет создан слой WFS с таким стилем;
+- |raster_layer| Растровый слой - в QGIS будет создан растровый слой GeoTIFF;
+- |basemap_symbol| Подложка;
+- |resource_webmap| Веб-карта - при добавлении в QGIS она будет представлена в виде проекта со слоями, стилями и подложками. Подложки карты будут объединены во взаимоисключающую группу;
+- |demo_project_symbol| `Демо-проект <https://docs.nextgis.ru/docs_ngcom/source/demoprojects.html>`_ - в QGIS будет создан проект, содержащий слои, стили и подложки;
+- |resource_group| Группа ресурсов - в текущий проект QGIS будет добавлена новая группа и входящие в неё ресурсы.
 
 
 
@@ -50,12 +74,10 @@
 Добавление слоя
 ---------------------------------------
 
-Модуль NextGIS Connect позволяет быстро экспортировать векторные данные из Веб ГИС в QGIS для их последующей обработки, анализа, выгрузки и иных операций.
+Модуль NextGIS Connect позволяет быстро добавлять векторные данные из Веб ГИС в QGIS для их последующей обработки, анализа, выгрузки и иных операций.
 
-Для этого в модуле доступна операция быстрого создания векторных слоев GeoJSON в QGIS с использованием данных Векторных слоев Веб ГИС:
-
-* Выберите в дереве ресурсов Веб ГИС в окне модуля NextGIS Connect Векторный слой, который вы хотите экспортировать в QGIS;
-* Нажмите кнопку **Добавить в QGIS** на панели инструментов модуля или выберите пункт **Добавить в QGIS** в контекстном меню слоя;
+* Выберите в дереве ресурсов Веб ГИС в окне модуля NextGIS Connect Векторный слой, который вы хотите добавить в QGIS;
+* Нажмите кнопку |button_to_qgis| **Добавить в QGIS** на панели инструментов модуля или выберите пункт **Добавить в QGIS** в контекстном меню слоя;
 
 .. figure:: _static/NGConnect_export_select_ru.png
    :name: NGConnect_export_select_pic
