@@ -75,6 +75,8 @@
 
 2. Использовать сервисы OGC API Features или `WFS <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#connect-data-edit-wfs>`_. Такие сервисы можно создать в веб-интерфейсе (`WFS <https://docs.nextgis.ru/docs_ngweb/source/services.html#ngw-wfs-service>`__, `OGC API — Features <https://docs.nextgis.ru/docs_ngweb/source/services.html#ngw-OGC-API-Features>`_) или прямо `через коннект <https://docs.nextgis.ru/docs_ngcom/source/ngqgis_connect.html#wfs-wms-ogc-api-features>`_, и редактировать данные через них.
 
+Если данные редактирует только один пользователь и только через один интерфейс, то включать версионирование не обязательно.
+
 .. _connect_conflict:
 
 Разрешение конфликта правок
