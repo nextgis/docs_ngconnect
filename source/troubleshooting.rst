@@ -1,6 +1,4 @@
-.. sectionauthor:: Roman Gainullov <roman.gainullov@nextgis.com>
-
-    
+   
 Troubleshooting
 ===============
 

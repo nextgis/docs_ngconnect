@@ -1,6 +1,3 @@
-.. sectionauthor:: Екатерина Петруненко <ekaterina.petrunenko@nextgis.com>
-.. sectionauthor:: Роман Гайнуллов <roman.gainullov@nextgis.com>
-
 .. _ng_connect_overview:
     
 Overview
