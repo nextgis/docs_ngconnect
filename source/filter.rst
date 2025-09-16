@@ -1,5 +1,3 @@
-.. sectionauthor:: Юлия Григоренко <yulia.grigorenko@nextgis.com>
-
 Поиск и фильтрация
 ======================
 
