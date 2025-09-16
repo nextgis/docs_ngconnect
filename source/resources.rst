@@ -41,11 +41,11 @@ Option is available if one of the following resources is selected in NextGIS Web
 .. |resource_group| image:: _static/symbol_resource_group.png
    :width: 6mm
 .. |raster_layer| image:: _static/symbol_raster_layer.png
-   :width: 6mm
+   :width: 5mm
 .. |vector_layer| image:: _static/symbol_vector_layer.png
    :width: 6mm
 .. |basemap_symbol| image:: _static/symbol_basemap.png
-   :width: 6mm
+   :width: 5mm
 .. |tms_layer_symbol| image:: _static/symbol_tms_layer.png
    :width: 6mm
 .. |tms_connection_symbol| image:: _static/symbol_tms_connection.png
@@ -77,10 +77,6 @@ Option is available if one of the following resources is selected in NextGIS Web
 - |demo_project_symbol| `Demo Project <https://docs.nextgis.com/docs_ngcom/source/demoprojects.html>`_ - a QGIS project will be created, containing layers, styles and basemaps;
 - |resource_group| Resource group - the group and resources inside it will be added to the QGIS project.
 
-
-
-
-Detailed instructions for adding various data types to QGIS `here <https://docs.nextgis.com/docs_ngconnect/source/resources.html#connect-data-export>`_.
 
 Vector layers added from Web GIS can be `edited in QGIS <https://docs.nextgis.com/docs_ngconnect/source/edit.html#>`_ right away.
 
