@@ -58,14 +58,23 @@ Only the data itself is synchronized. If the data structure changes, it makes sy
 .. _connect_multiuser:
 
 Multi user editing
---------------------------------
+-------------------
 
-Layers can be edited by several people at once or from several different devices/platforms. The options for collaborative editing are:
+Layers can be edited by several people at once or from several different devices/platforms by one or several users. The edits can be made simultaneously or at different times. Here are some common scenarios:
 
-1. Edit directly in QGIS with enabled `versioning <https://docs.nextgis.com/docs_ngweb/source/layers.html#create-vector-layer-vers-pic>`_ of vector layers.  Turn on versioning in the layer's settings in Web GIS. When versioning is on, all changes made to the layer are logged in the system. That allows Connect to access edits made on other devices and process them without resetting the layer.
+1. One user edits features in QGIS, on the Web Map and in a mobile app.
+
+2. Several users edit the same layer in QGIS.
+
+3. Several users edit the same layer in all possible ways.
+
+If your workflow is close to this, you have two main options:
+
+1. Enable `versioning <https://docs.nextgis.com/docs_ngweb/source/layers.html#create-vector-layer-vers-pic>`_ for the vector layers that are going to be edited. You can turn on versioning in the layer's settings in Web GIS. When versioning is on, all changes made to the layer are logged in the system. That allows Connect to access edits made on other devices and process them without resetting the layer.
 
 2. Use :term:`OGC API — Features` or :term:`WFS` services. You can create them in Web GIS (`WFS <https://docs.nextgis.com/docs_ngweb/source/layers.html#services.html#ngw-create-service-wfs>`_, `OGC API — Features <https://docs.nextgis.com/docs_ngweb/source/services.html#ngw-ogc-api-features>`_) or directly in the `Connect plugin <https://docs.nextgis.com/docs_ngconnect/source/manage.html#create-service>`_ and then use them to edit data.
 
+If only one user edits the data from the same interface (e.g. from QGIS), you don't need versioning.
 
 .. _connect_conflict:
 
