@@ -24,7 +24,7 @@ Connections
 
 Connection, selected in the dropdown list, becomes active **after** the Settings dialog is closed.
 
-Also, in this section you can create, edit or delete connections.
+Also, in this section you can `create, edit or delete connections <https://docs.nextgis.com/docs_ngconnect/source/ngc_install.html#create-a-connection>`_.
 
 Uploading
 -----------

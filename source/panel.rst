@@ -66,7 +66,7 @@ If no connection is set at the moment, the following message will be shown:
    
    NextGIS Connect panel if there is no connection
 
-If the previously used version of NextGIS Connect didn't support QGIS authentication, after the update you will need to convert all existing connections and authentication data. You can do it in the NextGIS Connect panel or in the plugin settings.
+If the previously used version of NextGIS Connect didn't support QGIS authentication, after the update you will need to convert all existing connections and authentication data. You can do it in the NextGIS Connect panel or in the `plugin settings <https://docs.nextgis.com/docs_ngconnect/source/ngc_settings.html>`_.
 
 .. figure:: _static/connect_update_convert_en.png
    :align: center

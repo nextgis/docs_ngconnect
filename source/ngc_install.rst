@@ -15,7 +15,7 @@ When the plugin is installed, its icon appears in the toolbar:
    :align: center
    :alt: NextGIS Connect icon
 
-Click on the icon to open NextGIS Connect panel.
+Click on the icon to open NextGIS Connect panel. `More about Connect panel <https://docs.nextgis.com/docs_ngconnect/source/panel.html>`_.
 
 .. figure:: _static/connect_panel_en_2.png
    :align: center
