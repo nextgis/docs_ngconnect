@@ -53,10 +53,12 @@ NextGIS Connect for QGIS
 
    ngconnect
    ngc_install
+   panel
    ngc_settings
    filter
    ngc_data_transfer
    resources
    edit
    export
+   manage
    troubleshooting
