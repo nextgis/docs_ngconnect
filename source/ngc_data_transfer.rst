@@ -88,11 +88,11 @@ The following types of resources are available for data exchange and operation:
 .. |resource_group| image:: _static/symbol_resource_group.png
    :width: 6mm
 .. |raster_layer| image:: _static/symbol_raster_layer.png
-   :width: 6mm
+   :width: 5mm
 .. |vector_layer| image:: _static/symbol_vector_layer.png
    :width: 6mm
 .. |basemap_symbol| image:: _static/symbol_basemap.png
-   :width: 6mm
+   :width: 5mm
 .. |tms_layer_symbol| image:: _static/symbol_tms_layer.png
    :width: 6mm
 .. |tms_connection_symbol| image:: _static/symbol_tms_connection.png
