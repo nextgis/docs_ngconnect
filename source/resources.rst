@@ -67,7 +67,7 @@
 - |wms_layer_symbol| WMS Слой - в QGIS будет добавлен выбранный WMS слой;
 - |resource_wms| WMS Сервис - в QGIS будет создан WMS слой, источником данных для которого будет выбранный WMS Сервис;
 - |wms_connection_symbol| WMS Соединение - из списка можно будет выбрать WMS слой, который необходимо добавить в QGIS
-- |tms_service_symbol| TMS Слой;
+- |tms_layer_symbol| TMS Слой;
 - |tms_connection_symbol| TMS Соединение;
 - |postgis_layer_symbol| PostGIS Слой;
 - |resource_style| QGIS Стиль Векторного слоя - если стиль относится к векторному слою, в QGIS будет создан векторный слой GeoJSON, со стилем идентичным выбранному стилю; если стиль относится к слою WFS, будет создан слой WFS с таким стилем;
