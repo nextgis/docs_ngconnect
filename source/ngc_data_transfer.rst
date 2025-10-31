@@ -120,7 +120,7 @@ The following types of resources are available for data exchange and operation:
 - |resource_style| - Vector layer style
 - |resource_wfs| - WFS Service 
 - |resource_wms| - WMS Service 
-- |tms_service_symbol| - TMS Layer
+- |tms_layer_symbol| - TMS Layer
 - |postgis_layer_symbol| - PostGIS Layer
 - |wfs_layer_symbol| - WFS Layer
 - |raster_layer| - Raster layer -  raster layer with a default style will be created in Web GIS. Style can be added directly to Web Map.
