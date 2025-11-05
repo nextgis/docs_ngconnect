@@ -49,11 +49,11 @@ You can start the process manually by pressing the **Synchronization** button.
 .. important::
     While the layer is in edit mode, synchronization is not available.
 
-If changes have been made to the layer in Web GIS since the last synchronization, further synchronization will not be possible. 
+If changes have been made to the layer in Web GIS since the last synchronization, further synchronization will not be possible. `Reset the layer <https://docs.nextgis.com/docs_ngconnect/source/edit.html#reset-layer>`_ to make synchronization possible again. 
 
 If the edits made in the cloud were incorrect and you need to replace them with local ones, you can use the `Data overwrite <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-data-overwrite>`_ function.
 
-Only the data itself is synchronized. If the data structure changes, it makes synchronization impossible. The layer needs to be downloaded again.
+Only the data itself is synchronized. See how to `change the layer structure <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-add-field>`_ to keep the synchronization available.
 
 .. _connect_multiuser:
 
@@ -124,10 +124,16 @@ When you add a layer from Web GIS to QGIS, the structure of the layer is stored 
 Reset layer
 ~~~~~~~~~~~
 
-When you reset the layer via sync dialog, you update the cached structure. This way the caches structure matches the one in the cloud allowing you to continue editing and synchronizing the data.
+When you reset the layer via sync dialog, you update the cached structure. This way the cached structure matches the one in the cloud allowing you to continue editing and synchronizing the data.
 
 To reset a layer, click on the sync symbol (see :numref:`https://docs.nextgis.com/docs_ngconnect/source/edit.html#ngc-check-sync-pic`). "Layer status" window will open. Click the downward arrow by the "Synchronization" button and in the dropdown menu select **Reset layer**. 
 
+.. figure:: _static/reset_layer_en.png
+   :name: reset_layer_pic
+   :align: center
+   :width: 20cm
+
+   Reseting layer
 
 Keep in mind that if you reset the layer, all local changes that had not been synchronized will be lost. 
 
