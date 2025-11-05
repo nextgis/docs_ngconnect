@@ -49,7 +49,7 @@ You can start the process manually by pressing the **Synchronization** button.
 .. important::
     While the layer is in edit mode, synchronization is not available.
 
-If changes have been made to the layer in Web GIS since the last synchronization, further synchronization will not be possible. Press the sync symbol by the layer, "Layer status" window will open. Press the downward arrow by the "Synchronization" button and in the dropdown menu select **Reset layer**. Keep in mind that if you reset the layer, all local changes that had not been synchronized will be lost. 
+If changes have been made to the layer in Web GIS since the last synchronization, further synchronization will not be possible. 
 
 If the edits made in the cloud were incorrect and you need to replace them with local ones, you can use the `Data overwrite <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-data-overwrite>`_ function.
 
@@ -125,6 +125,11 @@ Reset layer
 ~~~~~~~~~~~
 
 When you reset the layer via sync dialog, you update the cached structure. This way the caches structure matches the one in the cloud allowing you to continue editing and synchronizing the data.
+
+To reset a layer, click on the sync symbol (see :numref:`https://docs.nextgis.com/docs_ngconnect/source/edit.html#ngc-check-sync-pic`). "Layer status" window will open. Click the downward arrow by the "Synchronization" button and in the dropdown menu select **Reset layer**. 
+
+
+Keep in mind that if you reset the layer, all local changes that had not been synchronized will be lost. 
 
 .. _connect_data_edit_wfs:
 
