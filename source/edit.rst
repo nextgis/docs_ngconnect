@@ -105,7 +105,26 @@ The final version is displayed in the middle, in the Result column. Resolved con
 
    Edit conflict resolved. As a result, the attribute value is from the local version and the geometry is from the server version
 
+.. _connect_add_field:
 
+Change layer structure
+-------------------------
+
+If you want to add/remove fields of a versioned vector layer, added to QGIS from Web GIS cloud storage, make sure to do it this way:
+
+1. Important! Save all changes made to the layer in QGIS.
+2. Modify the layer structure in Web GIS.
+3. Go to the layer's sync dialog, click the downward arrow by the "Synchronization" button and in the dropdown menu select **Reset layer**.
+4. Now you can continue editing the data.
+
+When you add a layer from Web GIS to QGIS, the structure of the layer is stored in the cache. So if you delete the layer from QGIS, you only remove the legen item, but the cache stays intact. When you try to add the layer again after changing its structure in Web GIS, it clashes with the cached structure ending up in error.
+
+.. _connect_layer_reset:
+
+Reset layer
+~~~~~~~~~~~
+
+When you reset the layer via sync dialog, you update the cached structure. This way the caches structure matches the one in the cloud allowing you to continue editing and synchronizing the data.
 
 .. _connect_data_edit_wfs:
 
