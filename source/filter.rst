@@ -42,7 +42,7 @@ If you know the resource ID, you can find it in the layer tree by using an `expr
 Filter by expression
 --------------------------------
 
-To filter the resource tree by parameters other than the resource name (see the full list below) use expressions with conditions ``=, IN, ILIKE``. As for logical operators ``AND`` и ``OR``, you can use either of them several times in an expression, but not combined with the other. 
+To filter the resource tree by parameters other than the resource name (see the full list below) use expressions with conditions ``=, IN, ILIKE``. As for logical operators ``AND`` and ``OR``, you can use either of them several times in an expression, but not combined with the other. 
 
 Examples of expressions: 
 
