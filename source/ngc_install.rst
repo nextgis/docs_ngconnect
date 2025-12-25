@@ -10,6 +10,8 @@
 
 При необходимости проверить/обновить версию модуля можно в разделе меню *Модули ‣ Управление модулями ‣ NextGIS Connect*. 
 
+.. note:: Модуль поддерживает Qt6
+
 .. raw:: html
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/5f96ea9ca914a0a06cf365e6330c16b2/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
