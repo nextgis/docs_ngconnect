@@ -9,6 +9,8 @@ NextGIS Connect plugin is a part of `NextGIS QGIS <http://nextgis.com/nextgis-qg
 
 If you need to check the version of the plugin or update it, go to *Plugins‣ Manage and install plugins ‣ NextGIS Connect*. 
 
+.. note:: Qt6 compatible
+
 When the plugin is installed, its icon appears in the toolbar:  
 
 .. figure:: _static/logo_connect.png
