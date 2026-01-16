@@ -167,7 +167,7 @@ You can disable auto sync for a layer and synchronize it manually when needed. G
 
    Automatic synchronization is enabled
 
-To start the synchronization manually, open the `layer status window <https://docs.nextgis.ru/docs_ngconnect/source/edit.html>`_ and press **Synchronization**.
+To start the synchronization manually, open the `layer status window <https://docs.nextgis.com/docs_ngconnect/source/edit.html>`_ and press **Synchronization**.
 
 
 .. _ng_connect_share_project:
