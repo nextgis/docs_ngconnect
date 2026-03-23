@@ -70,9 +70,19 @@ Next, in the *Authentication* section, choose how you wish to log in to the Web 
 
 * The default setting, "No Authentication" (= as a Guest) can be used if you don't need to perform actions that a Guest has no permissions for;
 * `add a new configuration <https://docs.nextgis.ru/docs_ngconnect/source/ngc_install.html#nnew-config>`_;
-* select a previously created one (the list items consist of configuration name, user name and authentication type).
+* select a previously created one (the list includes configuration name, user name and authentication type).
 
 .. note:: For instance, only the Web GIS owner and the `team members <https://docs.nextgis.com/docs_ngcom/source/create.html#team-management>`_ can create and delete resources.
+
+Make sure that the correct configuration is selected. To check if the credentials are correct, press **Test Connection**. 
+
+If guest or user chosen for authentication does not have access at least to the Main resource group of the Web GIS, an error message will appear. Select a different authentication configuration or contact the administrator of the Web GIS to get access permission.
+
+Next press **Save** in the connection creating dialog (:numref:`create_connection_pic`). 
+
+Click **OK**. 
+
+The connection selected in the "Connections" dropdown menu of the Settings dialog will become active **after** the dialog is closed.
 
 .. _new_config:
 
@@ -96,16 +106,10 @@ The "Authentication" dialog will pop up.
 1. Enter *Username* (email used for registration) and *Password* of your NextGIS ID;
 2. Press **Save**.
 
-Make sure that the correct configuration is selected. To check if the credentials are correct, press **Test Connection**. 
+Then proceed with checking the connection and finilize creating the connection as described above.
 
-If guest or user chosen for authentication does not have access at least to the Main resource group of the Web GIS, an error message will appear. Select a different authentication configuration or contact the administrator of the Web GIS to get access permission.
 
-Next press **Save** in the connection creating dialog (:numref:`create_connection_pic`). 
-
-Click **OK**. 
-
-The connection selected in the "Connections" dropdown menu of the Settings dialog will become active **after** the dialog is closed.
-
+.. _keycloak:
 
 Keycloak authentication in NextGIS QGIS
 ----------------------------------------
