@@ -66,12 +66,22 @@ In the pop-up window press **New** and fill in the fields:
    
    Adding new connection
 
-Next, in the *Authentication* section, add a new configuration or select a previously created one (the list items consist of configuration name, user name and authentication type).
+Next, in the *Authentication* section, choose how you wish to log in to the Web GIS:
 
-The default setting, "No Authentication" can be used if you don't need to perform actions that a Guest has no permissions for.
-For instance, only the Web GIS owner and the `team members <https://docs.nextgis.com/docs_ngcom/source/create.html#team-management>`_ can create and delete resources.
+* The default setting, "No Authentication" (= as a Guest) can be used if you don't need to perform actions that a Guest has no permissions for;
+* `add a new configuration <https://docs.nextgis.ru/docs_ngconnect/source/ngc_install.html#nnew-config>`_;
+* select a previously created one (the list items consist of configuration name, user name and authentication type).
 
-To **add a new configuration**, press the button with a green plus.
+.. note:: For instance, only the Web GIS owner and the `team members <https://docs.nextgis.com/docs_ngcom/source/create.html#team-management>`_ can create and delete resources.
+
+.. _new_config:
+
+Add a new configuration
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. important:: If you used Google account to log in to NextGIS services, you need to create an additional password for the Connect module. Go to `this page <https://my.nextgis.com/password/reset/?email=>`_ and follow the instructions. After creating this password, you can still sign in with Google on web-based NextGIS services.
+
+Press the button with a green plus in the Connection dialog (:numref:`create_connection_pic`).
 
 The "Authentication" dialog will pop up.
 
@@ -83,7 +93,7 @@ The "Authentication" dialog will pop up.
    
    Adding authentication configuration
 
-1. Enter *Username* and *Password* of your NextGIS ID;
+1. Enter *Username* (email used for registration) and *Password* of your NextGIS ID;
 2. Press **Save**.
 
 Make sure that the correct configuration is selected. To check if the credentials are correct, press **Test Connection**. 
