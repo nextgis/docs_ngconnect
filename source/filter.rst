@@ -1,4 +1,4 @@
-Поиск и фильтрация
+Фильтр и поиск
 ======================
 
 Модуль NextGIS Connect позволяет `искать ресурсы по названию <https://docs.nextgis.ru/docs_ngconnect/source/filter.html#ngc-search-name>`_ и `URL <https://docs.nextgis.ru/docs_ngconnect/source/filter.html#ngc-search-url>`_ и `метаданным <https://docs.nextgis.ru/docs_ngconnect/source/filter.html#ngc-filter-metadata>`_ или `фильтровать <https://docs.nextgis.ru/docs_ngconnect/source/filter.html#ngc-filter-expression>`_ дерево ресурсов по выражению.
