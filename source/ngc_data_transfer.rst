@@ -16,6 +16,8 @@ With NextGIS Connect you can upload to Web GIS:
 
 Connect plugin also allows to publish vector data using standard protocols :term:`WFS`, :term:`WMS` and OGC.
 
+On Free plan you can upload up to 15 layers. If you need more, you can `upgrade to Premium in your NextGIS ID acccount <https://my.nextgis.com/subscription/>`_.
+
 .. figure:: _static/add_to_ngw_en.png
    :align: center
    :width: 10cm

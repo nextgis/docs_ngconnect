@@ -83,6 +83,8 @@ To complete the process, pess **Create**.
 
 The new layer will appear in the resource tree of the Connect panel as well as the QGIS Layers panel if the "Add layer to project" option was ticked.
 
+On Free plan you can create up to 15 layers. If you need more, you can `upgrade to Premium <https://my.nextgis.com/subscription/>`_ in your NextGIS ID account.
+
 .. _connect_services:
 
 Create service

@@ -55,3 +55,5 @@ Issues uploading data
 ----------------------
 
 If the rasters are not uploaded, check the checkbox in the connection settings “Upload rasters as Cloud Optimized GeoTIFF” (COG).
+
+Error "Maximum number of resources reached" can occur if your Web GIS is on Free plan and the number of layers is limited to 15. To upload more layers, `switch to Premium <https://my.nextgis.com/subscription/>`_ in your NextGIS ID account.
