@@ -44,6 +44,8 @@
    :width: 5mm
 .. |vector_layer| image:: _static/symbol_vector_layer.png
    :width: 6mm
+.. |resource_tileset| image:: _static/resource_tileset.png
+   :width: 5mm
 .. |basemap_symbol| image:: _static/symbol_basemap.png
    :width: 5mm
 .. |tms_layer_symbol| image:: _static/symbol_tms_layer.png
@@ -62,6 +64,7 @@
    :width: 6mm
 
 - |vector_layer| Векторный слой (NGW Vector Layer)  - в QGIS будет создан векторный слой GeoJSON;
+- |resource_tileset| - Набор тайлов
 - |wfs_layer_symbol| WFS Слой - в QGIS будет создан WFS слой;
 - |resource_wfs| WFS Сервис (NGW WFS Service) - в QGIS будет создан WFS слой, источником данных для которого будет выбранный WFS Сервис;
 - |wms_layer_symbol| WMS Слой - в QGIS будет добавлен выбранный WMS слой;
@@ -84,6 +87,18 @@
 
 Векторные слои из вашей Веб ГИС можно `редактировать <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#>`_ сразу после добавления их в QGIS.
 
+Для некоторых типов ресурсов доступно несколько вариантов экспорта. В этом случае рядом с кнопкой |button_cloud_download| будет стрелочка вниз, нажав на которую, вы увидите доступные способы добавления ресурса. Также вы можете выбрать в контекстном меню ресурса **Добавить в QGIS как**.
+
+* Векторные тайлы MVT - для векторных слоёв;
+* Растровые тайлы TMS - для векторных и растровых слоёв, а также веб-карт.
+
+.. figure:: _static/ngs_export_as_ru.png
+   :name: ngs_export_as_pic
+   :align: center
+   :width: 10cm
+
+   Разные варианты добавления в QGIS
+
 .. _connect_data_export:
 
 Добавление слоя
@@ -91,18 +106,18 @@
 
 Модуль NextGIS Connect позволяет быстро добавлять векторные данные из Веб ГИС в QGIS для их последующей обработки, анализа, выгрузки и иных операций.
 
-* Выберите в дереве ресурсов Веб ГИС в окне модуля NextGIS Connect Векторный слой, который вы хотите добавить в QGIS;
-* Нажмите кнопку |button_cloud_download| **Добавить в QGIS** на панели инструментов модуля или выберите пункт **Добавить в QGIS** в контекстном меню слоя;
+Выберите в дереве ресурсов Веб ГИС в окне модуля NextGIS Connect Векторный слой, который вы хотите добавить в QGIS.
 
-.. figure:: _static/NGConnect_export_select_ru.png
+Нажмите кнопку |button_cloud_download| **Добавить в QGIS** на панели инструментов модуля или выберите пункт **Добавить в QGIS** в контекстном меню слоя.
+
+.. figure:: _static/NGConnect_export_select_ru_2.png
    :name: NGConnect_export_select_pic
    :align: center
    :width: 20cm
    
    Экспорт векторного слоя из Веб ГИС
 
-
-* В случае, если слой имеет несколько стилей QGIS, сценарий зависит от того, что выделено для загрузки в окне Connect:
+В случае, если слой имеет несколько стилей QGIS, сценарий зависит от того, что выделено для загрузки в окне Connect:
 
 1. При выборе в дереве Connect **слоя с несколькими стилями**, они подгрузятся все, но будет предложено выбрать текущий. Это единственный вариант, при котором появляется диалоговое окно. Кликните дважды на нужном стиле, чтобы выбрать его.
 

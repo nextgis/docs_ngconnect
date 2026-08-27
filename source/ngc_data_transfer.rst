@@ -115,7 +115,7 @@
 - |tms_layer_symbol| - Слой TMS
 - |postgis_layer_symbol| - Слой PostGIS
 - |wfs_layer_symbol| - Слой WFS
-- |raster_layer| - Растровый слой (NGW Raster Layer) В Веб ГИС будет создан растровый слой со стилем по умолчанию, который можно добавить на веб-карту в Веб ГИС.
+- |raster_layer| - Растровый слой (NGW Raster Layer) В Веб ГИС будет создан растровый слой со стилем по умолчанию, который можно добавить на веб-карту в Веб ГИС
 - |basemap_symbol| - Подложка
 - |resource_webmap| - Веб карта (NGW Web Map)
 - |resource_group| - Группа ресурсов
