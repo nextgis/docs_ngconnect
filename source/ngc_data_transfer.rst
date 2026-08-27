@@ -18,9 +18,9 @@
 
 На плане Free в Веб ГИС можно создать до 15 слоёв. Если вам нужно загружать больше слоёв, подключите подиску Premium, это можно сделать `в личном кабинете <https://my.nextgis.com/subscription/>`_.
 
-При нажатии на кнопку |button_to_wg| **Добавить в QGIS** откроется меню с несколькими вариантами:
+При нажатии на кнопку |button_cloud_upload| **Добавить в QGIS** откроется меню с несколькими вариантами:
 
-.. |button_to_wg| image:: _static/button_to_wg.png
+.. |button_cloud_upload| image:: _static/button_cloud_upload.png
    :width: 6mm
 
 .. figure:: _static/nextgis_connect/add_to_ngw_ru.png

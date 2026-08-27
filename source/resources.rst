@@ -5,7 +5,7 @@
 
 При помощи модуля вы можете добавлять ресурсы из Веб ГИС в QGIS, чтобы редактировать их в настольном приложении.
 
-.. |button_to_qgis| image:: _static/button_to_qgis.png
+.. |button_cloud_download| image:: _static/button_cloud_download.png
    :width: 6mm
 
 
@@ -92,7 +92,7 @@
 Модуль NextGIS Connect позволяет быстро добавлять векторные данные из Веб ГИС в QGIS для их последующей обработки, анализа, выгрузки и иных операций.
 
 * Выберите в дереве ресурсов Веб ГИС в окне модуля NextGIS Connect Векторный слой, который вы хотите добавить в QGIS;
-* Нажмите кнопку |button_to_qgis| **Добавить в QGIS** на панели инструментов модуля или выберите пункт **Добавить в QGIS** в контекстном меню слоя;
+* Нажмите кнопку |button_cloud_download| **Добавить в QGIS** на панели инструментов модуля или выберите пункт **Добавить в QGIS** в контекстном меню слоя;
 
 .. figure:: _static/NGConnect_export_select_ru.png
    :name: NGConnect_export_select_pic

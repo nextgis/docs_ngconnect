@@ -2,21 +2,27 @@
 ===============
 
 
-.. figure:: _static/connect_panel_ru_2.png
+.. figure:: _static/connect_panel_ru_3.png
    :align: center
    :alt: Панель модуля расширения NextGIS Connect
    :width: 10cm
    
    Панель модуля расширения NextGIS Connect
 
-.. |button_to_qgis| image:: _static/button_to_qgis.png
+.. |button_cloud_download| image:: _static/button_cloud_download.png
    :width: 6mm
 
-.. |button_to_wg| image:: _static/button_to_wg.png
+.. |button_cloud_upload| image:: _static/button_cloud_upload.png
+   :width: 6mm
+
+.. |button_c_identify| image:: _static/button_c_identify.png
    :width: 6mm
 
 .. |button_newfolder| image:: _static/button_newfolder.png
    :width: 6mm
+
+.. |button_c_new_layer| image:: _static/button_c_new_layer.png
+   :width: 5mm
 
 .. |button_filter| image:: _static/button_filter.png
    :width: 6mm
@@ -39,13 +45,15 @@
 
 На панели расположены следующие кнопки:
 
-* |button_to_qgis| `Загрузить в QGIS <https://docs.nextgis.ru/docs_ngconnect/source/ngc_data_transfer.html>`_
+* |button_cloud_download| `Загрузить в QGIS <https://docs.nextgis.ru/docs_ngconnect/source/ngc_data_transfer.html>`_
 
-* |button_to_wg| `Добавить в Веб ГИС <https://docs.nextgis.ru/docs_ngconnect/source/resources.html#ng-connect-export>`_
+* |button_cloud_upload| `Добавить в Веб ГИС <https://docs.nextgis.ru/docs_ngconnect/source/resources.html#ng-connect-export>`_
 
-* |button_newfolder| `Создать группу ресурсов <https://docs.nextgis.ru/docs_ngconnect/source/manage.html#ng-connect-res-group>`_
+* |button_c_identify| Идентифицировать объекты в слоях Веб ГИС
 
-* |button_filter| `Поиск и фильтрация ресурсов <https://docs.nextgis.ru/docs_ngconnect/source/filter.html>`_
+* |button_newfolder| `Создать группу ресурсов <https://docs.nextgis.ru/docs_ngconnect/source/manage.html#ng-connect-res-group>`_ или |button_c_new_layer| `создать новый векторный слой <https://docs.nextgis.ru/docs_ngconnect/source/manage.html#new-vector-layer>`_
+
+* |button_filter| `Фильтр и поиск ресурсов <https://docs.nextgis.ru/docs_ngconnect/source/filter.html>`_
 
 * |button_refresh| `Обновить дерево ресурсов <https://docs.nextgis.ru/docs_ngconnect/source/panel.html#connect-refresh>`_
 
@@ -58,7 +66,7 @@
 Если на данный момент не настроено ни одно `подключение <https://docs.nextgis.ru/docs_ngconnect/source/ngc_install.html#ng-connect-new-connection>`_, вы увидите сообщение с предложением 
 создать свою Веб ГИС.
 
-.. figure:: _static/nextgis_connect/panel-no-connections_ru.png
+.. figure:: _static/ngc_no_connection_ru.png
    :align: center
    :alt: Панель модуля расширения NextGIS Connect при отсутствии подключения
    :width: 10cm
