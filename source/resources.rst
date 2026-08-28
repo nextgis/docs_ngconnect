@@ -64,7 +64,7 @@
    :width: 6mm
 
 - |vector_layer| Векторный слой (NGW Vector Layer)  - в QGIS будет создан векторный слой GeoJSON;
-- |resource_tileset| - Набор тайлов
+- |resource_tileset| - Набор тайлов - в QGIS будет создан слой TMS;
 - |wfs_layer_symbol| WFS Слой - в QGIS будет создан WFS слой;
 - |resource_wfs| WFS Сервис (NGW WFS Service) - в QGIS будет создан WFS слой, источником данных для которого будет выбранный WFS Сервис;
 - |wms_layer_symbol| WMS Слой - в QGIS будет добавлен выбранный WMS слой;

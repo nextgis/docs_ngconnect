@@ -132,43 +132,43 @@
 ----------------
 Контекстное меню может отличаться у различных ресурсов. 
 
-.. figure:: _static/nextgis_connect/context_menu_ru.png
+.. figure:: _static/context_menu_ru_2.png
    :align: center
-   :alt: Контекстное меню qgis стиля векторного слоя
-   :width: 10cm
+   :alt: Контекстное меню qgis векторного слоя
+   :width: 15cm
    
    Пример контекстного меню
 
 Общедоступные операции для всех типов ресурсов:
 
-- Открыть в ВебГИС - открывает страницу выбранного ресурса в Веб ГИС, также доступно из панели слоёв, см. :numref:`ngc_open_from_layertree_pic`;
+- Открыть страницу ресурса - открывает страницу выбранного ресурса в Веб ГИС, также доступно из панели слоёв, см. :numref:`ngc_open_from_layertree_pic`;
 
 - Переименовать ресурс;
 
 - `Удалить ресурс <https://docs.nextgis.ru/docs_ngconnect/source/manage.html#connect-resource-delete>`_;
 
-- Редактировать метаданные.
+- Дерево - позволяет развернуть или свернуть все дочерние ресурсы.
 
 
 Опциональные - зависят от типа ресурса:
 
-- Добавить в QGIS - операция и список ресурсов, для которых она доступна, описаны `выше <https://docs.nextgis.ru/docs_ngconnect/source/resources.html#ng-connect-export>`_;
+- Добавить в QGIS и Добавить в QGIS как - операция и список ресурсов, для которых она доступна, описаны `в этом разделе <https://docs.nextgis.ru/docs_ngconnect/source/resources.html#ng-connect-export>`_;
 
 - `Создать Веб Карту <https://docs.nextgis.ru/docs_ngconnect/source/manage.html#web-map>`_ - доступен для ресурсов: Векторный слой, Стиль Векторного слоя, Растровый слой, слой WMS;
 
-- `Загрузить как QML <https://docs.nextgis.ru/docs_ngconnect/source/export.html#connect-save-style>`_ - доступен только для ресурса QGIS Стиль Векторного слоя;
+- `Загрузить как QML <https://docs.nextgis.ru/docs_ngconnect/source/export.html#connect-save-style>`_ - доступен только для ресурсов QGIS Стиль Векторного слоя и QGIS Стиль Растрового слоя;
 
-- `Копировать стиль <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#connect-style-copy>`_  - доступен только для ресурса QGIS Стиль Векторного слоя;
+- `Копировать стиль <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#connect-style-copy>`_  - доступен только для ресурсов QGIS Стиль Векторного слоя и QGIS Стиль Растрового слоя;
 
-- `Создать сервис WFS <https://docs.nextgis.ru/docs_ngconnect/source/resources.html#wfs>`_ - доступен только для ресурса Векторный слой;
+- `Создать сервис WFS <https://docs.nextgis.ru/docs_ngconnect/source/resources.html#wfs>`_ - доступен только для ресурсов Векторный слой, слой PostGIS;
 
-- `Создать сервис OGC API - Features <https://docs.nextgis.ru/docs_ngconnect/source/resources.html#ogc-api-features>`_ - доступен только для ресурса Векторный слой;
+- `Создать сервис OGC API - Features <https://docs.nextgis.ru/docs_ngconnect/source/resources.html#ogc-api-features>`_ - доступен только для ресурсов Векторный слой и слой PostGIS;
 
-- `Создать сервис WMS <https://docs.nextgis.ru/docs_ngconnect/source/resources.html#wms>`_ - доступен только для ресурса Векторный слой;
+- `Создать сервис WMS <https://docs.nextgis.ru/docs_ngconnect/source/resources.html#wms>`_ - доступен только для ресурсов Векторный слой, Растровый слой, слой PostGIS;
 
 - `Дублировать ресурс <https://docs.nextgis.ru/docs_ngconnect/source/ngc_data_transfer.html#connect-resource-double>`_ - доступен только для ресурсов: Векторный слой и Растровый слой;
 
-- `Перезаписать выбранный слой <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#connect-data-overwrite>`_ - доступен только для ресурса Векторный слой;
+- `Перезаписать выбранный слой <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#connect-data-overwrite>`_ - доступен только для ресурсов Векторный слой и Растровый слой;
 
 - `Просмотр в браузере <https://docs.nextgis.ru/docs_ngconnect/source/panel.html#connect-open-webmap>`_ - доступен для веб-карт, галерей, слоёв и стилей, в браузере откроется веб-клиент с картой или страница превью слоя/стиля соответственно.
 
@@ -183,3 +183,6 @@
    :width: 22cm
 
    Открытие данных в Веб ГИС из дерева слоев QGIS
+
+.. |resource_webmap| image:: _static/symbol_webmap.png
+   :width: 6mm
