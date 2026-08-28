@@ -154,23 +154,27 @@
 
 - Добавить в QGIS и Добавить в QGIS как - операция и список ресурсов, для которых она доступна, описаны `в этом разделе <https://docs.nextgis.ru/docs_ngconnect/source/resources.html#ng-connect-export>`_;
 
-- `Создать Веб Карту <https://docs.nextgis.ru/docs_ngconnect/source/manage.html#web-map>`_ - доступен для ресурсов: Векторный слой, Стиль Векторного слоя, Растровый слой, слой WMS;
+- `Просмотр в браузере <https://docs.nextgis.ru/docs_ngconnect/source/panel.html#connect-open-webmap>`_ - доступен для веб-карт, галерей, слоёв и стилей, в браузере откроется веб-клиент с картой или страница превью слоя/стиля соответственно;
+
+- История слоя - доступно для векторных слоёв с включённым версионированием, открывает в браузере `историю изменений слоя <https://docs.nextgis.ru/docs_ngweb/source/version.html#vers-ngw-view-history>`_;
+
+- Создать новый ресурс:
+
+  - `Веб Карту <https://docs.nextgis.ru/docs_ngconnect/source/manage.html#web-map>`_ - доступен для ресурсов: Векторный слой, Стиль Векторного слоя, Растровый слой, слой WMS;
+  - `Сервис WFS <https://docs.nextgis.ru/docs_ngconnect/source/resources.html#wfs>`_ - доступен только для ресурсов Векторный слой, слой PostGIS;
+  - `Сервис OGC API - Features <https://docs.nextgis.ru/docs_ngconnect/source/resources.html#ogc-api-features>`_ - доступен только для ресурсов Векторный слой и слой PostGIS;
+  - `Сервис WMS <https://docs.nextgis.ru/docs_ngconnect/source/resources.html#wms>`_ - доступен только для ресурсов Векторный слой, Растровый слой, слой PostGIS;
+  - `Форму сбора данных <https://docs.nextgis.ru/docs_ngweb/source/collector.html#collector-create-form>`_ - доступно для векторного слоя, откроется в браузере.
 
 - `Загрузить как QML <https://docs.nextgis.ru/docs_ngconnect/source/export.html#connect-save-style>`_ - доступен только для ресурсов QGIS Стиль Векторного слоя и QGIS Стиль Растрового слоя;
 
 - `Копировать стиль <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#connect-style-copy>`_  - доступен только для ресурсов QGIS Стиль Векторного слоя и QGIS Стиль Растрового слоя;
 
-- `Создать сервис WFS <https://docs.nextgis.ru/docs_ngconnect/source/resources.html#wfs>`_ - доступен только для ресурсов Векторный слой, слой PostGIS;
-
-- `Создать сервис OGC API - Features <https://docs.nextgis.ru/docs_ngconnect/source/resources.html#ogc-api-features>`_ - доступен только для ресурсов Векторный слой и слой PostGIS;
-
-- `Создать сервис WMS <https://docs.nextgis.ru/docs_ngconnect/source/resources.html#wms>`_ - доступен только для ресурсов Векторный слой, Растровый слой, слой PostGIS;
-
 - `Дублировать ресурс <https://docs.nextgis.ru/docs_ngconnect/source/ngc_data_transfer.html#connect-resource-double>`_ - доступен только для ресурсов: Векторный слой и Растровый слой;
 
-- `Перезаписать выбранный слой <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#connect-data-overwrite>`_ - доступен только для ресурсов Векторный слой и Растровый слой;
+- `Перезаписать выбранный слой <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#connect-data-overwrite>`_ - доступен только для ресурсов Векторный слой и Растровый слой.
 
-- `Просмотр в браузере <https://docs.nextgis.ru/docs_ngconnect/source/panel.html#connect-open-webmap>`_ - доступен для веб-карт, галерей, слоёв и стилей, в браузере откроется веб-клиент с картой или страница превью слоя/стиля соответственно.
+
 
 
 Кроме того, при установке модуля появляется возможность переходить к данным в Веб ГИС из панели слоев в QGIS: в контекстном меню слоя в QGIS найдите «NextGIS Connect», и нажмите «Открыть в Веб ГИС».
