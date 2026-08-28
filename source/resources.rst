@@ -92,8 +92,8 @@
 * Векторные тайлы MVT - для векторных слоёв;
 * Растровые тайлы TMS - для векторных и растровых слоёв, а также веб-карт.
 
-.. figure:: _static/ngs_export_as_ru.png
-   :name: ngs_export_as_pic
+.. figure:: _static/ngc_export_as_ru.png
+   :name: ngc_export_as_pic
    :align: center
    :width: 10cm
 
