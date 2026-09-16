@@ -5,7 +5,7 @@ Working with cloud data
 
 With this plugin you can download data from Web GIS to QGIS to edit it.
 
-.. |button_to_qgis| image:: _static/button_to_qgis.png
+.. |button_cloud_download| image:: _static/button_cloud_download.png
    :width: 6mm
 
 

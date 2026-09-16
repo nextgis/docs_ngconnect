@@ -2,7 +2,7 @@ Plugin interface
 ================
 
 
-.. figure:: _static/connect_panel_en_2.png
+.. figure:: _static/connect_panel_en_3.png
    :align: center
    :alt: NextGIS Connect panel
    :width: 10cm
@@ -11,41 +11,17 @@ Plugin interface
 
 
 
-.. |button_to_qgis| image:: _static/button_to_qgis.png
-   :width: 6mm
 
-.. |button_to_wg| image:: _static/button_to_wg.png
-   :width: 6mm
-
-.. |button_newfolder| image:: _static/button_newfolder.png
-   :width: 6mm
-
-.. |button_filter| image:: _static/button_filter.png
-   :width: 6mm
-   :alt: funnel
-
-.. |button_refresh| image:: _static/button_refresh.png
-   :width: 6mm
-
-.. |button_openmap| image:: _static/button_openmap.png
-   :width: 6mm
-   :alt: map with magnifying glass
-
-.. |button_settings| image:: _static/button_settings.png
-   :width: 6mm
-   :alt: blue gear
-
-.. |button_help| image:: _static/button_help.png
-   :width: 6mm
-   :alt: question mark
 
 Buttons on the panel:
 
-* |button_to_qgis| `Add to QGIS <https://docs.nextgis.com/docs_ngconnect/source/resources.html>`_
+* |button_cloud_download| `Add to QGIS <https://docs.nextgis.com/docs_ngconnect/source/resources.html>`_
 
-* |button_to_wg| `Add to Web GIS <https://docs.nextgis.com/docs_ngconnect/source/resources.html#ng-connect-export>`_
+* |button_cloud_upload| `Add to Web GIS <https://docs.nextgis.com/docs_ngconnect/source/resources.html#ng-connect-export>`_
 
-* |button_newfolder| `Create resource group <https://docs.nextgis.com/docs_ngconnect/source/manage.html#ng-connect-res-group>`_
+* |button_c_identify| Identify features in Web GIS layers
+
+* |button_newfolder| `Create resource group <https://docs.nextgis.com/docs_ngconnect/source/manage.html#ng-connect-res-group>`_ or |button_c_new_layer| `a new vector layer <https://docs.nextgis.com/docs_ngconnect/source/manage.html#new-vector-layer>`_
 
 * |button_filter| `Search and filter resources <https://docs.nextgis.com/docs_ngconnect/source/filter.html>`_
 
@@ -59,9 +35,10 @@ Buttons on the panel:
 
 If no connection is set at the moment, the following message will be shown:
 
-.. figure:: _static/panel-no-connections_en.png
+.. figure:: _static/ngc_no_connection_en.png
+   :name: ngc_no_connection_pic
    :align: center
-   :alt: Message if there is no connection
+   :alt: Connect your first Web GIS
    :width: 10cm
    
    NextGIS Connect panel if there is no connection
@@ -92,10 +69,10 @@ Refresh
 
 Click |button_refresh| to refresh the entire Web GIS resource tree so that it's up to date with the current state of the server.
 
-.. figure:: _static/reload_en.png
+.. figure:: _static/ngc_reload_en.png
    :align: center
    :alt: Refresh resource tree
-   :width: 8cm
+   :width: 10cm
 
    Refreshing Web GIS data
 
@@ -105,16 +82,16 @@ Click |button_refresh| to refresh the entire Web GIS resource tree so that it's 
 Display in browser
 -----------------------------
 
-If a Web Map (|resource_webmap| NGW Web Map), a layer or a style is selected in NextGIS Connect resource tree, click |button_openmap| to preview the resource in a new tab of the default browser.
+If a Web Map (|resource_webmap| NGW Web Map), a gallery, a layer or a style is selected in NextGIS Connect resource tree, click |button_openmap| to preview the resource in a new tab of the default browser.
 
-.. figure:: _static/open_webmap_en.png
+.. figure:: _static/ngc_open_webmap_en.png
    :align: center
    :alt: Open Web Map in browser
-   :width: 8cm
+   :width: 10cm
 
    Opening a Web Map
 
-Context menu also allows to display a Web Map, layer or style in browser or to `open the Web GIS page of any resource <https://docs.nextgis.com/docs_ngconnect/source/panel.html#ng-connect-cont-menu>`_.
+Context menu also allows to display a Web Map, gallery, layer or style in browser or to `open the Web GIS page of any resource <https://docs.nextgis.com/docs_ngconnect/source/panel.html#ng-connect-cont-menu>`_.
 
 
 .. _ng_connect_cont_menu:
@@ -124,10 +101,10 @@ Context Menu
 
 Context menu may differ depending on resource type.  
 
-.. figure:: _static/context_menu_en.png
+.. figure:: _static/ngc_context_menu_en.png
    :align: center
    :alt: Context menu for a qgis vector style
-   :width: 8cm
+   :width: 13cm
    
    Context menu example
 
@@ -139,30 +116,29 @@ Common options for all resource types:
 
 - `Delete resource <https://docs.nextgis.com/docs_ngconnect/source/manage.html#connect-resource-delete>`_;
 
-- Edit metadata.
+- Tree - display or hide all child resources.
 
 
 Variable options – depend on resource type:
 
-- Add to QGIS - `see above <https://docs.nextgis.com/docs_ngconnect/source/resources.html#ng-connect-export>`_ for the types of resources that can be added and other details;
+- Add to QGIS and Add to QGIS as - `see above <https://docs.nextgis.com/docs_ngconnect/source/resources.html#ng-connect-export>`_ for the types of resources that can be added and other details;
+- `View in browser <https://docs.nextgis.com/docs_ngconnect/source/panel.html#connect-open-webmap>`_ - available for Web Maps, galleries, layers and styles; opens a web client displaying the map/gallery or the preview of the layer or style;
+- Layer history - available for vector layers with versioning enabled, opens the `history of actions for the layer <https://docs.nextgis.com/docs_ngweb/source/version.html#vers-ngw-view-history>`_ in your browser;
+- Create - you can create a new resource:
 
-- `Create Web Map <https://docs.nextgis.com/docs_ngconnect/source/manage.html#web-map>`_ - available for: Vector layer, Vector style, Raster layer, WMS Layer;
+  - `Web Map <https://docs.nextgis.com/docs_ngconnect/source/manage.html#web-map>`_ - available for: Vector layer, Vector style, Raster layer, WMS Layer;
+  - `WFS service <https://docs.nextgis.com/docs_ngconnect/source/resources.html#wfs>`_ - only for Vector layer and PostGIS layer;
+  - `OGC API - Featues service <https://docs.nextgis.com/docs_ngconnect/source/resources.html#ogc-api-features>`_ - only for Vector layer and PostGIS layer;
+  - `WMS service <https://docs.nextgis.com/docs_ngconnect/source/resources.html#wms>`_ - only for Vector layer, Raster layer and PostGIS layer;
+  - `Form for data collection <https://docs.nextgis.com/docs_ngweb/source/collector.html#collector-create-form>`_ - only for Vector layer, opens in browsers.
 
-- `Download as QML <https://docs.nextgis.com/docs_ngconnect/source/export.html#connect-save-style>`_ - only available for QGIS Vector style;
+- `Download as QML <https://docs.nextgis.com/docs_ngconnect/source/export.html#connect-save-style>`_ - only available for QGIS Vector style and QGIS Raster style;
 
-- `Copy style <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-style-copy>`_ - only available for QGIS Vector style;
-
-- `Create WFS service <https://docs.nextgis.com/docs_ngconnect/source/resources.html#wfs>`_ - only available for Vector layer;
-
-- `Create OGC API - Features service <https://docs.nextgis.com/docs_ngconnect/source/resources.html#ogc-api-features>`_ - only available for Vector layer;
-
-- `Create WMS service <https://docs.nextgis.com/docs_ngconnect/source/resources.html#wms>`_ - only available for Vector layer;
+- `Copy style <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-style-copy>`_ - only available for QGIS Vector style and QGIS Raster style;
 
 - `Duplicate resource <https://docs.nextgis.com/docs_ngcom/source/ngqgis_connect.html#ngcom-connect-resource-double>`_ - available only for Vector layer and Raster layer;
 
-- `Overwrite selected layer <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-data-overwrite>`_ - only available for Vector layer;
-
-- `Display in browser <https://docs.nextgis.com/docs_ngconnect/source/panel.html#connect-open-webmap>`_ - available for Web Map, all types of layers and styles.
+- `Overwrite selected layer <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-data-overwrite>`_ - only available for Vector layer.
 
 
 The plugin also allows you to navigate to the Web GIS data directly from the the Layers panel in QGIS. In the layer's context menu find "NextGIS Connect" and press "Open in Web GIS".
@@ -177,3 +153,42 @@ The plugin also allows you to navigate to the Web GIS data directly from the the
    Opening Web GIS data from QGIS layer tree
 
 
+.. |button_cloud_download| image:: _static/button_cloud_download.png
+   :width: 6mm
+   :alt: cloud with arrow down
+
+.. |button_cloud_upload| image:: _static/button_cloud_upload.png
+   :width: 6mm
+   :alt: cloud with arrow up
+
+.. |button_newfolder| image:: _static/button_newfolder.png
+   :width: 6mm
+   :alt: folder with a +
+
+.. |button_c_new_layer| image:: _static/button_c_new_layer.png
+   :width: 6mm
+   :alt: rectangle with a +
+
+.. |button_c_identify| image:: _static/button_c_identify.png
+   :width: 6mm
+   :alt: pointer with blue globe
+
+.. |button_filter| image:: _static/button_filter.png
+   :width: 6mm
+   :alt: funnel
+
+.. |button_refresh| image:: _static/button_refresh.png
+   :width: 6mm
+   :alt: round arrow
+
+.. |button_openmap| image:: _static/button_openmap.png
+   :width: 6mm
+   :alt: map with magnifying glass
+
+.. |button_settings| image:: _static/button_settings.png
+   :width: 6mm
+   :alt: blue gear
+
+.. |button_help| image:: _static/button_help.png
+   :width: 6mm
+   :alt: question mark

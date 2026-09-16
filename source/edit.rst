@@ -3,10 +3,10 @@
 Edit data 
 =========================
 
-.. |button_to_qgis| image:: _static/button_to_qgis.png
+.. |button_cloud_download| image:: _static/button_cloud_download.png
    :width: 6mm
 
-.. |button_to_wg| image:: _static/button_to_wg.png
+.. |button_cloud_upload| image:: _static/button_cloud_upload.png
    :width: 6mm
   
 NextGIS Connect plugin allows to quickly edit geometries and attribute values of features in Web GIS Vector layers right after adding them to QGIS. This allows the layer to be edited even with no Internet connection. The changes will be saved to the device and transfered to Web GIS when the connection is restored.
@@ -17,7 +17,7 @@ This functionality is only available for vector data formats used in QGIS.
 	By default only one user at a time can edit the layer **directly**. 
 
 
-#. Import the layer from Web GIS to QGIS by selecting it in NextGIS Connect and pressing |button_to_qgis| Add to QGIS.
+#. Import the layer from Web GIS to QGIS by selecting it in NextGIS Connect and pressing |button_cloud_download| Add to QGIS.
 #. Enter the edit mode from the layer’s context menu or from the toolbar.
 #. Make the changes.
 #. Exit edit mode. Confirm changes in the pop-up window.
@@ -146,7 +146,7 @@ You can also edit a vector layer using the standard :term:`WFS` protocol (with f
 
 * Publish via WFS protocol the Vector layer you're going to edit;
 * Select in NextGIS Connect Resources panel the relevant WFS service;
-* Press |button_to_qgis| Add to QGIS button on NextGIS Connect control panel or select **Add to QGIS** in the service context menu;
+* Press |button_cloud_download| Add to QGIS button on NextGIS Connect control panel or select **Add to QGIS** in the service context menu;
 
 .. figure:: _static/NGConnect_edit_add_en.png
    :name: ngcn_edit_add_pic
@@ -219,7 +219,7 @@ You can add another style to a layer or replace its existing style with a new on
 * Add layer to QGIS via Connect;
 * Change the style of the layer (color, line width, etc.);
 * Select the layer in QGIS Layers panel as well as in the Connect panel.
-* In Connect toolbar press |button_to_wg| Add to Web GIS and in the dropdown menu select "Add new style to layer" or "Update style".
+* In Connect toolbar press |button_cloud_upload| Add to Web GIS and in the dropdown menu select "Add new style to layer" or "Update style".
 
 .. figure:: _static/connect_add_style_en_2.png
    :name: ngcn_add_style_pic
