@@ -18,9 +18,10 @@ Connect plugin also allows to publish vector data using standard protocols :term
 
 On Free plan you can upload up to 15 layers. If you need more, you can `upgrade to Premium in your NextGIS ID acccount <https://my.nextgis.com/subscription/>`_.
 
-.. figure:: _static/add_to_ngw_en.png
+.. figure:: _static/ngc_add_to_ngw_en.png
+   :name: ngc_add_to_ngw_pic
    :align: center
-   :width: 10cm
+   :width: 9cm
    
    Upload menu in the NG Connect panel
 
@@ -135,38 +136,49 @@ The following types of resources are available for data exchange and operation:
 Upload entire QGIS project
 -------------------------------
 
-* Create a QGIS project with raster and vector layers. Tailor their styles, group them, set their hierarchy and visibility settings. Set the map extent;
-* In NextGIS Connect panel select Resource group to which you want to upload the project;
-* Press **Add to Web GIS** button on NextGIS Connect control panel and select **Upload all**;
+* Create a QGIS project with raster and vector layers. Tailor their styles, group them, set their hierarchy and visibility settings. Set the map extent.
+* In NextGIS Connect panel select Resource group to which you want to upload the project.
+* Press **Add to Web GIS** button on NextGIS Connect control panel and select **Upload all**.
 
-.. figure:: _static/NGConnect_import_menu_en_2.png
+.. figure:: _static/NGConnect_import_menu_en_3.png
    :name: NGConnect_import_menu_pic
    :align: center
-   :width: 20cm
+   :width: 22cm
    
    Adding project in the NextGIS Connect panel. Target resource group is highligthed in blue
    
-* In the opened dialog window enter the name of the new Resource group to which the project will be imported;
+* In the opened dialog window enter the name of the new Resource group to which the project will be imported (by default the project name is used). By default a Web Map including all project layers is created, but you can untick this opiton.
 
-.. figure:: _static/NGConnect_import_name_en_2.png
+.. figure:: _static/NGConnect_import_name_en_3.png
    :name: NGConnect_import_name_pic
    :align: center
-   :width: 20cm
+   :width: 8cm
    
    Entering the name for the project
 
 * If the project is uploaded successfully you'll see in a selected Resource group a newly created group with: 
 
 1) all Raster and Vector layers to which **Add to Web GIS** operation is applicable, and their Styles;
-2) automatically created `Web map <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client>`_ with a set extent, to which all the imported layers are added with groups, hierarchy and visibility settings similar to QGIS. 
+2) automatically created `Web map <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client>`_ (if the option is ticked) with a set extent, to which all the imported layers are added with groups, hierarchy and visibility settings similar to QGIS. 
+
+
+
+* After a successful upload the plugin suggests replacing the local layers in the project by the synchronizable Web GIS layers. If you select this option, all further edits you make to the layers will be auto-synced with the server.
+
+.. figure:: _static/ngc_replace_dialog_en.png
+   :name: ngc_replace_dialog_pic
+   :align: center
+   :width: 22cm
+
+   Replacing local layers with layers in Web GIS
 
 .. tip:: 
-	To view the newly created Web map press **Open map in browser** button on NextGIS Connect control panel or select **Open map in browser** in the context menu.
+	After the upload is finished, the Web Map opens in browser automatically. Also, you can view it by clicking **Open map in browser** button on NextGIS Connect control panel or selecting **Open map in browser** in the context menu.
 
-.. figure:: _static/NGConnect_import_view_en_2.png
+.. figure:: _static/NGConnect_import_view_en_3.png
    :name: NGConnect_import_view_pic
    :align: center
-   :width: 20cm
+   :width: 22cm
    
    Opening the newly created Web Map via context menu of the imported project
 
@@ -186,11 +198,12 @@ Upload vector data
 .. important:: 
    You can avoid `data format limitations <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-vector-data-requirements>`_ when uploading vector data to Web GIS through NextGIS Connect by switching on options "Rename forbidden fields" and "Fix incorrect geometries" in *Settings* dialog.
 
-* In QGIS create from scratch or upload from :term:`ESRI Shape`, :term:`GeoJSON` or :term:`CSV` files vector layers. Tailor their styles;
-* In NextGIS Connect panel select Resource group to which you want to upload your data (or create a new one using `Create resource group <https://docs.nextgis.com/docs_ngconnect/source/manage.html#ng-connect-res-group>`_ button);
+* In QGIS create from scratch or upload from :term:`ESRI Shape`, :term:`GeoJSON` or :term:`CSV` files vector layers. Tailor their styles.
+* In NextGIS Connect panel select Resource group to which you want to upload your data (or create a new one using `Create resource group <https://docs.nextgis.com/docs_ngconnect/source/manage.html#ng-connect-res-group>`_ button).
 * In QGIS Layers panel select the vector layer which you want to upload to Web GIS;
-* Press **Add to Web GIS** button on NextGIS Connect control panel and click **Upload selected** or choose **NextGIS Connect --> Upload selected** in layer context menu;
+* Press **Add to Web GIS** button on NextGIS Connect control panel and click **Upload selected** or choose **NextGIS Connect --> Upload selected** in layer context menu.
 * If data is uploaded successfully you'll see in the relevant Resource group a new Vector layer with `QGIS style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html>`_ tailored by you.
+* After a successful upload the plugin suggests replacing the local layers in the project by the synchronizable Web GIS layers. If you select this option, all further edits you make to the layers will be auto-synced with the server.
 
 If a layer has **multiple styles**, they will all be uploaded. Their names will be kept. If the style name is "default", the layer's name will be used instead. 
 
