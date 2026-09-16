@@ -183,7 +183,7 @@ You can also edit a vector layer using the standard :term:`WFS` protocol (with f
 Update data
 -----------------
 
-NextGIS Connect allows you to update the content of an existing Web GIS vector layer keeping its styles, attribute aliases and other settings.
+NextGIS Connect allows you to update the content of an existing Web GIS vector or raster layer keeping its styles, attribute aliases, resource ID and other settings.
 
 .. warning:: 
    When a **layer** is updated, all data of the target layer including attachments (photos, documents) is cleared. If you need to keep the attachments intact, use `WFS <https://docs.nextgis.com/docs_ngconnect/source/resources.html#wfs>`__. When you update a `style <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-style-overwrite>`_, it does not affect attachments.
@@ -191,8 +191,8 @@ NextGIS Connect allows you to update the content of an existing Web GIS vector l
 
 To update (overwrite) layer's data:
 
-* In the QGIS Layers panel, select the vector layer that has features you want to send to an existing Web GIS vector layer;
-* In the NextGIS Connect panel select the vector layer , select the vector layer the contents of which you need to replace;
+* In the QGIS Layers panel, select the layer that you want to use to replace an existing Web GIS vector layer;
+* In the NextGIS Connect panel select the layer the contents of which you need to replace;
 * Right click on the target layer and choose **Overwrite selected layer**.
 
 Layer resource ID stays the same.
