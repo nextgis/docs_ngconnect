@@ -1,5 +1,5 @@
-Manage resources
-================
+Manage Web GIS resources
+=========================
 
 
 .. _ng_connect_res_group:
@@ -7,16 +7,15 @@ Manage resources
 Create resource group
 -------------------------
 
-In the top menu of the NextGIS Connect plugin you'll find a "Create group" button.
+In the top menu of the NextGIS Connect plugin you'll find a |button_newfolder|"Create group" button.
 
 A new group will be created:
 
 * If a resource group is selected in the Connect panel - in that group;
-* If other type of resources but a group is selected - in the closest parent group 
-
+* If other type of resources but a group is selected - in the closest parent group;
 * If no resource is selected - in the main resource group.
 
-.. figure:: _static/create_group_en.png
+.. figure:: _static/ngc_create_group_en.png
    :align: center
    :alt: Create new group
    :width: 8cm
@@ -41,43 +40,56 @@ Create empty vector layer
 
 With NextGIS Connect plugin you can create a new vector layer in your Web GIS without uploading data.
 
-In the Connect panel select the resource group inside which you want to create a new layer. In the menu bar select :menuselection:`Layer ‣ Create layer ‣ New NextGIS Web vector layer`.
+In the Connect panel select the resource group inside which you want to create a new layer. 
 
-.. figure:: _static/ngc_create_ngw_layer_en.png
+Open the dropdown menu by clicking the downward arrow by the |button_newfolder| button and select |button_c_new_layer| NextGIS Web vector layer.
+
+.. figure:: _static/ngc_create_ngw_layer_panel_en.png
+   :name: ngc_create_ngw_layer_panel_pic
+   :align: center
+   :width: 10cm
+
+   Creating new vector layer
+
+Alternative way: in the menu bar select :menuselection:`Layer ‣ Create layer ‣ New NextGIS Web vector layer`.
+
+.. figure:: _static/ngc_create_ngw_layer_en_2.png
    :name: ngc_create_ngw_layer_pic
    :align: center
-   :width: 20cm
+   :width: 22cm
 
    Creating new vector layer in Web GIS
 
 In the opened dialog enter the parameters of the new layer:
 
-.. figure:: _static/ngc_create_ngw_layer_set_en.png
+.. figure:: _static/ngc_create_ngw_layer_set_en_2.png
    :name: ngc_create_ngw_layer_set_pic
    :align: center
    :width: 20cm
 
    Parameters of the new layer
 
-* Layer name
-* Geometry type
-* Option to include Z dimension
+* Parent - the resource is created in the group selected in NextGIS Connect layer tree;
+* Layer name;
+* Geometry type;
+* Option to include Z dimension;
 * Layer fields: enter the display name and keyname, select field type, then press **Add to Field List**. Available field parameters: 
 
-   * Feature table - the contents of the field will be displayed in the identification panel;
-   * Text search - enable/disable text search in the values of the attribute;
-   * Label attribute - values from this field will be used as feature labels on the map.
+  * Feature table - the contents of the field will be displayed in the identification panel;
+  * Text search - enable/disable text search in the values of the attribute;
+  * Required;
+  * Label attribute - values from this field will be used as to label features in search results.
 
 * You can also choose to add the layer to the project or just create in in the Web GIS.
 
-Also while creating a layer you can turn on `versioning <https://docs.nextgis.com/docs_ngweb/source/version.html#vers-qgis>`_ for it. Go to the second tab, "Settings".
+Also while creating a layer you can set up `versioning <https://docs.nextgis.com/docs_ngweb/source/version.html#vers-qgis>`_ for it. Go to the second tab, "Settings" and select from: auto - defaults to the `Web GIS settings <https://docs.nextgis.com/docs_ngweb/source/version.html#vers-ngw-default>`_, enabled, disabled.
 
-.. figure:: _static/ngc_create_ngw_layer_set_version_en.png
+.. figure:: _static/ngc_create_ngw_layer_set_version_en_2.png
    :name: ngc_create_ngw_layer_set_version_pic
    :align: center
    :width: 14cm
 
-   Enable versioning
+   Versioning settings
 
 To complete the process, pess **Create**.
 
@@ -256,7 +268,23 @@ Delete resource
 
 With NextGIS Connect you can quickly create and delete any resource in your Web GIS. 
 
-* In the NextGIS Connect panel select the resource you wish to delete;
-* In the context menu select **Delete**;
-* If the resource is deleted successfully, it disappears from the Web GIS layer tree.
- 
+* In the NextGIS Connect panel select the resource(s) you wish to delete.
+* In the context menu select **Delete**.
+
+A pop-up window shows the total number of resources (including child resources) that will be deleted. 
+
+.. figure:: _static/ngc_delete_confirm_en.png
+   :name: ngc_delete_confirm_pic
+   :align: center
+   :width: 12cm
+
+   Confirmation window for deleting resources
+
+Check the list of resources to make sure you don't accidentally delete something important, then click **Delete** co confirm. The deleted resources disappear from the Web GIS layer tree.
+
+
+.. |button_newfolder| image:: _static/button_newfolder.png
+   :width: 7mm
+
+.. |button_c_new_layer| image:: _static/button_c_new_layer.png
+   :width: 6mm
