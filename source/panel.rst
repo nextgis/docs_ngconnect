@@ -103,7 +103,8 @@
 
 Нажмите |button_refresh|, чтобы обновить всё дерево ресурсов Веб ГИС до актуального на текущий момент состояния.
 
-.. figure:: _static/nextgis_connect/reload_ru.png
+.. figure:: _static/ngc_reload_ru.png
+   :name: ngc_reload_pic
    :align: center
    :alt: Обновить дерево ресурсов
    :width: 10cm
@@ -117,7 +118,8 @@
 
 Выберите в дереве ресурсов веб-карту (NGW Web Map) |resource_webmap|, галерею, слой или стиль, и нажмите |button_openmap|, чтобы открыть просмотр этого ресурса в новой вкладке браузера.
 
-.. figure:: _static/nextgis_connect/open_webmap_ru.png
+.. figure:: _static/ngc_open_webmap_ru.png
+   :name: ngc_open_webmap_pic
    :align: center
    :alt: Открыть веб-карту в браузере
    :width: 10cm
