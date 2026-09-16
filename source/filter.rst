@@ -42,7 +42,7 @@ If you know the resource ID, you can find it in the layer tree by using an `expr
 Filter by expression
 --------------------------------
 
-To filter the resource tree by parameters other than the resource name (see the full list below) use expressions with conditions ``=, IN, ILIKE``. As for logical operators ``AND`` and ``OR``, you can use either of them several times in an expression, but not combined with the other. 
+To filter the resource tree by parameters other than the resource name (see the full list below) use expressions with conditions ``=, IN, ILIKE, LIKE``. As for logical operators ``AND`` and ``OR``, you can use either of them several times in an expression, but not combined with the other. 
 
 Examples of expressions: 
 
@@ -58,6 +58,10 @@ Examples of expressions:
 
 
 ``@owner = 4 AND @type = "raster_layer"``. The Connect panel will show all raster layers owned by the user with ID=4.
+
+.. hint:: 
+
+   Enter @owner = me to search for the resource owned by you (user whose credentials were used to create the connection).
 
 .. figure:: _static/ngc_filter_example_user_raster_en.png
    :name: ngc_filter_example_user_raster_pic
