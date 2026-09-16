@@ -3,61 +3,59 @@
 Main Settings
 ===================
 
-You can access this dialog via top menu *Settings > Options > NextGIS Connect*, or from NextGIS Connect panel by clicking on the gear button.
+You can access this dialog via top menu Settings > Options > NextGIS Connect, or from NextGIS Connect panel by clicking on the gear button.
 
-.. figure:: _static/call_settings_en.png
+.. figure:: _static/ngc_open_settings_en.png
+   :name: ngc_open_settings_pic
    :align: center
    :alt: Open settings dialog
    :width: 10cm
 
    Opening Settings menu
 
-.. figure:: _static/ngc_settings_en_2.png
+.. figure:: _static/ngc_settings_en_3.png
    :align: center
    :alt: Main settings
    :width: 20cm
    
    Main settings dialog
 
+.. _ngc_set_connect:
+
 Connections
------------
+~~~~~~~~~~~
 
 Connection, selected in the dropdown list, becomes active **after** the Settings dialog is closed.
 
 Also, in this section you can `create, edit or delete connections <https://docs.nextgis.com/docs_ngconnect/source/ngc_install.html#create-a-connection>`_.
 
+.. _ngc_set_upload:
+
 Uploading
------------
+~~~~~~~~~
 
-**Upload rasters as Cloud Optimized GeoTIFF (COG)** - if this option is selected, pyramids will be used for loading rasters depending on zoom level, so there's no need to wait for the entire raster to finish loading.
-
-**Enable feature versioning for vector layers when uploading** - versioning allows `co-editing from multiple devices <https://docs.nextgis.com/docs_ngweb/source/version.html#vers-qgis>`_.
-
-Resources
---------------
-
-**Add layers to QGIS on service creation** – after creation of WFS, WMS or OGC API - Features service in Web GIS it will be automatically added to QGIS as a layer. 
-
-**Open Web Map automatically on creation** – after completing any operation that includes creation of a Web Map it will be automatically opened in browser. 
+* **Add metadata to layers on creation**
+* **Add layers to QGIS on service creation**
+* **Open Web Map automatically on creation** - if this option is enabled, after you upload an entire project or create a Web Map from a layer in NextGIS Connect panel, a browser automatically opens to display that Web Map.
 
 .. _ngc_set_search:
 
-Searching
-----------
+Search
+~~~~~~
 
-Enter a list of metadata keys to select from the dropdown menu in the `search bar <https://docs.nextgis.com/docs_ngconnect/source/filter.html#ngc-filter-metadata>`_ instead of typing them every time.
+Here you enter a list of metadata keys so that in the `search bar <https://docs.nextgis.com/docs_ngconnect/source/filter.html#ngc-filter-metadata>`_ you could select from a dropdown menu instead of entering them manually.
 
-Synchronization
-----------------
+.. _ngc_set_notifications:
 
-You can select how often the plugin checks for edits. The interval is set in minutes or hours, between 1 and 59.
+Notifications
+~~~~~~~~~~~~~
 
-A bigger interval can be helpful if there are many layers to prevent a constant state of synchronization.
+**Show notification when deleting features with attachments** - when you delete a feature, all its attachments are deleted too. The message helps you avoid accidentally losing important files.
 
-You can disable automatic synchronization for a layer in the `layer properties <https://docs.nextgis.com/docs_ngconnect/source/resources.html#connect-data-sync>`_.
+.. _ngc_set_cache:
 
 Cache settings
------------------
+~~~~~~~~~~~~~~~
 
 You can manage the following parameters:
 
@@ -69,8 +67,10 @@ You can manage the following parameters:
 
 You can also **Clear cache**.
 
+.. _ngc_set_other:
+
 Other settings
------------------
+~~~~~~~~~~~~~~
 
 The following settings are used to inform the developers about software errors and bugs. Log messages contain the information on the events leading to an error and the place where it ocurred. 
 
@@ -94,4 +94,3 @@ If your company uses its own proxy server, you need to specify it in the NextGIS
    :width: 22cm
    
    Proxy server settings
-
