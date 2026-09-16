@@ -14,14 +14,9 @@ With this plugin you can download data from Web GIS to QGIS to edit it.
 From Web GIS to QGIS
 ------------------------------------
 
-.. figure:: _static/add_to_qgis_en.png
-   :align: center
-   :alt: Add to QGIS
-   :width: 10cm
-   
-   Button for data transfer to QGIS
 
-Option is available if one of the following resources is selected in NextGIS Web resource tree:
+
+Download |button_cloud_download| is available if one of the following resources is selected in NextGIS Web resource tree:
 
 
 .. |resource_vector_point| image:: _static/nextgis_connect/vector_layer_point.png
@@ -44,6 +39,8 @@ Option is available if one of the following resources is selected in NextGIS Web
    :width: 5mm
 .. |vector_layer| image:: _static/symbol_vector_layer.png
    :width: 6mm
+.. |resource_tileset| image:: _static/resource_tileset.png
+   :width: 5mm
 .. |basemap_symbol| image:: _static/symbol_basemap.png
    :width: 5mm
 .. |tms_layer_symbol| image:: _static/symbol_tms_layer.png
@@ -62,6 +59,7 @@ Option is available if one of the following resources is selected in NextGIS Web
    :width: 6mm
 
 - |vector_layer| Vector layer (NGW Vector Layer) - GeoJSON vector layer will be created in QGIS; 
+- |resource_tileset| - Tileset
 - |wfs_layer_symbol| WFS Layer - a WFS layer will be created in QGIS;
 -  |resource_wfs| WFS service (NGW WFS Service) - WFS layer will be created in QGIS; 
 - |wms_layer_symbol| WMS Layer - the selected WMS layer will be added to QGIS;
@@ -77,6 +75,17 @@ Option is available if one of the following resources is selected in NextGIS Web
 - |demo_project_symbol| `Demo Project <https://docs.nextgis.com/docs_ngcom/source/demoprojects.html>`_ - a QGIS project will be created, containing layers, styles and basemaps;
 - |resource_group| Resource group - the group and resources inside it will be added to the QGIS project.
 
+For some of resource there are multiple options. If they are available, the |button_cloud_download| icon has a downward arrow. Alternatively, select **Add to QGIS as** in the context menu of the layer. The options are:
+
+* MVT vector tiles - for all vector layers;
+* TMS layer - for vector and raster layers and Web Maps.
+
+.. figure:: _static/ngc_export_as_en.png
+   :align: center
+   :alt: Add to QGIS
+   :width: 10cm
+   
+   Options for downloading data to QGIS
 
 Vector layers added from Web GIS can be `edited in QGIS <https://docs.nextgis.com/docs_ngconnect/source/edit.html#>`_ right away.
 
@@ -89,20 +98,19 @@ Add vector layer to QGIS
 
 NextGIS Connect plugin enables a fast export of vector data from Web GIS to QGIS for further processing, analysis, saving in different formats and other data operations.
 
-It’s possible due to the option of fast creation of GeoJSON vector layers in QGIS using vector data from Web GIS:
+Select in NextGIS Connect Resources panel Vector layer which you want to export to QGIS.
 
-* Select in NextGIS Connect Resources panel Vector layer which you want to export to QGIS;
-Press **Add to QGIS** button on NextGIS Connect control panel or select **Add to QGIS** in the layer context menu;
+Press **Add to QGIS** button on NextGIS Connect control panel or select **Add to QGIS** in the layer context menu.
 
-.. figure:: _static/NGConnect_export_select_en.png
+.. figure:: _static/NGConnect_export_select_en_2.png
    :name: NGConnect_export_select_pic
    :align: center
-   :width: 20cm
+   :width: 9cm
    
    Exporting vector layer from Web GIS
 
 
-* If the layer has multiple QGIS styles, there are several options depending on what you select in the Connect window:
+If the layer has multiple QGIS styles, there are several options depending on what you select in the Connect window:
 
 1. If you select a layer with **multiple styles** in the Connect window, all the styles will be added, but you need to chose current style in a dialog window. Double-click the style to select it. This is the only case in which a dialog pops up.
 
