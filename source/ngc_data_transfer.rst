@@ -23,7 +23,7 @@
 .. |button_cloud_upload| image:: _static/button_cloud_upload.png
    :width: 6mm
 
-.. figure:: _static/nextgis_connect/ngc_add_to_ngw_ru.png
+.. figure:: _static/ngc_add_to_ngw_ru.png
    :name: ngc_add_to_ngw_pic
    :align: center
    :width: 10cm
