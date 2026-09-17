@@ -254,10 +254,10 @@ With NG Connect you can copy an existing Web GIS layer. This option is available
 
 Copy will be created in the same group. The layer's style will also be duplicated.
 
-.. figure:: _static/NGConnect_double_en.png
+.. figure:: _static/ngc_double_en.png
    :name: NGConnect_double_pic
    :align: center
-   :width: 8cm
+   :width: 13cm
 
    Duplicating resource
 
