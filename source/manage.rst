@@ -251,10 +251,10 @@
 
 Копия слоя будет создана в той же папке, стиль слоя также будет скопирован.
 
-.. figure:: _static/NGConnect_double_ru.png
+.. figure:: _static/ngc_double_ru.png
    :name: NGConnect_double_pic
    :align: center
-   :width: 8cm
+   :width: 13cm
 
    Дублирование ресурса
 
