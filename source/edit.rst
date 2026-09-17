@@ -126,7 +126,7 @@ Reset layer
 
 When you reset the layer via sync dialog, you update the cached structure. This way the cached structure matches the one in the cloud allowing you to continue editing and synchronizing the data.
 
-To reset a layer, click on the sync symbol (see :numref:`ngc-check-sync-pic`). "Layer status" window will open. Click the downward arrow by the "Synchronization" button and in the dropdown menu select **Reset layer**. 
+To reset a layer, click on the sync symbol (see :numref:`ngc_check_sync_pic`). "Layer status" window will open. Click the downward arrow by the "Synchronization" button and in the dropdown menu select **Reset layer**. 
 
 .. figure:: _static/reset_layer_en.png
    :name: reset_layer_pic
