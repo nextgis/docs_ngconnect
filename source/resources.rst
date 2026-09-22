@@ -195,3 +195,53 @@ With NextGIS Connect v. 3.2.0 and up a project file that uses detached layers ca
 The data will be loaded from the Web GIS. To check if the synchronization was successful, click on the layer status icon next to its name.
 
 .. note:: Open the project **after** the connection is set up. If you get "Handle Unavailable Layers" window, close the project, check the connection to Web GIS, then re-open the project.
+
+.. _ngc_identify:
+
+Identify features in Web GIS layers
+---------------------------------------
+
+NextGIS Connect allows to get information about vector features stored in your NextGIS Web server, including attachments and descriptions. Select |button_c_identify| in the NextGIS Connect panel or NextGIS Connect toolbar. Click on the feature to open the identification panel that has three tabs:
+
+* Attributes;
+* Attachments;
+* Description.
+
+.. figure:: _static/ngc_identify_feature_en.png
+   :name: ngc_identify_feature_pic
+   :align: center
+   :width: 20cm
+
+   Indetifying features in Web GIS layer
+
+On the Description tab you can view the feature's description, all formating and images included in it are preserved.
+
+.. _ngc_identify_attach:
+
+Manage attachments
+~~~~~~~~~~~~~~~~~~~
+
+On the Attachments tab you can view the files attached to the feature. Initially only previews are loaded. If you want to download the entire file, open its menu and click **Download**.
+
+In the menu of an attached file you can:
+
+
+* Download the attachment;
+* Download and immidiately open the attachment;
+* Open an already downloaded attachment;
+* Open the folder where it was downloaded;
+* Edit name and description of the attached file;
+* Copy the attachment;
+* Save as a separate file;
+* Delete the attachment.
+
+.. figure:: _static/ngc_identify_attach_en.png
+   :name: ngc_identify_attach_pic
+   :align: center
+   :width: 20cm
+
+   Attachment menu
+
+.. |button_c_identify| image:: _static/button_c_identify.png
+   :width: 6mm
+   :alt: pointer and globe on blue square

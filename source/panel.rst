@@ -19,7 +19,7 @@ Buttons on the panel:
 
 * |button_cloud_upload| `Add to Web GIS <https://docs.nextgis.com/docs_ngconnect/source/resources.html#ng-connect-export>`_
 
-* |button_c_identify| Identify features in Web GIS layers
+* |button_c_identify| `Identify features in Web GIS layers <https://docs.nextgis.com/docs_ngconnect/source/resources.html#ngc-identify>`_
 
 * |button_newfolder| `Create resource group <https://docs.nextgis.com/docs_ngconnect/source/manage.html#ng-connect-res-group>`_ or |button_c_new_layer| `a new vector layer <https://docs.nextgis.com/docs_ngconnect/source/manage.html#new-vector-layer>`_
 
