@@ -50,7 +50,7 @@
 
 * |button_cloud_upload| `Добавить в Веб ГИС <https://docs.nextgis.ru/docs_ngconnect/source/resources.html#ng-connect-export>`_
 
-* |button_c_identify| Идентифицировать объекты в слоях Веб ГИС
+* |button_c_identify| `Идентифицировать объекты в слоях Веб ГИС <https://docs.nextgis.ru/docs_ngconnect/source/resources.html#ngc-identify>`_
 
 * |button_newfolder| `Создать группу ресурсов <https://docs.nextgis.ru/docs_ngconnect/source/manage.html#ng-connect-res-group>`_ или |button_c_new_layer| `создать новый векторный слой <https://docs.nextgis.ru/docs_ngconnect/source/manage.html#new-vector-layer>`_
 
