@@ -278,7 +278,7 @@ With Connect you can copy QML style from Web GIS and apply it to a local style i
 
    <iframe width="560" height="315" src="https://www.youtube.com/embed/bmba3qqgTmM?si=rT99QhzB5_InKbnU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Watch on `youtube <https://youtu.be/bmba3qqgTmM?si=dZMBmZyPSXojFgiY>`_.
+Watch on `YouTube <https://youtu.be/bmba3qqgTmM?si=dZMBmZyPSXojFgiY>`_.
 
 Click on the layer in the Connect panel to view the styles and right-click on the QML-style. Select "Copy style" in the context menu. Then in the QGIS Layers panel paste style via context menu as usual.
 

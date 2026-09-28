@@ -24,7 +24,7 @@ With NextGIS Connect you can:
 
    <iframe width="560" height="315" src="https://www.youtube.com/embed/2tuh5p0tUqw?si=kcNULSgt2WIwQqi0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Watch on `youtube <https://youtu.be/2tuh5p0tUqw?si=iJmlmnhXQuMdTJlf>`_.
+Watch on `YouTube <https://youtu.be/2tuh5p0tUqw?si=iJmlmnhXQuMdTJlf>`_.
 
 .. warning::
 
