@@ -183,9 +183,9 @@
 
 .. raw:: html
 
-   <iframe width="560" height="315" src="https://rutube.ru/play/embed/f374bd300335a78dddd017a0c0934eec/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+   <iframe width="720" height="405" src="https://rutube.ru/play/embed/245deaf272e45ae5f6ab62c498f64e3f/" style="border: none;" allow="clipboard-write; autoplay" allowFullScreen></iframe>
 
-Смотреть на `youtube <https://youtu.be/qIByQEqZ4oQ>`__, `rutube <https://rutube.ru/video/f374bd300335a78dddd017a0c0934eec/>`__.
+Посмотреть видео на `RuTube <https://rutube.ru/video/245deaf272e45ae5f6ab62c498f64e3f/>`_, `YouTube <https://youtu.be/hf_PCjxg_yQ?si=_B12lEDYPxib4UF->`_.
 
 .. _vector_data:
 
