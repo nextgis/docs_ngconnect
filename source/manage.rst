@@ -1,13 +1,14 @@
 Manage Web GIS resources
 =========================
 
+In NextGIS Connect you can manage resources in your Web GIS: rename, delete and create, move, and for some resource types - duplicate and copy.
 
 .. _ng_connect_res_group:
 
 Create resource group
 -------------------------
 
-In the top menu of the NextGIS Connect plugin you'll find a |button_newfolder|"Create group" button.
+In the top menu of the NextGIS Connect plugin you'll find a |button_newfolder|"Create group" button. Alternatively, press :guilabel:`Ctrl+Shift+N` on the keyboard.
 
 A new group will be created:
 
@@ -260,6 +261,42 @@ Copy will be created in the same group. The layer's style will also be duplicate
    :width: 13cm
 
    Duplicating resource
+
+.. _connect_style_copy_wg:
+
+Copy style from one layer to another
+-------------------------------------
+
+With NextGIS Connect you can add an existing style to another layer in your Web GIS. 
+
+In the Connect panel select the style you want to copy. Open the resource context menu and click **Copy** or press :guilabel:`Ctrl+C`.
+
+.. figure:: _static/ngc_style_copy_en.png
+   :name: ngc_style_copy_pic
+   :align: center
+   :width: 9cm
+
+   Copying the source style
+
+Now select the layer you what to apply the style to. Open the layer's context menu and click **Paste** or press :guilabel:`Ctrl+V`.
+
+.. figure:: _static/ngc_style_paste_en.png
+   :name: ngc_style_paste_pic
+   :align: center
+   :width: 9cm
+
+   Pasting style to the target layer
+
+In the next dialog you can enter the name for the style.
+
+.. figure:: _static/ngc_style_name_en.png
+   :name: ngc_style_name_pic
+   :align: center
+   :width: 7cm
+
+   Name for the style
+
+.. hint:: You can also apply a style `to a layer in your QGIS project <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-style-copy>`_.
 
 .. _connect_resource_delete:
 
