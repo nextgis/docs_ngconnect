@@ -69,7 +69,7 @@ In the pop-up window press **New** and fill in the fields:
 Next, in the *Authentication* section, choose how you wish to log in to the Web GIS:
 
 * The default setting, "No Authentication" (= as a Guest) can be used if you don't need to perform actions that a Guest has no permissions for;
-* `add a new configuration <https://docs.nextgis.ru/docs_ngconnect/source/ngc_install.html#nnew-config>`_;
+* `add a new configuration <https://docs.nextgis.com/docs_ngconnect/source/ngc_install.html#nnew-config>`_;
 * select a previously created one (the list includes configuration name, user name and authentication type).
 
 .. note:: For instance, only the Web GIS owner and the `team members <https://docs.nextgis.com/docs_ngcom/source/create.html#team-management>`_ can create and delete resources.

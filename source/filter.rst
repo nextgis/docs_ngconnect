@@ -1,7 +1,13 @@
 Search and filter
 ======================
 
-In NextGIS Connect you can `search resources by name <https://docs.nextgis.com/docs_ngconnect/source/filter.html#ngc-search-name>`_, `url <https://docs.nextgis.com/docs_ngconnect/source/filter.html#ngc-search-url>`_ or `metadata <https://docs.nextgis.com/docs_ngconnect/source/filter.html#ngc-filter-metadata>`_ or `filter <https://docs.nextgis.com/docs_ngconnect/source/filter.html#ngc-filter-expression>`_ the resource tree using expressions.
+In NextGIS Connect you can search resources:
+
+* by name;
+* by URL;
+* by resource type;
+* by metadata;
+* or filter the resource tree using expressions.
 
 To open the search/filter bar, press |button_filter| button in the plugin toolbar.
 
@@ -13,7 +19,7 @@ To open the search/filter bar, press |button_filter| button in the plugin toolba
 .. _ngc_search_name:
 
 Search by name
-----------------------------
+---------------
 
 To search by name, enter word(s) or symbol(s) that are part of the resource name (use part of the word if you're not sure what form it is in). The resource tree will be filtered to only display the resources that have the entered symbol combination in their names and paths to those resources in the tree. The search results are marked in bold.
 
@@ -36,6 +42,32 @@ If you have a link to a Web GIS resource you can find it in the NextGIS Connect 
    Search by link
 
 If you know the resource ID, you can find it in the layer tree by using an `expression <https://docs.nextgis.com/docs_ngconnect/source/filter.html#ngc-filter-expression>`_ or by adding it to the Web GIS URL, following the template ``https://mywebgis.nextgis.com/resource/id``, e.g. https://experiments.nextgis.com/resource/200.
+
+.. _ngc_filter_type:
+
+Search by resource type
+-----------------------
+
+NextGIS Connect also allows search by metadata. To activate it, click the downward arrow next to the filter icon |button_filter| and select "By resource type". Next in the search bar click on the arrow and check the resource types you want to search.
+
+.. figure:: _static/ngc_filter_type_select_en.png
+   :name: ngc_filter_type_select_pic
+   :align: center
+   :width: 10cm
+
+   Selecting resource types: WFS and WMS layers
+
+After selecting all the resource types you need, click on the magnifying glass icon on the right. Only the resources of the selected types are left in the resource tree.
+
+.. figure:: _static/ngc_filter_type_result_en.png
+   :name: ngc_filter_type_result_pic
+   :align: center
+   :width: 10cm
+
+   WFS and WMS layers found
+
+To add another parameter to the search, you can use expressions.
+
 
 .. _ngc_filter_expression:
 
@@ -161,6 +193,7 @@ Use the following values for the resource type search:
 * QGIS raster style – qgis_raster_style
 * QGIS vector style – qgis_vector_style
 * Raster layer – raster_layer
+* Raster layer storage - raster_layer_storage
 * Raster style – raster_style
 * Resource group – resource_group
 * SVG marker library – svg_marker_library
