@@ -1,7 +1,13 @@
 Фильтр и поиск
 ======================
 
-Модуль NextGIS Connect позволяет `искать ресурсы по названию <https://docs.nextgis.ru/docs_ngconnect/source/filter.html#ngc-search-name>`_ и `URL <https://docs.nextgis.ru/docs_ngconnect/source/filter.html#ngc-search-url>`_ и `метаданным <https://docs.nextgis.ru/docs_ngconnect/source/filter.html#ngc-filter-metadata>`_ или `фильтровать <https://docs.nextgis.ru/docs_ngconnect/source/filter.html#ngc-filter-expression>`_ дерево ресурсов по выражению.
+Модуль NextGIS Connect позволяет искать и фильтровать ресурсы:
+
+* по названию;
+* ссылке (URL);
+* типу ресурса;
+* метаданным;
+* задавать выражение для фильтрации.
 
 Чтобы активировать поиск, нажмите кнопку |button_filter| в панели инструментов модуля.
 
@@ -36,6 +42,31 @@
    Поиск по URL
 
 Также если вы знаете номер ресурса, вы можете найти его не только при помощи `выражения <https://docs.nextgis.ru/docs_ngconnect/source/filter.html#ngc-filter-expression>`_, но и подставив его в ссылку вида ``https://mywebgis.nextgis.com/resource/id``, например https://experimental.nextgis.com/resource/516.
+
+.. _ngc_filter_type:
+
+Поиск по типу ресурса
+----------------------
+
+Также доступен поиск по типу ресурса. Чтобы перейти к нему, нажмите на стрелочку вниз рядом с кнопкой поиска |button_filter| и выберите "По типу ресурса". Затем в появившейся строке поиска нажмите стрелочку вниз и отметьте галочками нужные типы ресурсов.
+
+.. figure:: _static/ngc_filter_type_select_ru.png
+   :name: ngc_filter_type_select_pic
+   :align: center
+   :width: 10cm
+
+   Выбор типа ресурса из списка: выбраны слои PostGIS и TMS
+
+Выбрав нужное, нажмите на значок лупы справа. В дереве ресурсов останутся только ресурсы перечисленных типов.
+
+.. figure:: _static/ngc_filter_type_result_ru.png
+   :name: ngc_filter_type_result_pic
+   :align: center
+   :width: 10cm
+
+   Найды все слои PostGIS и TMS
+
+Чтобы искать одновременно по типу ресурса и другому параметру, вы можете составить выражение.
 
 .. _ngc_filter_expression:
 
@@ -175,6 +206,7 @@
 * Стиль MapServer - mapserver_style
 * Трекер - tracker
 * Форма - formbuilder_form
+* Хранилище растровых слоёв - raster_layer_storage
 * Библиотека маркеров SVG – svg_marker_library
 
 
