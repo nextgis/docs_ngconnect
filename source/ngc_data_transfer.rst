@@ -27,8 +27,8 @@ On Free plan you can upload up to 15 layers. If you need more, you can `upgrade 
 
 - Upload selected;
 - Upload all - All layers for which the import option is available will be added to Web GIS, as well as all groups, retaining the hierarchy from QGIS Layers Panel.  Also a Web Map will be created and all imported layers will be added to it retaining hierarchy and visibility of QGIS Layers Panel. While importing a project you need to specify the name of the new resource group which will be created in Web GIS. This group will hold all resources imported along with the project. When the process is complete, the Web Map will be opened automatically if corresponding option is selected in plugin settings.
-- Update layer style - Web GIS will update the style of the layer to match the style of the selected layer in QGIS.
-- Add new style to layer - Web GIS will add to the layer a new style, similar to the selected layer in QGIS.
+- Replace style - Web GIS will update the style of the layer to match the style of the selected layer in QGIS.
+- Add style - Web GIS will add to the layer a new style, similar to the selected layer in QGIS.
 
 Imported resources will be added to the group selected in NextGIS Connect panel. 
 
@@ -201,7 +201,7 @@ Upload vector data
 * In QGIS create from scratch or upload from :term:`ESRI Shape`, :term:`GeoJSON` or :term:`CSV` files vector layers. Tailor their styles.
 * In NextGIS Connect panel select Resource group to which you want to upload your data (or create a new one using `Create resource group <https://docs.nextgis.com/docs_ngconnect/source/manage.html#ng-connect-res-group>`_ button).
 * In QGIS Layers panel select the vector layer which you want to upload to Web GIS;
-* Press **Add to Web GIS** button on NextGIS Connect control panel and click **Upload selected** or choose **NextGIS Connect --> Upload selected** in layer context menu.
+* Press **Add to Web GIS** button on NextGIS Connect control panel and click **Upload layer** or choose **NextGIS Connect --> Upload layer to Web GIS** in layer context menu.
 * If data is uploaded successfully you'll see in the relevant Resource group a new Vector layer with `QGIS style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html>`_ tailored by you.
 * After a successful upload the plugin suggests replacing the local layers in the project by the synchronizable Web GIS layers. If you select this option, all further edits you make to the layers will be auto-synced with the server.
 
@@ -229,7 +229,7 @@ Upload raster data
 
 * In NextGIS Connect panel select Resource group to which you want to upload your data;
 * In QGIS Layers panel select a raster layer which you want to upload to Web GIS;
-* Press **Add to Web GIS** button on NextGIS Connect control panel and click **Upload selected** or choose **NextGIS Connect --> Upload selected** in layer context menu;
+* Press **Add to Web GIS** button on NextGIS Connect control panel and click **Upload layer** or choose **NextGIS Connect --> Upload layer to Web GIS** in layer context menu;
 * If data is uploaded successfully you'll see in the relevant Resource group a new Raster layer  with default `Raster style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#ngw-process-create-raster-style>`_.
 
 See how to set transparancy for a raster layer, upload it and `create a Web Map <https://docs.nextgis.com/docs_ngconnect/source/resources.html#creating-web-map-from-a-layer>`_ from the layer in our video:
@@ -249,7 +249,7 @@ Upload basemap
 * Add basemaps to QGIS via TMS;
 * In NextGIS Connect panel select Resource group to which you want to add your basemap;
 * In QGIS Layers panel select a basemap which you want to upload to Web GIS;
-* Press **Add to Web GIS** button on NextGIS Connect control panel and click **Upload selected** or choose **NextGIS Connect --> Upload selected** in layer context menu;
+* Press **Add to Web GIS** button on NextGIS Connect control panel and click **Upload layer** or choose **NextGIS Connect --> Upload layer to Web GIS** in layer context menu;
 * If a basemap is uploaded successfully you'll see it the relevant Resource group.
 
 

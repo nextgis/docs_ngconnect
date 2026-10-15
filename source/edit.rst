@@ -51,7 +51,7 @@ You can start the process manually by pressing the **Synchronization** button.
 
 If changes have been made to the layer in Web GIS since the last synchronization, further synchronization will not be possible. `Reset the layer <https://docs.nextgis.com/docs_ngconnect/source/edit.html#reset-layer>`_ to make synchronization possible again. 
 
-If the edits made in the cloud were incorrect and you need to replace them with local ones, you can use the `Data overwrite <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-data-overwrite>`_ function.
+If the edits made in the cloud were incorrect and you need to replace them with local ones, you can `replace the layer data <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-data-overwrite>`_.
 
 Only the data itself is synchronized. See how to `change the layer structure <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-add-field>`_ to keep the synchronization available.
 
@@ -189,11 +189,11 @@ NextGIS Connect allows you to update the content of an existing Web GIS vector o
    When a **layer** is updated, all data of the target layer including attachments (photos, documents) is cleared. If you need to keep the attachments intact, use `WFS <https://docs.nextgis.com/docs_ngconnect/source/resources.html#wfs>`__. When you update a `style <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-style-overwrite>`_, it does not affect attachments.
 
 
-To update (overwrite) layer's data:
+To update (replace) layer's data:
 
 * In the QGIS Layers panel, select the layer that you want to use to replace an existing Web GIS vector layer;
 * In the NextGIS Connect panel select the layer the contents of which you need to replace;
-* Right click on the target layer and choose **Overwrite selected layer**.
+* Right click on the target layer and choose **Replace data**.
 
 Layer resource ID stays the same.
 
@@ -203,7 +203,7 @@ Layer resource ID stays the same.
    :align: center
    :width: 20cm
    
-   Overwriting layer with the new version via context menu 
+   Replacing layer with the new version via context menu 
 
 You can also edit features `directly <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-data-edit>`_ or via `WFS <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-data-edit-wfs>`__.
 
@@ -219,7 +219,7 @@ You can add another style to a layer or replace its existing style with a new on
 * Add layer to QGIS via Connect;
 * Change the style of the layer (color, line width, etc.);
 * Select the layer in QGIS Layers panel as well as in the Connect panel.
-* In Connect toolbar press |button_cloud_upload| Add to Web GIS and in the dropdown menu select "Add new style to layer" or "Update style".
+* In Connect toolbar press |button_cloud_upload| Add to Web GIS and in the dropdown menu select "Add style" or "Replace style".
 
 .. figure:: _static/connect_add_style_en_2.png
    :name: ngcn_add_style_pic
@@ -241,7 +241,7 @@ To update layer's style you don't need to select a specific one.
 
    Selecting one of the styles to update
 
-This operation is also available in the layer's context menu in QGIS Layers panel: :menuselection:`NextGIS Connect --> Add new style to layer / Update layer style`.
+This operation is also available in the layer's context menu in QGIS Layers panel: :menuselection:`NextGIS Connect --> Add style to Web GIS / Replace style in Web GIS`.
 
 .. figure:: _static/connect_replace_add_style_context_en.png
    :name: ngcn_replace_style_context_pic
@@ -259,7 +259,7 @@ To **keep the photos** intact while modifying the style, perform the following s
 
 1. Add the layer's style from Web GIS to QGIS using NextGIS Connect.
 2. Modify the style.
-3. Update the style using NextGIS Connect. 
+3. Replace the style using NextGIS Connect. 
 
 .. figure:: _static/ngconnect_modify_keep_photo_en.png
    :align: center

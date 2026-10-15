@@ -19,7 +19,7 @@ NextGIS Connect for QGIS
 * `Raster layer <https://docs.nextgis.com/docs_ngconnect/source/resources.html#raster-data>`_
 * `Basemap <https://docs.nextgis.com/docs_ngconnect/source/ngc_data_transfer.html#basemaps>`_
 * `Replace data <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-data-overwrite>`_
-* `Update style <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-style-overwrite>`_
+* `Replace style <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-style-overwrite>`_
 
 **Use data from the cloud**
 
