@@ -168,12 +168,14 @@ Synchronization is automatic. Set how often Connect checks for layer updates in 
 
 You can disable auto sync for a layer and synchronize it manually when needed. Go to layer properties and untick "Automatic synchronization".
 
-.. figure:: _static/ngc_layer_autosync_set_en.png
+.. figure:: _static/ngc_layer_autosync_set_en_2.png
    :name: ngc_layer_autosync_set_pic
    :align: center
-   :width: 20cm
+   :width: 18cm
 
    Automatic synchronization is enabled
+
+Manually synchronized layers are marked by |icon_sync_manual| in the layer panel.
 
 To start the synchronization manually, open the `layer status window <https://docs.nextgis.com/docs_ngconnect/source/edit.html>`_ and press **Synchronization**.
 
@@ -245,3 +247,7 @@ In the menu of an attached file you can:
 .. |button_c_identify| image:: _static/button_c_identify.png
    :width: 6mm
    :alt: pointer and globe on blue square
+
+.. |icon_sync_manual| image:: _static/icon_sync_manual.png
+   :width: 6mm
+   :alt: branch
