@@ -20,7 +20,7 @@ NextGIS Connect для QGIS
 * `Растровый слой <https://docs.nextgis.ru/docs_ngconnect/source/ngc_data_transfer.html#raster-data>`_
 * `Подложка <https://docs.nextgis.ru/docs_ngconnect/source/ngc_data_transfer.html#basemaps>`_
 * `Заменить данные <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#connect-data-overwrite>`_
-* `Обновить стиль <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#connect-style-overwrite>`_
+* `Заменить стиль <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#connect-style-overwrite>`_
 
 **Использование данных из хранилища**
 
