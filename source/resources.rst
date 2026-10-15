@@ -182,12 +182,14 @@
 
 Также для отдельного слоя можно отключить автоматическую синхронизацию и запускать её только вручную. Для этого в свойствах слоя в разделе NextGIS снимите галочку "Автоматическая синхронизация".
 
-.. figure:: _static/ngc_layer_autosync_set_ru.png
+.. figure:: _static/ngc_layer_autosync_set_ru_2.png
    :name: ngc_layer_autosync_set_pic
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    Автоматическая синхронизация включена
+
+Слой, переключённый в режим ручной синхронизации, помечается в панели слоёв значком |icon_sync_manual|.
 
 Чтобы запустить синхронизацию вручную, откройте `окно Статуса слоя <https://docs.nextgis.ru/docs_ngconnect/source/edit.html>`_ и нажмите кнопку **Синхронизация**.
 
@@ -257,7 +259,9 @@ NextGIS Connect позволяет получать информацию об о
    :width: 6mm
    :alt: курсор и синяя плашка с глобусом
 
-
+.. |icon_sync_manual| image:: _static/icon_sync_manual.png
+   :width: 6mm
+   :alt: ветка
 
 
 
